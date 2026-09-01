@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vault — Authentication</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  /* ============================================================
+     DESIGN TOKENS
+     Theme: a "vault" — secure, mechanical, quietly confident.
+     ============================================================ */
+  :root{
+    --ink:        #11151c;   /* page background */
+    --panel:      #1a2029;   /* card background */
+    --panel-2:    #212836;   /* inset fields */
+    --line:       #2c3444;   /* hairline borders */
+    --text:       #e9e7df;   /* primary text */
+    --text-dim:   #9aa3b5;   /* secondary text */
+    --brass:      #c9a24b;   /* primary accent — the "key" */
+    --brass-dim:  #8a723a;
+    --teal:       #4fd1c5;   /* secondary accent — the "signal" */
+    --error:      #e0625a;
+    --error-bg:   #2a1c1c;
+    --success:    #6fbf8a;
+    --success-bg: #1b2620;
+    --radius:     10px;
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-mono:    'IBM Plex Mono', monospace;
+  }
+
+  *{ box-sizing: border-box; }
+  html, body{ height: 100%; }
+  body{
+    margin: 0;
+    background: var(--ink);
+    color: var(--text);
+    font-family: var(--font-display);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 32px 16px 64px;
+    /* faint blueprint-style dot grid, evokes a vault schematic */
+    background-image: radial-gradient(circle, #232b39 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  /* ---------- Header / wordmark ---------- */
+  .brand{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 28px;
+    user-select: none;
+  }
+  .brand svg{ width: 30px; height: 30px; flex-shrink: 0; }
+  .brand-text{
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: 0.06em;
+  }
+  .brand-text span{ color: var(--brass); }
+
+  /* ---------- Step / route indicator ----------
+     A real sequence (Register happens before Login happens before
+     Dashboard), so a labeled progression is meaningful here. */
+  .steps{
+    display: flex;
+    gap: 4px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 4px;
+    margin-bottom: 28px;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+  }
+  .steps button{
+    background: transparent;
+    border: none;
+    color: var(--text-dim);
+    padding: 8px 18px;
+    border-radius: 999px;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  .steps button:hover{ color: var(--text); }
+  .steps button.active{
+    background: var(--brass);
+    color: #1a1305;
+    font-weight: 600;
+  }
+  .steps button:disabled{
+    opacity: 0.35;
+    cursor: not-allowed;
+  }
+
+  /* ---------- Card ---------- */
+  .card{
+    width: 100%;
+    max-width: 400px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 32px 28px;
+    box-shadow: 0 20px 60px -20px rgba(0,0,0,0.6);
+  }
+  .card h1{
+    margin: 0 0 4px;
+    font-size: 1.4rem;
+  }
+  .card .sub{
+    margin: 0 0 24px;
+    color: var(--text-dim);
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+
+  /* ---------- Form fields ---------- */
+  .field{ margin-bottom: 18px; }
+  .field label{
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 6px;
+  }
+  .field-input-wrap{ position: relative; }
+  .field input{
+    width: 100%;
+    background: var(--panel-2);
+    border: 1px solid var(--line);
+    color: var(--text);
+    font-family: var(--font-display);
+    font-size: 0.95rem;
+    padding: 11px 14px;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  .field input::placeholder{ color: #5b6478; }
+  .field input:focus{
+    border-color: var(--teal);
+    box-shadow: 0 0 0 3px rgba(79,209,197,0.15);
+  }
+  .field input.invalid{
+    border-color: var(--error);
+  }
+  .toggle-visibility{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--text-dim);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    padding: 4px 6px;
+  }
+  .toggle-visibility:hover{ color: var(--teal); }
+
+  .field-hint{
+    margin-top: 6px;
+    font-size: 0.76rem;
+    color: var(--text-dim);
+  }
+  .field-error{
+    margin-top: 6px;
+    font-size: 0.76rem;
+    color: var(--error);
+    display: none;
+  }
+  .field-error.show{ display: block; }
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: none;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: transform 0.05s ease, filter 0.15s ease;
+  }
+  .btn:active{ transform: translateY(1px); }
+  .btn-primary{
+    background: var(--brass);
+    color: #1a1305;
+  }
+  .btn-primary:hover{ filter: brightness(1.08); }
+  .btn-ghost{
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--text);
+    margin-top: 10px;
+  }
+  .btn-ghost:hover{ border-color: var(--error); color: var(--error); }
+
+  /* ---------- Banners (form-level messages) ---------- */
+  .banner{
+    display: none;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 0.82rem;
+    margin-bottom: 18px;
+    line-height: 1.4;
+  }
+  .banner.show{ display: flex; }
+  .banner.error{ background: var(--error-bg); color: var(--error); border: 1px solid #4a2828; }
+  .banner.success{ background: var(--success-bg); color: var(--success); border: 1px solid #2a4033; }
+
+  .switch-link{
+    text-align: center;
+    margin-top: 18px;
+    font-size: 0.84rem;
+    color: var(--text-dim);
+  }
+  .switch-link a{
+    color: var(--teal);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .switch-link a:hover{ text-decoration: underline; }
+
+  /* ---------- Dashboard ---------- */
+  .dash-card{ max-width: 480px; }
+  .dash-header{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+  .dash-avatar{
+    width: 48px; height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--brass), var(--teal));
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700;
+    color: #12151c;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+  .dash-meta-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-top: 1px solid var(--line);
+    font-size: 0.86rem;
+  }
+  .dash-meta-row:last-of-type{ border-bottom: 1px solid var(--line); }
+  .dash-meta-row .k{ color: var(--text-dim); font-family: var(--font-mono); font-size: 0.76rem; letter-spacing: 0.04em; }
+  .dash-meta-row .v{ color: var(--text); }
+
+  .view{ display: none; }
+  .view.active{ display: block; }
+
+  footer{
+    margin-top: 32px;
+    color: #5b6478;
+    font-size: 0.75rem;
+    font-family: var(--font-mono);
+    text-align: center;
+  }
+
+  /* Accessibility: visible focus ring for keyboard users */
+  a:focus-visible, button:focus-visible, input:focus-visible{
+    outline: 2px solid var(--teal);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ transition: none !important; }
+  }
+
+  @media (max-width: 420px){
+    .card{ padding: 26px 20px; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="brand">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="11" stroke="#c9a24b" stroke-width="1.5"/>
+      <circle cx="12" cy="9.5" r="2.6" stroke="#c9a24b" stroke-width="1.5"/>
+      <path d="M12 12.1V17" stroke="#c9a24b" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+    <div class="brand-text">VAULT<span>.</span></div>
+  </div>
+
+  <nav class="steps" id="steps">
+    <button type="button" data-route="register">Register</button>
+    <button type="button" data-route="login">Login</button>
+    <button type="button" data-route="dashboard" id="dashStepBtn" disabled>Dashboard</button>
+  </nav>
+
+  <!-- ============================= REGISTER ============================= -->
+  <section class="view" id="view-register">
+    <div class="card">
+      <h1>Create an account</h1>
+      <p class="sub">Your password is hashed with a unique salt before it's ever stored — nothing is kept in plain text.</p>
+
+      <div class="banner error" id="reg-banner-error"></div>
+      <div class="banner success" id="reg-banner-success"></div>
+
+      <form id="register-form" novalidate>
+        <div class="field">
+          <label for="reg-username">Username</label>
+          <input type="text" id="reg-username" name="username" placeholder="e.g. jane_doe" autocomplete="username">
+          <p class="field-error" id="reg-username-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="reg-email">Email</label>
+          <input type="email" id="reg-email" name="email" placeholder="you@example.com" autocomplete="email">
+          <p class="field-error" id="reg-email-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="reg-password">Password</label>
+          <div class="field-input-wrap">
+            <input type="password" id="reg-password" name="password" placeholder="At least 8 characters, 1 number" autocomplete="new-password">
+            <button type="button" class="toggle-visibility" data-target="reg-password">SHOW</button>
+          </div>
+          <p class="field-hint">Minimum 8 characters, at least 1 number.</p>
+          <p class="field-error" id="reg-password-error"></p>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Register</button>
+      </form>
+
+      <p class="switch-link">Already have an account? <a data-route="login">Log in</a></p>
+    </div>
+  </section>
+
+  <!-- ============================== LOGIN ================================ -->
+  <section class="view" id="view-login">
+    <div class="card">
+      <h1>Welcome back</h1>
+      <p class="sub">Log in with your username or email.</p>
+
+      <div class="banner error" id="login-banner-error"></div>
+      <div class="banner success" id="login-banner-success"></div>
+
+      <form id="login-form" novalidate>
+        <div class="field">
+          <label for="login-identifier">Username or email</label>
+          <input type="text" id="login-identifier" name="identifier" placeholder="jane_doe or you@example.com" autocomplete="username">
+          <p class="field-error" id="login-identifier-error"></p>
+        </div>
+
+        <div class="field">
+          <label for="login-password">Password</label>
+          <div class="field-input-wrap">
+            <input type="password" id="login-password" name="password" placeholder="Your password" autocomplete="current-password">
+            <button type="button" class="toggle-visibility" data-target="login-password">SHOW</button>
+          </div>
+          <p class="field-error" id="login-password-error"></p>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+
+      <p class="switch-link">Don't have an account? <a data-route="register">Register</a></p>
+    </div>
+  </section>
+
+  <!-- ============================= DASHBOARD ============================== -->
+  <section class="view" id="view-dashboard">
+    <div class="card dash-card">
+      <div class="dash-header">
+        <div class="dash-avatar" id="dash-avatar">?</div>
+        <div>
+          <h1 id="dash-greeting" style="margin:0 0 2px;">Welcome</h1>
+          <p class="sub" style="margin:0;">You're viewing a protected page.</p>
+        </div>
+      </div>
+
+      <div class="dash-meta-row">
+        <span class="k">USERNAME</span>
+        <span class="v" id="dash-username">—</span>
+      </div>
+      <div class="dash-meta-row">
+        <span class="k">EMAIL</span>
+        <span class="v" id="dash-email">—</span>
+      </div>
+      <div class="dash-meta-row">
+        <span class="k">SESSION STARTED</span>
+        <span class="v" id="dash-session-start">—</span>
+      </div>
+
+      <button type="button" class="btn btn-ghost" id="logout-btn">Logout</button>
+    </div>
+  </section>
+
+  <footer>Client-side demo &mdash; data lives only in this browser's localStorage.</footer>
+
+<script>
+/* ==================================================================
+   VAULT — a small client-side authentication demo.
+   Storage:
+     localStorage.vault_users    -> { [usernameLower]: { username, email, emailLower, salt, hash } }
+     sessionStorage.vault_session -> { username, startedAt }  (cleared on logout / tab close)
+   Passwords are never stored in plain text: each one is combined with
+   a random per-user salt and hashed with SHA-256 (Web Crypto API).
+   ================================================================== */
+
+// ---------------------------------------------------------------
+// 1. Hashing helpers
+// ---------------------------------------------------------------
+
+// Turn an ArrayBuffer into a hex string, e.g. for storing/comparing hashes.
+function bufferToHex(buffer) {
+  return Array.from(new Uint8Array(buffer))
+    .map(b => b.toString(16).padStart(2, '0'))
+    .join('');
+}
+
+// Generate a random 16-byte salt as a hex string.
+function generateSalt() {
+  const bytes = crypto.getRandomValues(new Uint8Array(16));
+  return bufferToHex(bytes.buffer);
+}
+
+// Hash (password + salt) with SHA-256 and return a hex digest.
+async function hashPassword(password, salt) {
+  const encoder = new TextEncoder();
+  const data = encoder.encode(salt + ':' + password);
+  const digest = await crypto.subtle.digest('SHA-256', data);
+  return bufferToHex(digest);
+}
+
+// ---------------------------------------------------------------
+// 2. User store (localStorage)
+// ---------------------------------------------------------------
+
+function getUsers() {
+  try {
+    return JSON.parse(localStorage.getItem('vault_users')) || {};
+  } catch {
+    return {};
+  }
+}
+
+function saveUsers(users) {
+  localStorage.setItem('vault_users', JSON.stringify(users));
+}
+
+function findUserByIdentifier(identifier) {
+  const users = getUsers();
+  const key = identifier.trim().toLowerCase();
+  // Match by username key directly, or by scanning for a matching email.
+  if (users[key]) return users[key];
+  return Object.values(users).find(u => u.emailLower === key) || null;
+}
+
+// ---------------------------------------------------------------
+// 3. Session (sessionStorage — cleared on logout or tab close)
+// ---------------------------------------------------------------
+
+function setSession(username) {
+  sessionStorage.setItem('vault_session', JSON.stringify({
+    username,
+    startedAt: new Date().toISOString()
+  }));
+}
+
+function getSession() {
+  try {
+    return JSON.parse(sessionStorage.getItem('vault_session'));
+  } catch {
+    return null;
+  }
+}
+
+function clearSession() {
+  sessionStorage.removeItem('vault_session');
+}
+
+// ---------------------------------------------------------------
+// 4. Small form-helper utilities
+// ---------------------------------------------------------------
+
+function showFieldError(inputEl, errorEl, message) {
+  inputEl.classList.add('invalid');
+  errorEl.textContent = message;
+  errorEl.classList.add('show');
+}
+
+function clearFieldError(inputEl, errorEl) {
+  inputEl.classList.remove('invalid');
+  errorEl.textContent = '';
+  errorEl.classList.remove('show');
+}
+
+function showBanner(el, message) {
+  el.textContent = message;
+  el.classList.add('show');
+}
+
+function hideBanner(el) {
+  el.classList.remove('show');
+  el.textContent = '';
+}
+
+// Password rule: at least 8 characters and at least one digit.
+function isPasswordValid(password) {
+  return password.length >= 8 && /\d/.test(password);
+}
+
+function isEmailValid(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+// ---------------------------------------------------------------
+// 5. Routing — three views, one at a time, driven by the URL hash
+// ---------------------------------------------------------------
+
+const routes = ['register', 'login', 'dashboard'];
+
+function route() {
+  let name = (location.hash || '#login').replace('#', '');
+  if (!routes.includes(name)) name = 'login';
+
+  // Guard: the dashboard requires an active session.
+  if (name === 'dashboard' && !getSession()) {
+    location.hash = '#login';
+    showBanner(
+      document.getElementById('login-banner-error'),
+      'Please log in to view the dashboard.'
+    );
+    return;
+  }
+
+  routes.forEach(r => {
+    document.getElementById('view-' + r).classList.toggle('active', r === name);
+  });
+
+  document.querySelectorAll('#steps button').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.route === name);
+  });
+
+  document.getElementById('dashStepBtn').disabled = !getSession();
+
+  if (name === 'dashboard') renderDashboard();
+}
+
+window.addEventListener('hashchange', route);
+
+// Clicking any element with data-route navigates there.
+document.querySelectorAll('[data-route]').forEach(el => {
+  el.addEventListener('click', () => {
+    if (el.disabled) return;
+    location.hash = '#' + el.dataset.route;
+  });
+});
+
+// ---------------------------------------------------------------
+// 6. Registration
+// ---------------------------------------------------------------
+
+const regForm = document.getElementById('register-form');
+const regUsername = document.getElementById('reg-username');
+const regEmail = document.getElementById('reg-email');
+const regPassword = document.getElementById('reg-password');
+
+regForm.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  hideBanner(document.getElementById('reg-banner-error'));
+  hideBanner(document.getElementById('reg-banner-success'));
+
+  const usernameErr = document.getElementById('reg-username-error');
+  const emailErr = document.getElementById('reg-email-error');
+  const passwordErr = document.getElementById('reg-password-error');
+  [regUsername, regEmail, regPassword].forEach((el, i) =>
+    clearFieldError(el, [usernameErr, emailErr, passwordErr][i])
+  );
+
+  const username = regUsername.value.trim();
+  const email = regEmail.value.trim();
+  const password = regPassword.value;
+
+  // --- Basic "no empty submissions" validation ---
+  let hasError = false;
+  if (!username) { showFieldError(regUsername, usernameErr, 'Username is required.'); hasError = true; }
+  if (!email) { showFieldError(regEmail, emailErr, 'Email is required.'); hasError = true; }
+  else if (!isEmailValid(email)) { showFieldError(regEmail, emailErr, 'Enter a valid email address.'); hasError = true; }
+  if (!password) { showFieldError(regPassword, passwordErr, 'Password is required.'); hasError = true; }
+  else if (!isPasswordValid(password)) {
+    showFieldError(regPassword, passwordErr, 'Password needs 8+ characters and at least 1 number.');
+    hasError = true;
+  }
+  if (hasError) return;
+
+  // --- Duplicate check ---
+  const users = getUsers();
+  const usernameKey = username.toLowerCase();
+  const emailKey = email.toLowerCase();
+  const usernameTaken = !!users[usernameKey];
+  const emailTaken = Object.values(users).some(u => u.emailLower === emailKey);
+
+  if (usernameTaken) {
+    showFieldError(regUsername, usernameErr, 'That username is already taken.');
+    return;
+  }
+  if (emailTaken) {
+    showFieldError(regEmail, emailErr, 'An account with that email already exists.');
+    return;
+  }
+
+  // --- Store the new user with a salted hash (never the raw password) ---
+  const salt = generateSalt();
+  const hash = await hashPassword(password, salt);
+  users[usernameKey] = { username, email, emailLower: emailKey, salt, hash };
+  saveUsers(users);
+
+  regForm.reset();
+  showBanner(
+    document.getElementById('reg-banner-success'),
+    'Account created. You can log in now.'
+  );
+  setTimeout(() => { location.hash = '#login'; }, 900);
+});
+
+// ---------------------------------------------------------------
+// 7. Login
+// ---------------------------------------------------------------
+
+const loginForm = document.getElementById('login-form');
+const loginIdentifier = document.getElementById('login-identifier');
+const loginPassword = document.getElementById('login-password');
+
+loginForm.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  hideBanner(document.getElementById('login-banner-error'));
+  hideBanner(document.getElementById('login-banner-success'));
+
+  const idErr = document.getElementById('login-identifier-error');
+  const pwErr = document.getElementById('login-password-error');
+  clearFieldError(loginIdentifier, idErr);
+  clearFieldError(loginPassword, pwErr);
+
+  const identifier = loginIdentifier.value.trim();
+  const password = loginPassword.value;
+
+  let hasError = false;
+  if (!identifier) { showFieldError(loginIdentifier, idErr, 'Enter your username or email.'); hasError = true; }
+  if (!password) { showFieldError(loginPassword, pwErr, 'Enter your password.'); hasError = true; }
+  if (hasError) return;
+
+  const user = findUserByIdentifier(identifier);
+
+  // Deliberately generic message: we never reveal whether the
+  // identifier or the password was the part that was wrong.
+  const genericError = 'Incorrect username/email or password.';
+
+  if (!user) {
+    showBanner(document.getElementById('login-banner-error'), genericError);
+    return;
+  }
+
+  const attemptedHash = await hashPassword(password, user.salt);
+  if (attemptedHash !== user.hash) {
+    showBanner(document.getElementById('login-banner-error'), genericError);
+    return;
+  }
+
+  setSession(user.username);
+  loginForm.reset();
+  location.hash = '#dashboard';
+});
+
+// ---------------------------------------------------------------
+// 8. Dashboard + logout
+// ---------------------------------------------------------------
+
+function renderDashboard() {
+  const session = getSession();
+  if (!session) return;
+  const users = getUsers();
+  const user = users[session.username.toLowerCase()];
+  if (!user) return;
+
+  document.getElementById('dash-avatar').textContent = user.username.charAt(0).toUpperCase();
+  document.getElementById('dash-greeting').textContent = 'Welcome, ' + user.username;
+  document.getElementById('dash-username').textContent = user.username;
+  document.getElementById('dash-email').textContent = user.email;
+  document.getElementById('dash-session-start').textContent =
+    new Date(session.startedAt).toLocaleString();
+}
+
+document.getElementById('logout-btn').addEventListener('click', () => {
+  clearSession();
+  location.hash = '#login';
+});
+
+// ---------------------------------------------------------------
+// 9. Password visibility toggles
+// ---------------------------------------------------------------
+
+document.querySelectorAll('.toggle-visibility').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const input = document.getElementById(btn.dataset.target);
+    const isHidden = input.type === 'password';
+    input.type = isHidden ? 'text' : 'password';
+    btn.textContent = isHidden ? 'HIDE' : 'SHOW';
+  });
+});
+
+// ---------------------------------------------------------------
+// 10. Initial route on load
+// ---------------------------------------------------------------
+
+route();
+</script>
+</body>
+</html>

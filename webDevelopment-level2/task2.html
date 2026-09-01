@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>James Clerk Maxwell — The Man Who Explained Light</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --board: #1E2B22;
+    --board-2: #172018;
+    --chalk-grid: rgba(237, 232, 220, 0.07);
+    --parchment: #F6F0E1;
+    --parchment-card: #ECE1C4;
+    --parchment-line: #DCCFA9;
+    --ink: #262C20;
+    --ink-soft: #565A47;
+    --chalk: #ECE7DA;
+    --chalk-soft: #B9C0AE;
+    --gold: #C89A45;
+    --gold-deep: #96702B;
+    --indigo: #5C6FB0;
+    --spectrum: linear-gradient(90deg, #B0473F 0%, #C89A45 26%, #5C8F6E 52%, #4C6FA5 78%, #5C4E9E 100%);
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--parchment);
+    color: var(--ink);
+    font-family: 'Literata', serif;
+    line-height: 1.7;
+  }
+
+  h1, h2, h3, .display {
+    font-family: 'Fraunces', serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .mono { font-family: 'IBM Plex Mono', monospace; }
+
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.76rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+
+  .spectrum-rule {
+    height: 4px;
+    background: var(--spectrum);
+    border: none;
+    margin: 0;
+  }
+
+  /* ================= HERO ================= */
+  .hero {
+    position: relative;
+    background:
+      repeating-linear-gradient(0deg, var(--chalk-grid) 0 1px, transparent 1px 42px),
+      repeating-linear-gradient(90deg, var(--chalk-grid) 0 1px, transparent 1px 42px),
+      radial-gradient(ellipse at 20% 15%, #26362A 0%, var(--board) 60%);
+    color: var(--chalk-soft);
+    padding: 60px 6vw 0;
+    overflow: hidden;
+  }
+
+  .hero-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    max-width: 1180px;
+    margin: 0 auto 44px;
+    color: var(--chalk-soft);
+  }
+  .hero-top .eyebrow.left { color: var(--gold); }
+  .hero-top .eyebrow.right { color: var(--indigo); }
+
+  .hero-grid {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 48px;
+    align-items: end;
+  }
+
+  .hero-name {
+    font-size: clamp(2.7rem, 7vw, 5.4rem);
+    line-height: 1.02;
+    color: #F7F3E7;
+    font-weight: 600;
+  }
+
+  .hero-name .last { color: var(--gold); font-style: italic; }
+
+  .tagline {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: clamp(0.92rem, 1.5vw, 1.08rem);
+    color: var(--chalk-soft);
+    margin-top: 20px;
+    max-width: 44ch;
+    line-height: 1.6;
+    border-left: 2px solid var(--indigo);
+    padding-left: 16px;
+  }
+
+  .equations {
+    margin-top: 30px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-style: italic;
+    font-size: 0.92rem;
+    color: rgba(236,231,218,0.5);
+    line-height: 2;
+    transform: rotate(-0.6deg);
+  }
+  .equations div { white-space: nowrap; }
+
+  .hero-figure {
+    position: relative;
+    padding: 0;
+    align-self: end;
+  }
+
+  .hero-figure img {
+    display: block;
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    object-position: center 18%;
+    filter: grayscale(20%) contrast(1.05) sepia(10%);
+    border: 1px solid var(--gold-deep);
+    box-shadow: 0 0 0 6px var(--board), 0 0 30px rgba(0,0,0,0.4);
+  }
+
+  .figcaption {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--chalk-soft);
+    opacity: 0.75;
+    margin-top: 10px;
+    text-align: right;
+  }
+
+  /* ================= SECTION SHELL ================= */
+  section { padding: 88px 6vw; }
+  .section-inner { max-width: 900px; margin: 0 auto; }
+  .section-head { margin-bottom: 40px; }
+  .section-head .eyebrow { color: var(--gold-deep); margin-bottom: 8px; }
+  .section-head h2 { font-size: clamp(1.9rem, 4.2vw, 2.8rem); }
+
+  /* ================= BIO ================= */
+  .bio { background: var(--parchment); }
+
+  .bio-layout {
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    gap: 48px;
+    align-items: start;
+  }
+
+  .bio p {
+    font-size: 1.1rem;
+    color: var(--ink);
+    margin: 0 0 1.4em;
+  }
+
+  .bio p:first-of-type::first-letter {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 4.2rem;
+    float: left;
+    line-height: 0.78;
+    padding: 8px 10px 0 0;
+    color: var(--gold-deep);
+  }
+
+  .aside-card {
+    background: var(--parchment-card);
+    border: 1px solid var(--parchment-line);
+    padding: 16px;
+    position: sticky;
+    top: 24px;
+  }
+  .aside-card img {
+    width: 100%;
+    display: block;
+    border: 1px solid var(--parchment-line);
+  }
+  .aside-card .eyebrow {
+    color: var(--gold-deep);
+    display: block;
+    margin-bottom: 10px;
+  }
+  .aside-card p {
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+    margin: 12px 0 0;
+    line-height: 1.55;
+  }
+
+  /* ================= QUOTE ================= */
+  .quote-band {
+    background: var(--board);
+    color: var(--chalk);
+    padding: 76px 6vw;
+    position: relative;
+  }
+
+  blockquote {
+    max-width: 740px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  blockquote .mark {
+    font-family: 'Fraunces', serif;
+    font-size: 4.6rem;
+    color: var(--gold);
+    line-height: 0.4;
+    display: block;
+    margin-bottom: 6px;
+    font-style: italic;
+  }
+
+  blockquote p {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(1.25rem, 2.8vw, 1.8rem);
+    color: #F7F3E7;
+    margin: 0 0 18px;
+    line-height: 1.4;
+  }
+
+  blockquote footer {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--chalk-soft);
+  }
+
+  /* ================= TIMELINE ================= */
+  .timeline-section {
+    background:
+      repeating-linear-gradient(0deg, var(--chalk-grid) 0 1px, transparent 1px 42px),
+      repeating-linear-gradient(90deg, var(--chalk-grid) 0 1px, transparent 1px 42px),
+      var(--board-2);
+    color: var(--chalk-soft);
+  }
+  .timeline-section .section-head h2 { color: #F7F3E7; }
+  .timeline-section .eyebrow { color: var(--indigo); }
+
+  .timeline {
+    position: relative;
+    max-width: 820px;
+    margin: 0 auto;
+    padding-left: 28px;
+    border-left: 2px solid var(--gold-deep);
+  }
+
+  .t-item { position: relative; padding: 0 0 42px 28px; }
+  .t-item:last-child { padding-bottom: 0; }
+
+  .t-item::before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--board-2);
+    border: 2px solid var(--gold);
+  }
+
+  .t-date {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--indigo);
+    letter-spacing: 0.05em;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .t-item h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #F7F3E7;
+    margin-bottom: 6px;
+  }
+
+  .t-item p { margin: 0; color: var(--chalk-soft); font-size: 0.98rem; max-width: 58ch; }
+
+  /* ================= FOOTER ================= */
+  footer.site-footer {
+    background: var(--board-2);
+    color: var(--chalk-soft);
+    text-align: center;
+    padding: 40px 6vw 52px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8rem;
+  }
+  footer.site-footer .signature {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    color: var(--gold);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  /* ================= RESPONSIVE ================= */
+  @media (max-width: 860px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-figure img { height: 280px; }
+    .bio-layout { grid-template-columns: 1fr; }
+    .aside-card { position: static; }
+    section { padding: 64px 6vw; }
+  }
+
+  @media (max-width: 480px) {
+    .hero { padding: 44px 5vw 0; }
+    .hero-top { flex-direction: column; gap: 6px; margin-bottom: 30px; }
+    .bio p:first-of-type::first-letter { font-size: 3.2rem; }
+    blockquote .mark { font-size: 3.4rem; }
+    .equations { font-size: 0.8rem; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- ================= HERO ================= -->
+  <header class="hero">
+    <div class="hero-top">
+      <span class="eyebrow left">Edinburgh, 1831</span>
+      <span class="eyebrow right">Cambridge, 1879</span>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <h1 class="hero-name">James Clerk <span class="last">Maxwell</span></h1>
+        <p class="tagline">He wrote four equations that quietly proved light, electricity, and magnetism were the same thing all along.</p>
+        <div class="equations mono" aria-hidden="true">
+          <div>&nabla; &middot; E = &rho; / &epsilon;&#8320;</div>
+          <div>&nabla; &middot; B = 0</div>
+          <div>&nabla; &times; E = &minus;&part;B/&part;t</div>
+          <div>&nabla; &times; B = &mu;&#8320;J + &mu;&#8320;&epsilon;&#8320; &part;E/&part;t</div>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/James%20Clerk%20Maxwell.jpg" alt="Portrait of James Clerk Maxwell, Scottish physicist">
+        <p class="figcaption">Portrait, c. 1870s &mdash; Wikimedia Commons, public domain</p>
+      </figure>
+    </div>
+    <hr class="spectrum-rule">
+  </header>
+
+  <!-- ================= BIOGRAPHY ================= -->
+  <section class="bio">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="eyebrow">&sect;01 &mdash; The Unification</span>
+        <h2>A Scotsman Who Rewrote Light</h2>
+      </div>
+
+      <div class="bio-layout">
+        <div>
+          <p>James Clerk Maxwell was born in Edinburgh in 1831 and grew up on his family's rural estate in Galloway, where by all accounts he was an unstoppably curious child, forever asking "what's the go o' that?" about anything mechanical. That question never really left him. He entered Edinburgh University at sixteen and published his first scientific paper, on a method for drawing oval curves, before he had finished his teens. By the time he reached Cambridge he had already shown the instinct that would define his career: a willingness to take other people's half-formed ideas and give them exact mathematical shape.</p>
+
+          <p>That instinct found its greatest subject in the work of Michael Faraday, who had spent decades describing electricity and magnetism in terms of invisible "lines of force" but lacked the mathematics to prove what he sensed. Maxwell, starting with his 1855 paper "On Faraday's Lines of Force" and arriving at his masterwork "A Dynamical Theory of the Electromagnetic Field" a decade later, translated Faraday's intuition into a compact set of equations. Buried inside them was a strange and enormous discovery: the equations predicted a wave that traveled at a speed matching the known speed of light almost exactly. Maxwell concluded, correctly, that light itself was an electromagnetic wave, and that visible light was only a narrow slice of a much larger spectrum still waiting to be found.</p>
+
+          <p>He was, just as importantly, a scientist who never stayed in one lane. In 1861, while investigating how the human eye perceives color, he supervised the creation of the first durable color photograph, a picture of a tartan ribbon built from three black-and-white exposures shot through red, green, and blue filters. He worked out the statistical behavior of colliding gas particles, giving physics the Maxwell-Boltzmann distribution and helping found the field of statistical mechanics. He even proved, through pure calculation from an armchair in Cambridge, that Saturn's rings could not be solid or liquid and had to be made of countless small orbiting particles, a conclusion later confirmed by spacecraft that would not exist for another century.</p>
+
+          <p>In 1871 Cambridge asked him to become its first Cavendish Professor of Experimental Physics, and he built the Cavendish Laboratory from nothing into what would become one of the most important physics departments in the world.</p>
+
+          <p>None of this, in Maxwell's own mind, stood apart from his faith. He was raised in a devoutly Christian household, reportedly able to recite the entire 119th Psalm, the longest in the Bible, by the age of eight, and he carried that grounding through a Cambridge education that only deepened it. He saw the order he kept finding in nature &mdash; in the motion of gas particles, in the rings of Saturn, in the equations that unified light itself &mdash; as evidence of a universe made intelligible on purpose, by a Creator he believed was worth searching it out for. When Cambridge finally gave him a laboratory of his own to design, Maxwell chose to have a line from Psalm 111 carved in Latin above its great oak doors, words that in English read: <em>&ldquo;Great are the works of the Lord; they are pondered by all who delight in them.&rdquo;</em> It was not a decoration to him. Colleagues and biographers describe a man for whom rigorous science and quiet, settled belief were simply two expressions of the same wonder, carried all the way to the end &mdash; the minister who sat with him during his final illness reported that Maxwell faced it with a faith that remained confident in the gospel he had trusted all his life.</p>
+
+          <p>He died of cancer in 1879, at only forty-eight, before he could see where his equations would lead. Within a decade Heinrich Hertz had used them to generate radio waves in a laboratory. Within a lifetime they had given the world wireless communication, and within one more they had guided a young patent clerk named Einstein toward special relativity. Einstein later said that one scientific era ended and another began with Maxwell; it is hard to find a physicist since who would disagree.</p>
+        </div>
+
+        <aside class="aside-card">
+          <span class="eyebrow">Fig. 2 &mdash; 1861</span>
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tartan%20Ribbon.jpg" alt="The Tartan Ribbon, the first durable colour photograph, produced under Maxwell's direction in 1861">
+          <p>The world's first durable color photograph, built from three exposures Maxwell asked a photographer to shoot through red, green, and blue filters &mdash; the same principle every screen you own still uses today.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= QUOTE ================= -->
+  <div class="quote-band">
+    <blockquote>
+      <span class="mark">&ldquo;</span>
+      <p>The true logic of this world is in the calculus of probabilities.</p>
+      <footer>&mdash; James Clerk Maxwell</footer>
+    </blockquote>
+  </div>
+
+  <!-- ================= TIMELINE ================= -->
+  <section class="timeline-section">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="eyebrow">&sect;02 &mdash; The Record</span>
+        <h2>Key Moments</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="t-item">
+          <span class="t-date mono">13 JUN 1831</span>
+          <h3>Born in Edinburgh</h3>
+          <p>Raised at the family estate of Glenlair in Galloway, Scotland, showing an early and relentless curiosity about how things worked.</p>
+        </div>
+        <div class="t-item">
+          <span class="t-date mono">1855&ndash;56</span>
+          <h3>"On Faraday's Lines of Force"</h3>
+          <p>Begins translating Michael Faraday's physical intuition about electric and magnetic fields into rigorous mathematics.</p>
+        </div>
+        <div class="t-item">
+          <span class="t-date mono">1861</span>
+          <h3>The first color photograph</h3>
+          <p>Directs the creation of the Tartan Ribbon photograph, demonstrating that any color can be built from red, green, and blue light.</p>
+        </div>
+        <div class="t-item">
+          <span class="t-date mono">1865</span>
+          <h3>The electromagnetic theory of light</h3>
+          <p>Publishes "A Dynamical Theory of the Electromagnetic Field," showing that light itself is an electromagnetic wave.</p>
+        </div>
+        <div class="t-item">
+          <span class="t-date mono">1871</span>
+          <h3>First Cavendish Professor</h3>
+          <p>Takes up Cambridge's new chair in experimental physics and founds the Cavendish Laboratory from the ground up.</p>
+        </div>
+        <div class="t-item">
+          <span class="t-date mono">1873</span>
+          <h3>"A Treatise on Electricity and Magnetism"</h3>
+          <p>Publishes the definitive two-volume text that would shape the study of electromagnetism for generations of physicists.</p>
+        </div>
+        <div class="t-item">
+          <span class="t-date mono">5 NOV 1879</span>
+          <h3>Dies in Cambridge</h3>
+          <p>Passes away from cancer at forty-eight, a decade before Heinrich Hertz confirmed his predicted electromagnetic waves in a laboratory.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="signature">J. C. M.</div>
+    <p>A tribute to the physicist who looked at electricity, magnetism, and light, and saw one thing.</p>
+  </footer>
+
+</body>
+</html>

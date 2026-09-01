@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chalk It Up — To-Do Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --board-1:#1b2420;
+    --board-2:#212c26;
+    --chalk-white:#edeee6;
+    --chalk-dim:#9fada2;
+    --chalk-yellow:#e8c468;
+    --chalk-pink:#e88da0;
+    --chalk-blue:#7ec8e3;
+    --rail-wood:#5a4632;
+    --rail-wood-dark:#443421;
+    --line:rgba(237,238,230,0.18);
+  }
+
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+
+  body{
+    min-height:100vh;
+    background:
+      radial-gradient(ellipse at 20% 0%, rgba(126,200,227,0.05), transparent 55%),
+      radial-gradient(ellipse at 85% 90%, rgba(232,141,160,0.05), transparent 55%),
+      var(--board-1);
+    font-family:'Space Grotesk', sans-serif;
+    color:var(--chalk-white);
+    padding:36px 20px 60px;
+    position:relative;
+    overflow-x:hidden;
+  }
+
+  /* chalkboard texture */
+  body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    opacity:0.5;
+    mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
+  }
+
+  .wrap{
+    max-width:920px;
+    margin:0 auto;
+    position:relative;
+    z-index:1;
+  }
+
+  /* wooden frame rail top */
+  .frame{
+    border:10px solid var(--rail-wood);
+    border-top-width:16px;
+    border-radius:6px;
+    background:
+      linear-gradient(180deg, rgba(0,0,0,0.15), transparent 40px),
+      var(--board-2);
+    box-shadow:0 30px 60px -20px rgba(0,0,0,0.6), inset 0 0 60px rgba(0,0,0,0.35);
+    padding:38px clamp(20px,4vw,56px) 44px;
+    position:relative;
+  }
+  .frame::before{
+    content:"";
+    position:absolute;
+    top:-16px; left:16px; right:16px; height:6px;
+    background:var(--rail-wood-dark);
+    border-radius:3px;
+  }
+
+  header{
+    text-align:center;
+    margin-bottom:30px;
+  }
+  .eyebrow{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    letter-spacing:0.24em;
+    text-transform:uppercase;
+    color:var(--chalk-blue);
+    opacity:0.85;
+  }
+  h1{
+    font-family:'Kalam', cursive;
+    font-weight:700;
+    font-size:clamp(2.4rem, 6vw, 3.6rem);
+    margin:6px 0 8px;
+    color:var(--chalk-white);
+    text-shadow:0 0 18px rgba(237,238,230,0.12);
+    letter-spacing:0.01em;
+    transform:rotate(-0.6deg);
+  }
+  .sub{
+    font-size:15px;
+    color:var(--chalk-dim);
+    max-width:440px;
+    margin:0 auto;
+    line-height:1.5;
+  }
+
+  /* input row */
+  .composer{
+    display:flex;
+    gap:10px;
+    margin:0 auto 34px;
+    max-width:640px;
+    flex-wrap:wrap;
+  }
+  .composer input[type="text"]{
+    flex:1 1 260px;
+    background:transparent;
+    border:none;
+    border-bottom:2px dashed var(--line);
+    color:var(--chalk-white);
+    font-family:'Kalam', cursive;
+    font-size:19px;
+    padding:10px 6px;
+    outline:none;
+    transition:border-color 0.2s ease;
+  }
+  .composer input[type="text"]::placeholder{
+    color:var(--chalk-dim);
+    opacity:0.7;
+  }
+  .composer input[type="text"]:focus{
+    border-bottom-color:var(--chalk-yellow);
+  }
+  .add-btn{
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:600;
+    font-size:14px;
+    letter-spacing:0.02em;
+    background:transparent;
+    color:var(--board-2);
+    background-color:var(--chalk-yellow);
+    border:none;
+    border-radius:4px;
+    padding:12px 20px;
+    cursor:pointer;
+    transition:transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow:0 2px 0 rgba(0,0,0,0.25);
+    white-space:nowrap;
+  }
+  .add-btn:hover{ transform:translateY(-1px); box-shadow:0 4px 0 rgba(0,0,0,0.25); }
+  .add-btn:active{ transform:translateY(1px); box-shadow:0 1px 0 rgba(0,0,0,0.25); }
+  .add-btn:focus-visible, .composer input:focus-visible{ outline:2px solid var(--chalk-blue); outline-offset:2px; }
+
+  /* columns */
+  .board{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:0;
+    position:relative;
+  }
+  .board::after{
+    content:"";
+    position:absolute;
+    top:0; bottom:0; left:50%;
+    width:0;
+    border-left:2px dashed var(--line);
+    transform:translateX(-1px);
+  }
+  @media (max-width:680px){
+    .board{ grid-template-columns:1fr; }
+    .board::after{ display:none; }
+    .col{ border-bottom:2px dashed var(--line); padding-bottom:20px; margin-bottom:20px; }
+    .col:last-child{ border-bottom:none; }
+  }
+
+  .col{ padding:0 clamp(6px,2vw,28px); min-width:0; }
+
+  .col-head{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    margin-bottom:16px;
+  }
+  .col-title{
+    font-family:'Kalam', cursive;
+    font-size:22px;
+    font-weight:700;
+  }
+  .col-title.pending{ color:var(--chalk-white); }
+  .col-title.done{ color:var(--chalk-blue); }
+  .count{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    color:var(--chalk-dim);
+    background:rgba(237,238,230,0.06);
+    border:1px solid var(--line);
+    padding:3px 9px;
+    border-radius:20px;
+  }
+
+  ul.list{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:10px; min-height:60px; }
+
+  .task{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    padding:12px 10px;
+    border-radius:6px;
+    transition:background 0.2s ease, opacity 0.25s ease, transform 0.25s ease;
+    position:relative;
+  }
+  .task:hover{ background:rgba(237,238,230,0.04); }
+  .task.removing{ opacity:0; transform:scale(0.96); }
+
+  /* chalk circle checkbox */
+  .chalk-check{
+    flex:0 0 auto;
+    width:24px; height:24px;
+    border:2px solid var(--chalk-dim);
+    border-radius:50%;
+    cursor:pointer;
+    margin-top:2px;
+    position:relative;
+    background:transparent;
+    transition:border-color 0.2s ease;
+  }
+  .chalk-check:hover{ border-color:var(--chalk-yellow); }
+  .chalk-check svg{
+    position:absolute; inset:-3px;
+    width:26px; height:26px;
+    pointer-events:none;
+  }
+  .chalk-check path{
+    fill:none;
+    stroke:var(--chalk-yellow);
+    stroke-width:2.5;
+    stroke-linecap:round;
+    stroke-dasharray:22;
+    stroke-dashoffset:22;
+  }
+  .task.done .chalk-check{ border-color:var(--chalk-yellow); }
+  .task.done .chalk-check path{
+    animation:scribble 0.35s ease forwards;
+  }
+  @keyframes scribble{ to{ stroke-dashoffset:0; } }
+
+  .task-body{ flex:1 1 auto; min-width:0; }
+  .task-text{
+    font-family:'Kalam', cursive;
+    font-size:17px;
+    line-height:1.35;
+    word-break:break-word;
+    color:var(--chalk-white);
+  }
+  .task.done .task-text{
+    color:var(--chalk-dim);
+    text-decoration:line-through;
+    text-decoration-color:var(--chalk-blue);
+    text-decoration-thickness:2px;
+  }
+  .task-time{
+    font-family:'JetBrains Mono', monospace;
+    font-size:11px;
+    color:var(--chalk-dim);
+    opacity:0.75;
+    margin-top:4px;
+    display:block;
+  }
+
+  .edit-input{
+    width:100%;
+    font-family:'Kalam', cursive;
+    font-size:17px;
+    background:transparent;
+    border:none;
+    border-bottom:1px dashed var(--chalk-yellow);
+    color:var(--chalk-white);
+    outline:none;
+    padding:0 0 2px;
+  }
+
+  .task-actions{
+    flex:0 0 auto;
+    display:flex;
+    gap:6px;
+    opacity:0.55;
+    transition:opacity 0.2s ease;
+  }
+  .task:hover .task-actions{ opacity:1; }
+  .icon-btn{
+    background:transparent;
+    border:1px solid var(--line);
+    color:var(--chalk-dim);
+    border-radius:4px;
+    width:30px; height:30px;
+    display:flex; align-items:center; justify-content:center;
+    cursor:pointer;
+    transition:border-color 0.15s ease, color 0.15s ease, transform 0.12s ease;
+  }
+  .icon-btn:hover{ color:var(--chalk-white); border-color:var(--chalk-white); }
+  .icon-btn.erase:hover{ color:var(--chalk-pink); border-color:var(--chalk-pink); }
+  .icon-btn.save:hover{ color:var(--chalk-yellow); border-color:var(--chalk-yellow); }
+  .icon-btn:active{ transform:scale(0.92); }
+  .icon-btn:focus-visible{ outline:2px solid var(--chalk-blue); outline-offset:1px; }
+  .icon-btn svg{ width:15px; height:15px; }
+
+  /* eraser wipe effect on delete */
+  .task.erasing{
+    animation:wipe 0.4s ease forwards;
+  }
+  @keyframes wipe{
+    0%{ filter:blur(0); opacity:1; }
+    60%{ filter:blur(3px); opacity:0.4; }
+    100%{ filter:blur(6px); opacity:0; transform:translateX(6px) scale(0.98); }
+  }
+
+  /* empty states */
+  .empty{
+    font-family:'Kalam', cursive;
+    font-size:16px;
+    color:var(--chalk-dim);
+    text-align:center;
+    padding:30px 10px;
+    border:1.5px dashed var(--line);
+    border-radius:8px;
+    opacity:0.85;
+  }
+  .empty .doodle{
+    display:block;
+    font-size:26px;
+    margin-bottom:6px;
+    opacity:0.7;
+  }
+
+  footer{
+    text-align:center;
+    margin-top:26px;
+    font-family:'JetBrains Mono', monospace;
+    font-size:11px;
+    color:var(--chalk-dim);
+    opacity:0.6;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration:0.001ms !important; transition-duration:0.001ms !important; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="frame">
+    <header>
+      <div class="eyebrow">— Today's Board —</div>
+      <h1>Chalk It Up</h1>
+      <p class="sub">Write it down, cross it off, wipe it clean. Nothing here outlasts the day.</p>
+    </header>
+
+    <div class="composer">
+      <input type="text" id="taskInput" placeholder="What needs doing?" maxlength="200" autocomplete="off">
+      <button class="add-btn" id="addBtn">Add to board</button>
+    </div>
+
+    <div class="board">
+      <div class="col">
+        <div class="col-head">
+          <span class="col-title pending">On the Board</span>
+          <span class="count" id="pendingCount">0 pending</span>
+        </div>
+        <ul class="list" id="pendingList"></ul>
+      </div>
+      <div class="col">
+        <div class="col-head">
+          <span class="col-title done">Wiped Clean</span>
+          <span class="count" id="completedCount">0 completed</span>
+        </div>
+        <ul class="list" id="completedList"></ul>
+      </div>
+    </div>
+
+    <footer>saved to this browser · nothing leaves your board</footer>
+  </div>
+</div>
+
+<script>
+(function(){
+  const STORAGE_KEY = 'chalk-it-up-tasks';
+  const taskInput = document.getElementById('taskInput');
+  const addBtn = document.getElementById('addBtn');
+  const pendingList = document.getElementById('pendingList');
+  const completedList = document.getElementById('completedList');
+  const pendingCount = document.getElementById('pendingCount');
+  const completedCount = document.getElementById('completedCount');
+
+  let tasks = [];
+
+  function loadTasks(){
+    try{
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if(raw){ tasks = JSON.parse(raw); }
+    }catch(e){
+      console.error('Could not read saved tasks', e);
+      tasks = [];
+    }
+  }
+
+  function saveTasks(){
+    try{
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(tasks));
+    }catch(e){
+      console.error('Could not save tasks', e);
+    }
+  }
+
+  function uid(){
+    return 't_' + Date.now().toString(36) + '_' + Math.random().toString(36).slice(2,8);
+  }
+
+  function formatTime(iso){
+    if(!iso) return '';
+    const d = new Date(iso);
+    const now = new Date();
+    const sameDay = d.toDateString() === now.toDateString();
+    const timeStr = d.toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
+    if(sameDay) return timeStr;
+    const dateStr = d.toLocaleDateString([], {month:'short', day:'numeric'});
+    return dateStr + ' · ' + timeStr;
+  }
+
+  function checkIcon(){
+    return '<svg viewBox="0 0 26 26"><path d="M6 13.5 L11 18 L20 8"/></svg>';
+  }
+  function editIcon(){
+    return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>';
+  }
+  function eraseIcon(){
+    return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20H8l-6-6a2 2 0 0 1 0-2.8L13.6 2.6a2 2 0 0 1 2.8 0l5.7 5.7a2 2 0 0 1 0 2.8L14 19"/><path d="M6.5 12.5 15 21"/></svg>';
+  }
+  function saveIcon(){
+    return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>';
+  }
+
+  function render(){
+    const pending = tasks.filter(t => !t.done).sort((a,b) => a.createdAt < b.createdAt ? 1 : -1);
+    const completed = tasks.filter(t => t.done).sort((a,b) => (a.completedAt||'') < (b.completedAt||'') ? 1 : -1);
+
+    pendingCount.textContent = pending.length + (pending.length === 1 ? ' pending' : ' pending');
+    completedCount.textContent = completed.length + (completed.length === 1 ? ' completed' : ' completed');
+
+    renderList(pendingList, pending, false);
+    renderList(completedList, completed, true);
+  }
+
+  function renderList(el, items, isDone){
+    el.innerHTML = '';
+    if(items.length === 0){
+      const empty = document.createElement('li');
+      empty.className = 'empty';
+      empty.innerHTML = isDone
+        ? '<span class="doodle">〜</span>Nothing crossed off yet. Get to it.'
+        : '<span class="doodle">✎</span>The board&rsquo;s empty. Add something above.';
+      el.appendChild(empty);
+      return;
+    }
+    items.forEach(task => el.appendChild(renderTask(task)));
+  }
+
+  function renderTask(task){
+    const li = document.createElement('li');
+    li.className = 'task' + (task.done ? ' done' : '');
+    li.dataset.id = task.id;
+
+    const check = document.createElement('button');
+    check.className = 'chalk-check';
+    check.setAttribute('aria-label', task.done ? 'Mark as pending' : 'Mark complete');
+    check.innerHTML = checkIcon();
+    check.addEventListener('click', () => toggleDone(task.id));
+
+    const body = document.createElement('div');
+    body.className = 'task-body';
+
+    const textEl = document.createElement('div');
+    textEl.className = 'task-text';
+    textEl.textContent = task.text;
+    body.appendChild(textEl);
+
+    const timeEl = document.createElement('span');
+    timeEl.className = 'task-time';
+    timeEl.textContent = task.done
+      ? 'added ' + formatTime(task.createdAt) + ' · wiped ' + formatTime(task.completedAt)
+      : 'added ' + formatTime(task.createdAt);
+    body.appendChild(timeEl);
+
+    const actions = document.createElement('div');
+    actions.className = 'task-actions';
+
+    const editBtn = document.createElement('button');
+    editBtn.className = 'icon-btn edit';
+    editBtn.setAttribute('aria-label', 'Edit task');
+    editBtn.innerHTML = editIcon();
+    editBtn.addEventListener('click', () => startEdit(li, task, body, textEl));
+
+    const delBtn = document.createElement('button');
+    delBtn.className = 'icon-btn erase';
+    delBtn.setAttribute('aria-label', 'Erase task');
+    delBtn.innerHTML = eraseIcon();
+    delBtn.addEventListener('click', () => deleteTask(task.id, li));
+
+    actions.appendChild(editBtn);
+    actions.appendChild(delBtn);
+
+    li.appendChild(check);
+    li.appendChild(body);
+    li.appendChild(actions);
+
+    return li;
+  }
+
+  function startEdit(li, task, body, textEl){
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.className = 'edit-input';
+    input.value = task.text;
+    input.maxLength = 200;
+
+    textEl.replaceWith(input);
+    input.focus();
+    input.setSelectionRange(input.value.length, input.value.length);
+
+    function commit(){
+      const val = input.value.trim();
+      if(val){ task.text = val; }
+      saveTasks();
+      render();
+    }
+
+    input.addEventListener('keydown', (e) => {
+      if(e.key === 'Enter'){ e.preventDefault(); commit(); }
+      if(e.key === 'Escape'){ e.preventDefault(); render(); }
+    });
+    input.addEventListener('blur', commit);
+  }
+
+  function addTask(){
+    const val = taskInput.value.trim();
+    if(!val) return;
+    tasks.push({
+      id: uid(),
+      text: val,
+      done: false,
+      createdAt: new Date().toISOString(),
+      completedAt: null
+    });
+    taskInput.value = '';
+    saveTasks();
+    render();
+    taskInput.focus();
+  }
+
+  function toggleDone(id){
+    const task = tasks.find(t => t.id === id);
+    if(!task) return;
+    task.done = !task.done;
+    task.completedAt = task.done ? new Date().toISOString() : null;
+    saveTasks();
+    render();
+  }
+
+  function deleteTask(id, li){
+    li.classList.add('erasing');
+    setTimeout(() => {
+      tasks = tasks.filter(t => t.id !== id);
+      saveTasks();
+      render();
+    }, 380);
+  }
+
+  addBtn.addEventListener('click', addTask);
+  taskInput.addEventListener('keydown', (e) => {
+    if(e.key === 'Enter'){ addTask(); }
+  });
+
+  loadTasks();
+  render();
+})();
+</script>
+</body>
+</html>
