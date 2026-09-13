@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard - Digital Library</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div th:replace="~{fragments/header :: nav}"></div>
+
+<div class="container">
+    <h1>Admin Dashboard</h1>
+    <div class="stat-grid">
+        <div class="stat-card"><div class="num" th:text="${bookCount}"></div><div class="label">Books in Catalogue</div></div>
+        <div class="stat-card"><div class="num" th:text="${issuedCount}"></div><div class="label">Currently Issued</div></div>
+        <div class="stat-card"><div class="num" th:text="${memberCount}"></div><div class="label">Registered Members</div></div>
+        <div class="stat-card"><div class="num" th:text="${unpaidFineCount}"></div><div class="label">Unpaid Fines</div></div>
+        <div class="stat-card"><div class="num" th:text="${unresolvedMessages}"></div><div class="label">Open Messages</div></div>
+    </div>
+
+    <div class="card" style="margin-top:24px;">
+        <h2>Quick Links</h2>
+        <a class="btn" href="/admin/books">Manage Books</a>
+        <a class="btn" href="/admin/issued">View Issued Books</a>
+        <a class="btn" href="/admin/members">Manage Members</a>
+        <a class="btn" href="/admin/fines">Manage Fines</a>
+        <a class="btn" href="/admin/messages">View Messages</a>
+    </div>
+</div>
+</body>
+</html>

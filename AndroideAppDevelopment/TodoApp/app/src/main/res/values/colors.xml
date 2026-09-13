@@ -1,0 +1,17 @@
+<resources>
+    <color name="primary">#3F51B5</color>
+    <color name="primary_dark">#303F9F</color>
+    <color name="accent">#00BFA5</color>
+
+    <color name="background">#F5F6FA</color>
+    <color name="surface">#FFFFFF</color>
+
+    <color name="text_primary">#1C1C1E</color>
+    <color name="text_secondary">#6E6E73</color>
+    <color name="text_hint">#A0A0A5</color>
+
+    <color name="error">#D32F2F</color>
+    <color name="completed_strike">#9E9E9E</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="white">#FFFFFF</color>
+</resources>

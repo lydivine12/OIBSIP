@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Fines - Digital Library</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div th:replace="~{fragments/header :: nav}"></div>
+
+<div class="container">
+    <div class="card">
+        <h1>Fine Management</h1>
+        <table>
+            <thead>
+            <tr><th>Member</th><th>Book</th><th>Due Date</th><th>Returned</th><th>Amount</th><th>Status</th><th></th></tr>
+            </thead>
+            <tbody>
+            <tr th:each="f : ${fines}">
+                <td th:text="${f.issueRecord.member.fullName}"></td>
+                <td th:text="${f.issueRecord.book.title}"></td>
+                <td th:text="${f.issueRecord.dueDate}"></td>
+                <td th:text="${f.issueRecord.returnDate}"></td>
+                <td th:text="'₹' + ${f.amount}"></td>
+                <td>
+                    <span th:if="${f.paid}" class="badge badge-green">Paid</span>
+                    <span th:if="${!f.paid}" class="badge badge-red">Unpaid</span>
+                </td>
+                <td>
+                    <form th:if="${!f.paid}" method="post" th:action="@{/admin/fines/{id}/mark-paid(id=${f.id})}">
+                        <button type="submit" class="btn-small">Mark Paid</button>
+                    </form>
+                </td>
+            </tr>
+            <tr th:if="${#lists.isEmpty(fines)}"><td colspan="7" class="muted">No fines on record.</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

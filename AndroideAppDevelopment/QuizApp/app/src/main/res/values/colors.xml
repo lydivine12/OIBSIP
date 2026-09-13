@@ -1,0 +1,23 @@
+<resources>
+    <color name="primary">#6C4EF5</color>
+    <color name="primary_dark">#4E36C7</color>
+    <color name="accent">#FFC947</color>
+
+    <color name="background">#F4F3FB</color>
+    <color name="surface">#FFFFFF</color>
+
+    <color name="text_primary">#1C1B1F</color>
+    <color name="text_secondary">#6E6E78</color>
+    <color name="on_primary">#FFFFFF</color>
+
+    <color name="option_default_bg">#FFFFFF</color>
+    <color name="option_default_text">#1C1B1F</color>
+    <color name="option_default_stroke">#DADCE6</color>
+
+    <color name="option_correct_bg">#43A047</color>
+    <color name="option_incorrect_bg">#E53935</color>
+    <color name="option_disabled_text">#FFFFFF</color>
+    <color name="option_dimmed">#B7B7C3</color>
+
+    <color name="white">#FFFFFF</color>
+</resources>

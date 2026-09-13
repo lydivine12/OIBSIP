@@ -1,0 +1,10 @@
+[
+  {
+    "trigger": "tell me a joke",
+    "response": "Why do programmers prefer dark mode? Because light attracts bugs."
+  },
+  {
+    "trigger": "open my calendar",
+    "response": "I can't open apps yet, but you can add that ability by extending actions.py."
+  }
+]

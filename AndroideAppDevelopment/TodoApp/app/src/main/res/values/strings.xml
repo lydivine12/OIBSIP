@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">TodoApp</string>
+
+    <!-- Login -->
+    <string name="login_title">Welcome back</string>
+    <string name="login_subtitle">Log in to see your tasks</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">Log In</string>
+    <string name="no_account_prompt">Don\'t have an account? Sign up</string>
+
+    <!-- Signup -->
+    <string name="signup_title">Create account</string>
+    <string name="signup_subtitle">It only takes a minute</string>
+    <string name="hint_name">Full name</string>
+    <string name="hint_confirm_password">Confirm password</string>
+    <string name="btn_register">Register</string>
+    <string name="have_account_prompt">Already have an account? Log in</string>
+
+    <!-- Task list -->
+    <string name="task_list_title">My Tasks</string>
+    <string name="btn_add_task">Add task</string>
+    <string name="empty_state_title">No tasks yet</string>
+    <string name="empty_state_subtitle">Tap the + button to add your first task</string>
+    <string name="action_logout">Logout</string>
+
+    <!-- Add task dialog -->
+    <string name="add_task_title">New task</string>
+    <string name="hint_task_name">Task name</string>
+    <string name="hint_task_notes">Notes (optional)</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="delete_task_title">Delete task?</string>
+    <string name="delete_task_message">This can\'t be undone.</string>
+    <string name="btn_delete">Delete</string>
+</resources>

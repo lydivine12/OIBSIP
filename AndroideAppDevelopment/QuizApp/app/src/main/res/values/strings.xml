@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+
+    <!-- Welcome -->
+    <string name="welcome_title">General Knowledge Quiz</string>
+    <string name="welcome_subtitle">10 questions. Answer as many as you can!</string>
+    <string name="btn_start">Start Quiz</string>
+
+    <!-- Quiz -->
+    <string name="question_counter_format">Question %1$d of %2$d</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_finish">Finish</string>
+    <string name="score_label_format">Score: %1$d</string>
+
+    <!-- Results -->
+    <string name="results_title">Quiz Complete!</string>
+    <string name="results_score_format">%1$d%%</string>
+    <string name="results_correct_label">Correct</string>
+    <string name="results_incorrect_label">Incorrect</string>
+    <string name="btn_restart">Restart Quiz</string>
+</resources>

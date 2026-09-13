@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>My Books - Digital Library</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div th:replace="~{fragments/header :: nav}"></div>
+
+<div class="container">
+    <div class="card">
+        <h1>My Books</h1>
+        <div class="error" th:if="${error}" th:text="${error}"></div>
+
+        <table>
+            <thead>
+            <tr><th>Title</th><th>Issue Date</th><th>Due Date</th><th>Status</th><th></th></tr>
+            </thead>
+            <tbody>
+            <tr th:each="r : ${records}">
+                <td th:text="${r.book.title}"></td>
+                <td th:text="${r.issueDate}"></td>
+                <td th:text="${r.dueDate}"></td>
+                <td>
+                    <span th:if="${r.returned}" class="badge badge-gray"
+                          th:text="'Returned ' + ${r.returnDate}"></span>
+                    <span th:if="${!r.returned and !r.dueDate.isBefore(today)}" class="badge badge-green">On loan</span>
+                    <span th:if="${!r.returned and r.dueDate.isBefore(today)}" class="badge badge-red">Overdue</span>
+                </td>
+                <td>
+                    <form th:if="${!r.returned}" method="post" th:action="@{/user/return/{id}(id=${r.id})}">
+                        <button type="submit" class="btn-small">Return</button>
+                    </form>
+                </td>
+            </tr>
+            <tr th:if="${#lists.isEmpty(records)}"><td colspan="5" class="muted">You haven't issued any books yet.</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

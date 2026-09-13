@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Messages - Digital Library</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div th:replace="~{fragments/header :: nav}"></div>
+
+<div class="container">
+    <div class="card">
+        <h1>Contact / Query Messages</h1>
+        <table>
+            <thead>
+            <tr><th>From</th><th>Message</th><th>Received</th><th>Status</th><th></th></tr>
+            </thead>
+            <tbody>
+            <tr th:each="m : ${messages}">
+                <td th:text="${m.name} + ' (' + ${m.email} + ')'"></td>
+                <td th:text="${m.message}" style="max-width:360px;"></td>
+                <td th:text="${m.createdAt}"></td>
+                <td>
+                    <span th:if="${m.resolved}" class="badge badge-green">Resolved</span>
+                    <span th:if="${!m.resolved}" class="badge badge-red">Open</span>
+                </td>
+                <td>
+                    <form th:if="${!m.resolved}" method="post" th:action="@{/admin/messages/{id}/resolve(id=${m.id})}">
+                        <button type="submit" class="btn-small">Mark Resolved</button>
+                    </form>
+                </td>
+            </tr>
+            <tr th:if="${#lists.isEmpty(messages)}"><td colspan="5" class="muted">No messages yet.</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

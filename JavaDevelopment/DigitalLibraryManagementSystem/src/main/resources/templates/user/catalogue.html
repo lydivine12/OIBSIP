@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Catalogue - Digital Library</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div th:replace="~{fragments/header :: nav}"></div>
+
+<div class="container">
+    <div class="card">
+        <h1>Book Catalogue</h1>
+        <div class="error" th:if="${error}" th:text="${error}"></div>
+
+        <form method="get" th:action="@{/user/catalogue}" class="filter-bar">
+            <input type="text" name="q" placeholder="Search title or author" th:value="${query}">
+            <select name="category" onchange="this.form.submit()">
+                <option value="">All categories</option>
+                <option th:each="c : ${categories}" th:value="${c}" th:text="${c}"
+                        th:selected="${c == selectedCategory}"></option>
+            </select>
+            <button type="submit">Search</button>
+            <a class="btn btn-secondary" th:href="@{/user/catalogue}">Reset</a>
+        </form>
+
+        <table>
+            <thead>
+            <tr><th>Title</th><th>Author</th><th>Category</th><th>ISBN</th><th>Availability</th><th></th></tr>
+            </thead>
+            <tbody>
+            <tr th:each="book : ${books}">
+                <td th:text="${book.title}"></td>
+                <td th:text="${book.author}"></td>
+                <td th:text="${book.category}"></td>
+                <td th:text="${book.isbn}"></td>
+                <td>
+                    <span th:if="${book.availableQuantity > 0}" class="badge badge-green"
+                          th:text="${book.availableQuantity} + ' of ' + ${book.quantity} + ' available'"></span>
+                    <span th:if="${book.availableQuantity == 0}" class="badge badge-red">All copies issued</span>
+                </td>
+                <td>
+                    <form th:if="${book.availableQuantity > 0}" method="post"
+                          th:action="@{/user/issue/{id}(id=${book.id})}" class="inline-form">
+                        <button type="submit" class="btn-small">Issue</button>
+                    </form>
+                    <form th:if="${book.availableQuantity == 0}" method="post"
+                          th:action="@{/user/reserve/{id}(id=${book.id})}" class="inline-form">
+                        <button type="submit" class="btn-small btn-secondary">Reserve</button>
+                    </form>
+                </td>
+            </tr>
+            <tr th:if="${#lists.isEmpty(books)}"><td colspan="6" class="muted">No books found.</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

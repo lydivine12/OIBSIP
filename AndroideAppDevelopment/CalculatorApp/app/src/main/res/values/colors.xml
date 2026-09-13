@@ -1,0 +1,16 @@
+<resources>
+    <color name="background_dark">#121212</color>
+    <color name="display_text">#FFFFFF</color>
+    <color name="display_sub_text">#9E9E9E</color>
+
+    <color name="number_btn_bg">#2C2C2E</color>
+    <color name="number_btn_text">#FFFFFF</color>
+
+    <color name="function_btn_bg">#A5A5A5</color>
+    <color name="function_btn_text">#000000</color>
+
+    <color name="operator_btn_bg">#FF9500</color>
+    <color name="operator_btn_text">#FFFFFF</color>
+
+    <color name="ripple_color">#55FFFFFF</color>
+</resources>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>My Fines - Digital Library</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div th:replace="~{fragments/header :: nav}"></div>
+
+<div class="container">
+    <div class="card">
+        <h1>My Fines</h1>
+        <p class="muted">Overdue returns are fined at ₹5 per day. Pay fines with the library admin in person, who will mark them as paid.</p>
+
+        <table>
+            <thead>
+            <tr><th>Book</th><th>Due Date</th><th>Returned</th><th>Amount</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+            <tr th:each="f : ${fines}">
+                <td th:text="${f.issueRecord.book.title}"></td>
+                <td th:text="${f.issueRecord.dueDate}"></td>
+                <td th:text="${f.issueRecord.returnDate}"></td>
+                <td th:text="'₹' + ${f.amount}"></td>
+                <td>
+                    <span th:if="${f.paid}" class="badge badge-green">Paid</span>
+                    <span th:if="${!f.paid}" class="badge badge-red">Unpaid</span>
+                </td>
+            </tr>
+            <tr th:if="${#lists.isEmpty(fines)}"><td colspan="5" class="muted">No fines - nice work!</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

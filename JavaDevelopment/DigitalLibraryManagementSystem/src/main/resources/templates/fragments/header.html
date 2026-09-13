@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div th:fragment="nav">
+    <nav class="topnav">
+        <a class="brand" th:href="${session.role != null and session.role.name() == 'ADMIN'} ? '/admin/dashboard' : '/user/catalogue'">
+            📚 Digital Library
+        </a>
+        <div class="links" th:if="${session.memberId != null and session.role.name() == 'ADMIN'}">
+            <a href="/admin/dashboard">Dashboard</a>
+            <a href="/admin/books">Books</a>
+            <a href="/admin/issued">Issued Books</a>
+            <a href="/admin/members">Members</a>
+            <a href="/admin/fines">Fines</a>
+            <a href="/admin/messages">Messages</a>
+            <a href="/logout">Logout (<span th:text="${session.displayName}">admin</span>)</a>
+        </div>
+        <div class="links" th:if="${session.memberId != null and session.role.name() == 'USER'}">
+            <a href="/user/catalogue">Catalogue</a>
+            <a href="/user/my-books">My Books</a>
+            <a href="/user/reservations">Reservations</a>
+            <a href="/user/fines">My Fines</a>
+            <a href="/user/contact">Contact Us</a>
+            <a href="/logout">Logout (<span th:text="${session.displayName}">user</span>)</a>
+        </div>
+    </nav>
+</div>
+</body>
+</html>

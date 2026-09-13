@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Members - Digital Library</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div th:replace="~{fragments/header :: nav}"></div>
+
+<div class="container">
+    <div class="card">
+        <h1>Registered Members</h1>
+        <table>
+            <thead>
+            <tr><th>Name</th><th>Email</th><th></th></tr>
+            </thead>
+            <tbody>
+            <tr th:each="m : ${members}">
+                <td th:text="${m.fullName}"></td>
+                <td th:text="${m.email}"></td>
+                <td>
+                    <form method="post" th:action="@{/admin/members/{id}/delete(id=${m.id})}"
+                          onsubmit="return confirm('Remove this member? Their issue/reservation history stays on record.');">
+                        <button type="submit" class="btn-small btn-danger">Remove</button>
+                    </form>
+                </td>
+            </tr>
+            <tr th:if="${#lists.isEmpty(members)}"><td colspan="3" class="muted">No members have registered yet.</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

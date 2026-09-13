@@ -1,0 +1,1496 @@
+CustomerID,FullName,Age,Gender,Country,SignupDate,PurchaseAmount,Email,HasEmail
+100220,Amara Abara,42,Unknown,Kenya,2020-04-06,132.89,amara.abara113@example.com,True
+100959,William Kimani,54,Male,United Kingdom,2021-07-15,60.05,william.kimani732@example.com,True
+101432,Richard Brown,36,Female,Canada,2021-12-06,160.63,richard.brown265@example.com,True
+100070,Thomas Mensah,39,Female,United Kingdom,,172.37,thomas.mensah218@example.com,True
+100951,Joseph Martinez,62,Male,United Kingdom,2021-03-13,37.47,joseph.martinez761@example.com,True
+100965,Michael Davis,73,Unknown,United States,2022-04-03,78.18,,False
+101046,Richard Kimani,25,Unknown,United Kingdom,2020-09-14,282.99,richard.kimani476@example.com,True
+100262,Kwame Williams,31,Female,Unknown,2024-01-16,74.75,kwame.williams595@example.com,True
+101074,Amara Williams,18,Unknown,Kenya,2023-05-04,240.64,amara.williams381@example.com,True
+101110,Kwame Okafor,65,Unknown,United States,2024-05-23,68.03,,False
+100505,Richard Johnson,67,Male,United States,2021-10-20,174.16,richard.johnson859@example.com,True
+100663,Michael Brown,55,Male,Canada,2022-12-05,190.91,michael.brown977@example.com,True
+101239,Linda Rodriguez,62,Male,United States,2021-04-30,156.19,,False
+100427,Michael Jones,27,Female,United Kingdom,2024-08-18,163.36,michael.jones440@example.com,True
+100626,Jessica Johnson,45,Male,United States,2023-02-02,124.49,jessica.johnson646@example.com,True
+100123,John Abara,64,Unknown,Kenya,2022-07-22,52.04,john.abara298@example.com,True
+100820,Mary Brown,46,Female,Canada,2020-11-02,102.31,mary.brown422@example.com,True
+100508,John Miller,49,Female,United Kingdom,2024-10-01,236.02,john.miller130@example.com,True
+100710,Michael Brown,45,Female,United Kingdom,,125.37,,False
+100371,Wanjiru Kimani,25,Male,Kenya,2024-04-08,305.95,wanjiru.kimani488@example.com,True
+101144,Joseph Williams,23,Unknown,Canada,2024-04-22,104.2,joseph.williams240@example.com,True
+100722,Thomas Miller,24,Female,Nigeria,2022-12-04,293.41,,False
+101234,Barbara Jones,35,Male,Canada,2022-04-27,146.15,,False
+100795,David Williams,19,Unknown,United Kingdom,2021-11-14,87.94,davidwilliamsAT example dot com,True
+100130,Susan Mensah,31,Female,United Kingdom,2022-03-04,150.68,susan.mensah348@example.com,True
+100887,Richard Rodriguez,45,Male,United States,2021-07-26,140.12,richard.rodriguez49@example.com,True
+100470,Kwame Rodriguez,36,Male,United States,2023-01-10,225.51,kwame.rodriguez710@example.com,True
+100036,Jennifer Miller,31,Male,Canada,2023-04-20,105.59,jennifer.miller798@example.com,True
+101499,Sarah Kimani,35,Male,United Kingdom,2024-02-03,140.12,sarah.kimani886@example.com,True
+100800,Sarah Ndlovu,47,Female,United States,2021-10-12,156.46,sarah.ndlovu917@example.com,True
+100272,Robert Brown,53,Female,United States,,140.12,robert.brown280@example.com,True
+100127,Karen Johnson,26,Female,Canada,2024-11-18,214.4,karen.johnson984@example.com,True
+101071,Zola Kimani,40,Unknown,United States,,183.46,,False
+100369,Wanjiru Johnson,24,Unknown,United Kingdom,2024-07-23,174.66,wanjiru.johnson907@example.com,True
+100237,Joseph Miller,66,Female,Unknown,2024-06-07,140.12,joseph.miller989@example.com,True
+100791,John Abara,74,Unknown,Canada,2023-12-25,105.21,john.abara333@example.com,True
+100512,James Martinez,46,Male,Kenya,2020-11-29,99.49,james.martinez534@example.com,True
+100892,Jennifer Williams,31,Female,United Kingdom,2020-05-26,173.4,jennifer.williams355@example.com,True
+101279,Charles Garcia,35,Unknown,Canada,2023-09-19,186.07,charles.garcia848@example.com,True
+101322,Mary Brown,26,Unknown,United States,2020-01-03,135.12,mary.brown787@example.com,True
+100798,Barbara Williams,65,Male,United States,,288.12,barbara.williams925@example.com,True
+100972,Jennifer Garcia,61,Unknown,Canada,2020-01-02,116.37,jennifer.garcia780@example.com,True
+101380,Linda Garcia,47,Female,Kenya,2022-02-21,293.22,linda.garcia170@example.com,True
+100107,Chidi Ndlovu,51,Female,Canada,2021-08-12,238.5,,False
+100289,Robert Garcia,45,Female,United Kingdom,2021-01-28,261.44,robert.garcia418@example.com,True
+101209,Joseph Garcia,45,Female,Kenya,2024-08-27,20.42,joseph.garcia189@example.com,True
+100002,Robert Smith,73,Unknown,United Kingdom,2023-02-06,92.21,robert.smith881@example.com,True
+100611,Sarah Ndlovu,28,Male,United States,2024-03-05,139.13,sarah.ndlovu404@example.com,True
+100269,David Johnson,73,Male,Canada,2022-10-28,50.77,,False
+100615,Elizabeth Garcia,62,Male,Canada,2021-09-30,89.39,,False
+101093,Susan Ndlovu,45,Male,Unknown,2021-09-07,164.72,,False
+100456,Joseph Mensah,45,Female,Canada,2022-06-25,63.33,joseph.mensah202@example.com,True
+100201,Michael Brown,44,Female,United States,2021-08-14,123.3,michael.brown234@example.com,True
+101160,William Abara,50,Female,Kenya,2021-06-17,140.12,william.abara431@example.com,True
+100771,Charles Rodriguez,63,Unknown,United States,2021-12-02,140.12,charles.rodriguez921@example.com,True
+100877,Jessica Kimani,19,Female,Unknown,2021-06-07,206.76,jessica.kimani968@example.com,True
+100080,Kwame Kimani,38,Male,Kenya,2022-07-03,140.12,,False
+100943,David Mensah,45,Unknown,Canada,2022-08-15,111.57,davidmensahAT example dot com,True
+100457,Sarah Okafor,50,Unknown,Nigeria,2024-11-05,63.5,sarahokaforAT example dot com,True
+101431,David Okafor,33,Female,Canada,2023-06-19,222.11,david.okafor793@example.com,True
+101026,Sarah Jones,74,Female,Nigeria,2021-10-24,187.24,,False
+101057,Elizabeth Davis,26,Male,United States,2024-11-14,161.99,elizabeth.davis667@example.com,True
+101141,Kwame Smith,71,Female,United States,2024-11-23,141.46,,False
+100725,Elizabeth Davis,41,Female,Unknown,2020-07-28,140.12,elizabeth.davis816@example.com,True
+101283,Joseph Williams,24,Male,Kenya,2023-05-11,94.88,joseph.williams928@example.com,True
+101243,Sarah Kimani,63,Female,United Kingdom,2022-03-18,207.47,sarah.kimani187@example.com,True
+100998,Michael Ndlovu,55,Male,Nigeria,,362.45,michael.ndlovu219@example.com,True
+100353,Richard Rodriguez,62,Male,United States,2024-06-02,87.3,,False
+100897,John Rodriguez,37,Unknown,Kenya,2024-07-05,146.12,johnrodriguezAT example dot com,True
+100773,Mary Kimani,37,Female,United Kingdom,2022-07-13,140.12,mary.kimani33@example.com,True
+100279,William Kimani,45,Female,United Kingdom,2022-06-16,139.1,,False
+100767,Richard Mensah,45,Unknown,Canada,2023-03-23,61.21,richard.mensah408@example.com,True
+100920,Sarah Garcia,45,Male,Unknown,2020-03-13,131.84,sarahgarciaAT example dot com,True
+100558,Susan Kimani,44,Unknown,Canada,,180.93,susan.kimani272@example.com,True
+100293,Michael Mensah,22,Unknown,Nigeria,2024-04-19,178.19,michael.mensah218@example.com,True
+101016,Sarah Mensah,19,Male,Kenya,2021-07-28,164.15,sarah.mensah751@example.com,True
+100856,Robert Okafor,36,Unknown,United Kingdom,2021-08-01,266.08,robert.okafor300@example.com,True
+100349,Susan Williams,45,Male,Kenya,2024-09-08,140.12,susan.williams692@example.com,True
+100397,Sarah Smith,39,Unknown,United Kingdom,2023-04-11,53.43,sarah.smith67@example.com,True
+100135,William Garcia,38,Male,Kenya,2021-01-16,175.33,,False
+101246,Chidi Martinez,59,Unknown,United States,2021-04-02,213.29,chidi.martinez390@example.com,True
+101059,John Miller,35,Male,Canada,2022-12-20,57.83,john.miller523@example.com,True
+100857,Chidi Miller,70,Unknown,United Kingdom,,122.57,chidi.miller331@example.com,True
+100455,Jessica Miller,27,Unknown,Canada,2020-04-12,137.87,jessica.miller687@example.com,True
+100802,Wanjiru Jones,45,Unknown,United States,2020-05-09,256.76,wanjiru.jones211@example.com,True
+100916,Joseph Smith,71,Unknown,United Kingdom,2023-08-14,79.53,joseph.smith680@example.com,True
+101441,James Johnson,22,Female,Canada,2024-03-17,65.51,james.johnson860@example.com,True
+101490,Thomas Kimani,67,Female,United Kingdom,2022-10-22,362.45,thomas.kimani276@example.com,True
+101488,Wanjiru Williams,55,Male,Unknown,2024-03-04,65.97,wanjiru.williams664@example.com,True
+101094,Robert Miller,42,Female,Nigeria,2024-11-04,362.45,robert.miller877@example.com,True
+100993,William Rodriguez,51,Female,Kenya,2022-07-17,162.64,william.rodriguez84@example.com,True
+100239,Wanjiru Jones,26,Unknown,United States,2024-10-19,135.35,wanjiru.jones320@example.com,True
+100061,Sarah Mensah,73,Male,Kenya,2022-11-14,362.45,sarah.mensah825@example.com,True
+101244,Jessica Williams,45,Female,United Kingdom,,362.45,jessica.williams771@example.com,True
+100891,John Okafor,55,Male,Kenya,2021-08-20,84.91,john.okafor60@example.com,True
+100807,Jessica Ndlovu,39,Unknown,Canada,2023-09-07,140.12,jessica.ndlovu669@example.com,True
+101375,William Smith,51,Female,United States,2024-03-20,109.76,william.smith788@example.com,True
+100975,Patricia Okafor,21,Unknown,Nigeria,2024-07-22,262.98,patricia.okafor710@example.com,True
+101065,Joseph Jones,30,Female,United States,2021-12-31,140.12,joseph.jones712@example.com,True
+100940,Linda Williams,65,Unknown,United Kingdom,2021-12-08,32.24,linda.williams482@example.com,True
+101282,Robert Brown,45,Female,United Kingdom,2021-03-20,120.76,robert.brown187@example.com,True
+100292,Elizabeth Johnson,45,Female,Canada,2023-04-16,54.53,elizabeth.johnson950@example.com,True
+100368,Karen Ndlovu,18,Male,United States,2024-03-23,109.79,karen.ndlovu127@example.com,True
+101468,Sarah Martinez,36,Female,United Kingdom,2023-07-10,74.97,sarah.martinez844@example.com,True
+101474,Linda Mensah,18,Female,United States,2024-10-15,89.82,linda.mensah310@example.com,True
+100041,Elizabeth Kimani,67,Female,Nigeria,2021-03-26,188.62,elizabeth.kimani583@example.com,True
+101391,David Smith,59,Male,Canada,2022-09-04,303.99,david.smith687@example.com,True
+100537,Amara Ndlovu,50,Female,Kenya,2024-04-14,125.52,amara.ndlovu780@example.com,True
+100632,Jennifer Rodriguez,67,Male,Kenya,2024-03-07,45.11,jennifer.rodriguez925@example.com,True
+101045,Patricia Okafor,30,Female,Kenya,2024-05-26,221.53,patriciaokaforAT example dot com,True
+101077,Mary Okafor,35,Female,United Kingdom,2020-09-15,204.81,mary.okafor567@example.com,True
+100591,Linda Kimani,24,Male,Kenya,2020-07-29,282.5,linda.kimani377@example.com,True
+101390,Joseph Smith,30,Male,United States,2024-07-15,281.23,joseph.smith552@example.com,True
+101224,James Davis,73,Male,United Kingdom,2023-03-31,265.07,james.davis131@example.com,True
+100709,Sarah Okafor,36,Male,United States,2023-02-27,254.65,,False
+100679,Sarah Martinez,40,Unknown,Kenya,2023-06-17,112.59,sarah.martinez978@example.com,True
+100678,Linda Johnson,64,Female,United Kingdom,,54.95,linda.johnson184@example.com,True
+100552,Michael Williams,64,Male,United States,2021-11-12,63.06,michael.williams307@example.com,True
+100675,Jessica Johnson,68,Male,United States,2021-12-13,164.32,jessica.johnson562@example.com,True
+100324,Kwame Martinez,69,Male,United Kingdom,2021-06-16,77.15,kwame.martinez505@example.com,True
+100388,Elizabeth Garcia,48,Unknown,United States,,155.9,elizabeth.garcia776@example.com,True
+100672,William Mensah,41,Male,Kenya,2023-07-05,158.87,william.mensah621@example.com,True
+100363,Joseph Brown,34,Male,Unknown,2020-12-09,77.57,joseph.brown691@example.com,True
+101351,Sarah Davis,31,Female,United Kingdom,2022-11-05,70.0,,False
+100482,Mary Jones,28,Female,Unknown,2024-08-29,174.85,mary.jones744@example.com,True
+101117,Karen Martinez,65,Female,Kenya,2020-09-22,140.12,karen.martinez705@example.com,True
+100472,Robert Ndlovu,56,Female,Nigeria,2024-03-07,156.46,robert.ndlovu396@example.com,True
+101409,Barbara Brown,45,Female,United Kingdom,2022-08-25,140.12,barbara.brown462@example.com,True
+100042,Joseph Ndlovu,70,Female,United Kingdom,2024-02-09,144.65,joseph.ndlovu933@example.com,True
+101398,Linda Smith,26,Male,Canada,2020-09-15,103.73,linda.smith405@example.com,True
+101206,Linda Davis,28,Male,Kenya,2023-06-05,148.42,linda.davis441@example.com,True
+101320,Joseph Garcia,68,Unknown,Nigeria,2021-04-22,140.12,joseph.garcia577@example.com,True
+101201,Susan Kimani,35,Male,Nigeria,2024-02-24,72.9,susan.kimani757@example.com,True
+100536,Karen Ndlovu,31,Male,Kenya,2021-01-16,181.48,karen.ndlovu328@example.com,True
+100776,Thomas Davis,45,Male,Canada,2023-05-23,255.71,thomas.davis973@example.com,True
+100022,Michael Brown,36,Unknown,Canada,2024-04-26,140.12,michael.brown300@example.com,True
+101167,Kwame Davis,30,Unknown,United States,2022-01-19,93.63,kwame.davis230@example.com,True
+101261,John Garcia,45,Male,United Kingdom,2021-11-15,107.03,john.garcia672@example.com,True
+100922,Linda Garcia,67,Unknown,Kenya,2020-12-25,362.45,linda.garcia844@example.com,True
+101331,Linda Johnson,22,Female,United States,2022-10-01,103.21,linda.johnson521@example.com,True
+100093,Wanjiru Mensah,50,Female,Nigeria,2024-04-20,67.12,wanjiru.mensah793@example.com,True
+100255,John Rodriguez,62,Male,United Kingdom,2020-04-27,140.12,john.rodriguez877@example.com,True
+100088,Amara Abara,70,Male,Nigeria,2024-10-08,175.27,amara.abara189@example.com,True
+101159,Elizabeth Williams,61,Unknown,United States,2023-05-20,139.07,elizabeth.williams347@example.com,True
+101447,Barbara Johnson,67,Male,United States,,122.18,barbara.johnson855@example.com,True
+100834,John Rodriguez,45,Unknown,United States,2022-01-12,362.45,john.rodriguez885@example.com,True
+100454,Linda Ndlovu,64,Female,Nigeria,2022-03-26,140.12,lindandlovuAT example dot com,True
+101042,Linda Williams,40,Male,Nigeria,,14.51,linda.williams312@example.com,True
+100815,John Mensah,45,Female,Kenya,2021-03-18,60.51,john.mensah128@example.com,True
+100499,Wanjiru Smith,45,Female,United Kingdom,2024-07-08,112.51,wanjiru.smith155@example.com,True
+100247,Jessica Williams,73,Male,Kenya,2024-02-08,140.12,jessica.williams441@example.com,True
+101491,Sarah Garcia,69,Female,Unknown,2020-05-21,362.45,sarah.garcia579@example.com,True
+100053,Mary Smith,33,Unknown,United States,2021-10-03,100.35,mary.smith4@example.com,True
+100340,Joseph Rodriguez,74,Male,Kenya,,47.67,joseph.rodriguez251@example.com,True
+100217,Jessica Kimani,41,Male,Kenya,2024-03-25,158.55,jessica.kimani507@example.com,True
+101304,Richard Garcia,49,Female,United States,2023-06-24,144.12,richard.garcia325@example.com,True
+100082,David Abara,72,Male,United Kingdom,2023-05-22,140.12,david.abara833@example.com,True
+101186,David Mensah,32,Female,Kenya,2021-07-06,156.13,david.mensah808@example.com,True
+101080,Karen Garcia,34,Female,Kenya,2023-05-09,140.12,karen.garcia380@example.com,True
+100329,Jennifer Davis,52,Female,Kenya,,140.12,jennifer.davis907@example.com,True
+101464,William Mensah,32,Male,Nigeria,2023-06-11,141.38,william.mensah374@example.com,True
+100913,David Brown,44,Male,Canada,2021-02-13,350.61,david.brown82@example.com,True
+101120,Michael Williams,73,Unknown,Canada,2021-06-26,79.69,,False
+100901,Sarah Abara,45,Male,United States,2022-03-20,23.06,sarah.abara858@example.com,True
+100873,Wanjiru Okafor,37,Male,Canada,2024-08-01,238.19,,False
+101225,Kwame Ndlovu,69,Male,United Kingdom,2020-08-18,22.73,kwame.ndlovu678@example.com,True
+101112,Wanjiru Miller,34,Male,Kenya,2022-01-10,81.31,wanjiru.miller594@example.com,True
+101276,Patricia Ndlovu,55,Male,Nigeria,,140.12,patricia.ndlovu497@example.com,True
+100665,Charles Williams,47,Female,United Kingdom,2023-03-19,146.48,charles.williams298@example.com,True
+100117,Thomas Jones,37,Female,Kenya,2020-04-21,321.21,,False
+100026,Elizabeth Jones,54,Unknown,United Kingdom,2021-05-01,81.6,elizabeth.jones444@example.com,True
+101360,Barbara Davis,36,Unknown,United States,2020-02-09,157.03,barbara.davis20@example.com,True
+101021,Zola Rodriguez,67,Male,United States,2022-01-15,23.84,zola.rodriguez183@example.com,True
+101371,Chidi Martinez,40,Male,Nigeria,2021-09-03,362.45,chidi.martinez712@example.com,True
+101383,Wanjiru Ndlovu,45,Female,Nigeria,2022-01-15,192.74,wanjiru.ndlovu938@example.com,True
+101129,Karen Jones,54,Female,United Kingdom,2020-09-30,96.61,karen.jones242@example.com,True
+100905,Kwame Rodriguez,34,Male,United Kingdom,2024-01-28,171.18,kwame.rodriguez750@example.com,True
+100763,Susan Miller,21,Male,Canada,,362.45,,False
+100163,Amara Davis,48,Unknown,Kenya,2020-07-14,362.45,amara.davis270@example.com,True
+100907,Sarah Davis,58,Unknown,United States,2021-01-06,51.73,sarah.davis893@example.com,True
+100737,Mary Williams,35,Female,United States,2020-10-01,112.99,mary.williams427@example.com,True
+100164,Susan Brown,44,Female,Canada,2022-10-19,130.98,susan.brown758@example.com,True
+100214,Susan Kimani,45,Unknown,Canada,2021-11-14,145.37,susan.kimani152@example.com,True
+100460,Wanjiru Johnson,45,Female,Canada,2021-11-17,21.68,wanjiru.johnson917@example.com,True
+100744,Karen Abara,68,Unknown,United States,2024-05-29,129.84,,False
+100402,Barbara Ndlovu,28,Female,United States,2023-06-29,362.45,barbara.ndlovu459@example.com,True
+100246,Mary Abara,19,Female,Canada,2022-03-14,79.04,mary.abara394@example.com,True
+100195,Karen Johnson,41,Female,United Kingdom,2020-08-19,362.45,karen.johnson734@example.com,True
+100561,David Johnson,50,Unknown,Kenya,2020-10-08,287.02,david.johnson930@example.com,True
+101116,David Jones,38,Female,Unknown,2023-08-15,362.45,david.jones361@example.com,True
+101190,Patricia Brown,28,Female,United Kingdom,2020-09-11,336.22,patricia.brown219@example.com,True
+100816,Barbara Martinez,40,Male,Kenya,2021-09-01,50.69,barbara.martinez202@example.com,True
+101364,David Rodriguez,59,Female,United States,2020-12-10,21.12,,False
+100654,Linda Rodriguez,45,Unknown,Unknown,2021-04-21,88.96,linda.rodriguez633@example.com,True
+100039,Susan Miller,64,Unknown,United Kingdom,2023-03-21,116.79,susan.miller641@example.com,True
+100043,Sarah Johnson,22,Female,United States,2024-11-24,140.12,sarah.johnson420@example.com,True
+100169,Jessica Miller,45,Female,United Kingdom,2024-07-06,119.81,jessica.miller423@example.com,True
+100333,Patricia Martinez,45,Unknown,Nigeria,2020-11-03,81.62,patricia.martinez671@example.com,True
+101088,Elizabeth Smith,40,Unknown,Kenya,2024-10-22,158.36,elizabethsmithAT example dot com,True
+100557,Joseph Okafor,55,Male,Unknown,2024-07-07,84.68,joseph.okafor169@example.com,True
+100433,Thomas Ndlovu,73,Unknown,Unknown,2020-11-28,115.75,thomas.ndlovu356@example.com,True
+101376,Linda Mensah,53,Male,United Kingdom,2020-06-15,253.14,linda.mensah640@example.com,True
+101136,Susan Williams,54,Male,Nigeria,2022-01-16,65.18,susan.williams362@example.com,True
+101145,Susan Okafor,47,Male,Canada,2021-06-05,140.12,susan.okafor262@example.com,True
+100786,Amara Ndlovu,45,Male,Kenya,,137.75,amara.ndlovu671@example.com,True
+100707,Robert Smith,25,Unknown,Kenya,2020-05-10,156.5,robert.smith80@example.com,True
+100325,Richard Martinez,47,Female,Canada,2021-10-21,88.0,richard.martinez8@example.com,True
+101257,Barbara Abara,27,Unknown,United Kingdom,2023-01-27,248.48,barbara.abara24@example.com,True
+101427,Linda Okafor,70,Unknown,Canada,2023-12-02,140.12,linda.okafor409@example.com,True
+100730,Karen Garcia,45,Unknown,Canada,2022-07-19,226.18,karen.garcia74@example.com,True
+101266,Wanjiru Martinez,49,Male,Nigeria,,140.12,wanjiru.martinez568@example.com,True
+101367,William Mensah,38,Unknown,United States,2021-02-12,140.12,william.mensah618@example.com,True
+100573,John Martinez,50,Female,United Kingdom,2020-05-08,102.91,john.martinez208@example.com,True
+100731,Jessica Mensah,45,Unknown,Nigeria,2020-06-13,138.93,jessica.mensah62@example.com,True
+100378,Zola Davis,45,Unknown,United States,2024-04-18,44.21,zola.davis593@example.com,True
+101354,Robert Kimani,73,Unknown,Nigeria,2020-10-13,94.8,robert.kimani747@example.com,True
+101363,Zola Jones,41,Unknown,United States,2021-04-24,29.21,zola.jones420@example.com,True
+100497,Chidi Martinez,58,Unknown,United Kingdom,2020-02-03,213.28,chidi.martinez473@example.com,True
+100828,James Brown,34,Unknown,United Kingdom,2023-07-03,17.76,james.brown666@example.com,True
+100992,Chidi Ndlovu,59,Unknown,Kenya,2022-01-05,168.36,chidi.ndlovu948@example.com,True
+101443,Chidi Johnson,41,Male,Unknown,2022-08-28,131.46,chidi.johnson602@example.com,True
+100612,Jessica Ndlovu,53,Male,Kenya,2023-10-24,110.87,jessica.ndlovu814@example.com,True
+100073,Linda Davis,54,Female,Canada,2023-04-09,93.14,linda.davis348@example.com,True
+100489,Elizabeth Brown,34,Unknown,Nigeria,2021-03-21,157.12,elizabeth.brown758@example.com,True
+101043,William Okafor,45,Female,United States,2020-07-03,174.25,william.okafor68@example.com,True
+100288,Elizabeth Kimani,30,Female,United Kingdom,2024-08-27,80.33,elizabeth.kimani370@example.com,True
+101365,Elizabeth Abara,49,Female,Nigeria,,82.16,elizabeth.abara528@example.com,True
+101125,Chidi Abara,25,Female,United States,2021-09-05,140.12,,False
+101328,Robert Garcia,21,Unknown,Kenya,2020-07-31,140.12,robert.garcia926@example.com,True
+100664,Barbara Mensah,22,Unknown,United Kingdom,2021-09-22,96.7,barbara.mensah576@example.com,True
+100964,Karen Miller,56,Female,Nigeria,2022-02-25,81.34,karen.miller144@example.com,True
+101092,Jessica Smith,27,Male,Kenya,2024-06-11,71.39,jessica.smith961@example.com,True
+100175,John Johnson,44,Unknown,Kenya,,69.88,john.johnson121@example.com,True
+100148,Mary Jones,41,Unknown,Unknown,2023-10-29,99.49,mary.jones703@example.com,True
+100860,Kwame Brown,24,Unknown,Kenya,2020-01-28,239.44,kwame.brown298@example.com,True
+101382,Patricia Jones,35,Male,United States,2020-06-20,344.73,patricia.jones58@example.com,True
+100700,Karen Mensah,29,Female,Kenya,2023-04-14,173.7,karen.mensah172@example.com,True
+100304,Karen Williams,54,Female,United States,2022-08-29,147.94,karenwilliamsAT example dot com,True
+100344,Sarah Jones,69,Male,Kenya,,119.08,sarah.jones634@example.com,True
+100836,Jennifer Miller,68,Male,Canada,2024-03-19,279.96,jennifer.miller830@example.com,True
+100136,Susan Miller,64,Unknown,Canada,2024-11-09,140.12,susan.miller656@example.com,True
+100278,John Johnson,71,Female,United States,2021-06-05,104.88,john.johnson793@example.com,True
+100458,Linda Jones,53,Female,Unknown,2024-02-09,140.12,linda.jones184@example.com,True
+100647,Patricia Williams,21,Female,Kenya,2024-11-02,140.12,patricia.williams490@example.com,True
+101373,Linda Okafor,51,Female,United Kingdom,2023-02-10,125.63,linda.okafor211@example.com,True
+100398,Jennifer Kimani,38,Female,Canada,2024-01-09,117.41,jennifer.kimani490@example.com,True
+101030,Richard Abara,64,Female,United Kingdom,2024-07-14,37.45,richard.abara811@example.com,True
+100232,Chidi Jones,43,Male,Canada,2020-08-03,362.45,chidi.jones466@example.com,True
+101475,Joseph Kimani,24,Unknown,United States,2024-08-03,337.3,joseph.kimani229@example.com,True
+100538,David Okafor,56,Unknown,Kenya,,291.66,david.okafor338@example.com,True
+100823,Sarah Davis,51,Male,United States,2021-05-19,220.09,sarahdavisAT example dot com,True
+101479,James Mensah,61,Unknown,Nigeria,2020-09-28,140.12,james.mensah717@example.com,True
+100394,James Brown,53,Male,Canada,2021-07-19,362.45,james.brown784@example.com,True
+100814,William Abara,66,Unknown,United Kingdom,2021-09-10,140.12,william.abara611@example.com,True
+100604,Jessica Davis,27,Unknown,United States,2022-11-27,271.92,jessica.davis710@example.com,True
+101138,Susan Johnson,38,Unknown,United Kingdom,2024-03-07,137.02,susan.johnson556@example.com,True
+101341,Michael Jones,20,Unknown,Nigeria,2020-08-25,158.25,,False
+100177,David Smith,53,Male,Kenya,2021-01-10,140.12,davidsmithAT example dot com,True
+100921,Karen Davis,65,Male,United Kingdom,2020-05-30,71.62,karen.davis886@example.com,True
+100570,Amara Rodriguez,50,Unknown,Kenya,2020-12-02,227.74,,False
+101199,John Miller,59,Male,Nigeria,2021-09-15,161.54,john.miller412@example.com,True
+100442,Sarah Davis,45,Female,Canada,2021-10-27,74.25,sarah.davis76@example.com,True
+100128,Kwame Abara,37,Female,United Kingdom,2022-05-04,174.28,kwame.abara12@example.com,True
+100989,Thomas Davis,71,Female,Canada,2022-07-05,92.83,thomas.davis827@example.com,True
+101379,Zola Martinez,20,Female,United States,2021-07-04,362.45,zola.martinez702@example.com,True
+100434,Jennifer Abara,45,Female,United Kingdom,2022-11-26,362.45,jennifer.abara135@example.com,True
+101181,Amara Brown,27,Female,Canada,2024-08-21,264.83,amara.brown376@example.com,True
+100194,Wanjiru Rodriguez,69,Male,United Kingdom,2021-06-18,82.44,wanjiru.rodriguez356@example.com,True
+101152,Susan Mensah,45,Female,United Kingdom,2021-07-12,227.8,susan.mensah100@example.com,True
+100608,Barbara Garcia,56,Unknown,United States,2022-07-14,44.6,barbara.garcia112@example.com,True
+100309,Sarah Rodriguez,24,Male,Canada,2021-08-20,85.24,sarah.rodriguez702@example.com,True
+101399,Karen Miller,43,Unknown,United Kingdom,2020-05-11,362.45,karen.miller725@example.com,True
+101073,Susan Smith,45,Unknown,United States,2023-04-06,88.26,,False
+101259,William Jones,27,Male,Nigeria,2021-04-26,83.19,williamjonesAT example dot com,True
+100531,Barbara Jones,24,Male,United Kingdom,2024-06-23,97.73,,False
+100216,Jessica Garcia,58,Male,Nigeria,2020-04-24,111.1,jessica.garcia233@example.com,True
+100641,Barbara Miller,45,Male,United States,2023-01-25,157.97,barbara.miller449@example.com,True
+100447,David Williams,43,Unknown,Kenya,2024-02-04,140.12,david.williams43@example.com,True
+100488,Patricia Ndlovu,24,Male,United States,2022-05-03,360.35,patricia.ndlovu190@example.com,True
+100549,Susan Abara,50,Unknown,Kenya,2024-02-16,54.34,,False
+100430,Thomas Smith,45,Male,United States,2024-04-12,128.21,thomas.smith196@example.com,True
+101101,Linda Jones,50,Unknown,United States,,362.45,linda.jones181@example.com,True
+100356,Chidi Brown,65,Male,United Kingdom,2021-06-28,208.21,chidi.brown141@example.com,True
+100411,Mary Mensah,21,Female,United Kingdom,,31.89,mary.mensah645@example.com,True
+101308,Wanjiru Brown,30,Unknown,Kenya,2020-07-09,222.98,wanjiru.brown494@example.com,True
+100625,Patricia Abara,37,Female,United States,2020-05-08,362.45,patricia.abara803@example.com,True
+100514,Jessica Johnson,30,Male,Nigeria,2022-02-01,333.6,jessica.johnson253@example.com,True
+101044,Elizabeth Jones,40,Female,United Kingdom,2021-08-13,86.48,elizabeth.jones378@example.com,True
+100319,Joseph Garcia,45,Female,United Kingdom,,18.7,joseph.garcia364@example.com,True
+101153,Joseph Kimani,58,Male,Kenya,2020-04-29,77.84,joseph.kimani24@example.com,True
+100189,Zola Jones,37,Female,United States,2024-09-19,109.07,zola.jones97@example.com,True
+100044,Amara Garcia,48,Unknown,United Kingdom,2023-10-18,140.12,amara.garcia144@example.com,True
+100694,Elizabeth Miller,64,Unknown,United Kingdom,2022-06-24,173.46,,False
+101217,Wanjiru Miller,45,Male,Canada,2020-07-01,34.27,wanjiru.miller988@example.com,True
+100320,William Williams,43,Male,Kenya,2020-02-14,136.39,william.williams384@example.com,True
+101483,Michael Johnson,52,Unknown,Canada,2023-02-15,140.12,michael.johnson174@example.com,True
+100085,John Mensah,34,Unknown,Kenya,,212.98,john.mensah602@example.com,True
+101232,Sarah Ndlovu,59,Male,Canada,2020-02-17,140.83,sarah.ndlovu520@example.com,True
+100066,Patricia Martinez,44,Male,United Kingdom,2021-04-11,105.94,patricia.martinez331@example.com,True
+101230,David Smith,60,Male,United Kingdom,2020-08-26,116.27,david.smith853@example.com,True
+100983,Joseph Williams,45,Female,United Kingdom,,66.35,,False
+100311,Susan Mensah,34,Female,United States,2024-08-13,164.1,susan.mensah834@example.com,True
+100046,Chidi Jones,54,Unknown,United Kingdom,2023-07-01,153.35,chidi.jones766@example.com,True
+101215,Amara Ndlovu,39,Male,United Kingdom,2023-01-30,141.93,amara.ndlovu282@example.com,True
+100331,Joseph Rodriguez,42,Female,Nigeria,2022-06-20,362.45,joseph.rodriguez762@example.com,True
+101402,David Abara,26,Female,Kenya,2020-09-16,162.64,david.abara200@example.com,True
+100716,Elizabeth Johnson,23,Unknown,Nigeria,2021-03-08,105.83,elizabeth.johnson263@example.com,True
+100083,David Smith,35,Unknown,Kenya,2022-08-28,80.97,david.smith727@example.com,True
+101411,Wanjiru Miller,72,Female,Unknown,2020-06-10,73.45,wanjiru.miller573@example.com,True
+101188,Karen Brown,51,Female,Nigeria,2022-03-20,163.21,karen.brown678@example.com,True
+100789,Susan Miller,39,Female,United Kingdom,2020-05-11,142.58,susan.miller802@example.com,True
+100851,James Garcia,30,Unknown,Canada,2023-05-07,140.12,james.garcia793@example.com,True
+101011,Sarah Miller,62,Female,Nigeria,2023-11-15,77.61,sarah.miller30@example.com,True
+101458,Jennifer Okafor,36,Male,Unknown,2021-11-23,332.98,jennifer.okafor37@example.com,True
+100701,William Davis,21,Unknown,United Kingdom,2022-01-22,287.47,william.davis454@example.com,True
+100658,Richard Miller,70,Female,Canada,2021-11-21,150.23,richard.miller918@example.com,True
+100346,Robert Garcia,69,Female,Canada,2022-10-14,362.45,robert.garcia765@example.com,True
+100425,Linda Williams,19,Female,Kenya,2024-02-21,96.78,,False
+100067,Jennifer Abara,21,Male,Nigeria,2020-09-08,54.36,jennifer.abara822@example.com,True
+100793,Mary Davis,58,Female,United States,2023-12-12,201.09,mary.davis702@example.com,True
+100025,Jennifer Mensah,68,Unknown,United States,2023-03-06,235.12,jennifer.mensah603@example.com,True
+100980,Jessica Okafor,26,Female,Kenya,2023-11-30,150.8,jessica.okafor974@example.com,True
+101386,Zola Martinez,42,Unknown,Unknown,2023-10-19,362.45,zola.martinez599@example.com,True
+101035,Jennifer Okafor,32,Female,United States,2022-10-19,205.59,jennifer.okafor705@example.com,True
+100245,Elizabeth Martinez,41,Male,United States,2021-06-02,140.12,elizabeth.martinez553@example.com,True
+100221,Elizabeth Abara,26,Unknown,United Kingdom,2021-03-15,175.01,elizabeth.abara168@example.com,True
+100869,Zola Ndlovu,35,Female,United States,2023-04-01,284.4,zola.ndlovu65@example.com,True
+101095,Susan Garcia,67,Male,Nigeria,2022-07-30,140.12,susan.garcia415@example.com,True
+100184,Patricia Davis,66,Female,United Kingdom,2021-05-02,350.4,patricia.davis530@example.com,True
+100253,Robert Okafor,41,Male,Canada,2024-01-10,236.48,robert.okafor635@example.com,True
+100754,Zola Williams,22,Female,Nigeria,2022-02-01,200.2,zola.williams86@example.com,True
+100864,David Jones,45,Male,Kenya,2020-03-14,176.63,david.jones848@example.com,True
+100225,Amara Rodriguez,44,Unknown,United Kingdom,2024-03-28,162.27,amara.rodriguez99@example.com,True
+101058,Richard Garcia,18,Unknown,Nigeria,2024-04-24,362.45,richard.garcia810@example.com,True
+100599,Linda Abara,54,Male,United Kingdom,2021-11-02,176.74,linda.abara196@example.com,True
+100550,Wanjiru Smith,55,Unknown,United States,2022-11-09,362.45,wanjiru.smith641@example.com,True
+101147,Patricia Brown,27,Unknown,United States,2022-08-07,249.19,patricia.brown523@example.com,True
+100259,Chidi Davis,68,Male,United States,2023-05-05,80.14,chidi.davis90@example.com,True
+100316,Mary Rodriguez,24,Unknown,Canada,2022-10-22,95.72,mary.rodriguez753@example.com,True
+100181,Wanjiru Mensah,31,Female,United States,,86.94,wanjiru.mensah106@example.com,True
+101009,Jessica Okafor,72,Male,United Kingdom,2023-03-17,89.04,jessica.okafor160@example.com,True
+100926,Chidi Jones,23,Female,Canada,2023-10-13,140.12,chidi.jones236@example.com,True
+100092,Joseph Davis,40,Female,United States,2022-08-24,21.74,joseph.davis730@example.com,True
+100878,Linda Ndlovu,64,Unknown,United Kingdom,2020-07-20,111.0,linda.ndlovu708@example.com,True
+100909,Linda Garcia,52,Male,Unknown,,129.3,lindagarciaAT example dot com,True
+100500,Jessica Kimani,24,Unknown,Canada,2024-10-25,122.51,jessica.kimani597@example.com,True
+100595,James Martinez,45,Unknown,Canada,2023-08-06,94.32,james.martinez120@example.com,True
+101418,Amara Williams,70,Male,Unknown,2021-06-05,82.63,amara.williams72@example.com,True
+100317,Wanjiru Ndlovu,61,Unknown,United Kingdom,2023-01-30,147.6,wanjiru.ndlovu961@example.com,True
+100618,Richard Johnson,72,Male,Unknown,2020-12-21,362.45,richard.johnson958@example.com,True
+100294,Wanjiru Abara,60,Unknown,Nigeria,2023-12-24,110.86,wanjiru.abara363@example.com,True
+100985,Chidi Williams,50,Male,Canada,2023-08-08,209.21,chidi.williams715@example.com,True
+101396,Jennifer Abara,40,Female,Kenya,2020-10-09,140.12,jenniferabaraAT example dot com,True
+100060,Mary Ndlovu,36,Male,United States,,100.6,mary.ndlovu567@example.com,True
+100691,Wanjiru Smith,45,Female,United States,2021-12-30,62.29,wanjiru.smith91@example.com,True
+100250,Jennifer Brown,60,Female,United Kingdom,2022-06-09,117.49,jennifer.brown114@example.com,True
+101137,Karen Okafor,68,Unknown,Canada,2024-10-28,77.47,karen.okafor769@example.com,True
+100277,Jessica Brown,63,Female,United States,2022-06-24,77.52,jessica.brown681@example.com,True
+100973,Barbara Abara,21,Male,Kenya,2020-05-30,116.6,barbara.abara649@example.com,True
+100038,Wanjiru Miller,61,Female,United States,2021-02-03,362.45,wanjiru.miller109@example.com,True
+100584,Richard Martinez,68,Female,Kenya,2021-06-15,120.4,richard.martinez745@example.com,True
+100631,Michael Garcia,34,Male,Canada,,140.12,michael.garcia657@example.com,True
+100077,James Kimani,30,Female,United States,,222.7,james.kimani156@example.com,True
+100287,David Miller,58,Unknown,United Kingdom,2021-10-29,62.75,david.miller248@example.com,True
+101408,Linda Johnson,37,Female,United States,2024-04-21,207.62,linda.johnson468@example.com,True
+100614,Charles Johnson,67,Unknown,United States,2021-08-16,25.22,charles.johnson228@example.com,True
+101340,Elizabeth Rodriguez,19,Female,Kenya,2020-11-08,91.73,elizabeth.rodriguez621@example.com,True
+101417,Jennifer Abara,45,Male,United Kingdom,2020-09-01,40.81,jennifer.abara58@example.com,True
+101241,Zola Miller,66,Female,Canada,2022-10-10,129.91,zola.miller428@example.com,True
+100702,Thomas Garcia,37,Male,Canada,2023-07-10,140.12,thomas.garcia641@example.com,True
+101106,Robert Rodriguez,63,Unknown,United Kingdom,2024-10-06,70.53,robert.rodriguez526@example.com,True
+100031,Patricia Martinez,45,Male,United Kingdom,2023-11-01,149.11,patricia.martinez283@example.com,True
+100616,William Abara,20,Unknown,Unknown,2021-03-10,140.12,william.abara694@example.com,True
+101415,Charles Martinez,73,Male,United Kingdom,2020-11-17,200.86,charles.martinez795@example.com,True
+100172,Wanjiru Mensah,43,Female,United Kingdom,2024-05-27,140.12,wanjiru.mensah598@example.com,True
+100994,Elizabeth Garcia,73,Female,United Kingdom,,124.04,elizabeth.garcia363@example.com,True
+100095,Susan Garcia,28,Unknown,Canada,2021-08-14,33.66,susan.garcia436@example.com,True
+100069,Robert Garcia,52,Female,Canada,2022-02-17,99.97,robert.garcia736@example.com,True
+100348,Charles Ndlovu,74,Male,Nigeria,2022-08-15,280.18,charles.ndlovu667@example.com,True
+101208,James Williams,45,Unknown,Nigeria,,362.45,james.williams937@example.com,True
+101078,Amara Garcia,23,Unknown,United States,2024-10-03,65.19,amara.garcia8@example.com,True
+100354,Susan Brown,50,Male,Kenya,2022-03-30,164.61,susan.brown191@example.com,True
+100539,Zola Abara,53,Male,Unknown,2020-12-23,143.37,zolaabaraAT example dot com,True
+101426,Patricia Williams,68,Female,Canada,2021-04-24,181.22,patricia.williams105@example.com,True
+100326,Richard Okafor,62,Female,United Kingdom,2023-09-18,344.23,richard.okafor862@example.com,True
+101327,Thomas Abara,38,Unknown,United States,,45.96,thomas.abara478@example.com,True
+100473,Wanjiru Martinez,45,Unknown,Canada,2022-09-03,137.99,wanjiru.martinez154@example.com,True
+100298,Kwame Jones,29,Male,Canada,2023-05-23,362.45,kwame.jones92@example.com,True
+101107,Joseph Ndlovu,44,Unknown,Kenya,2024-11-25,60.01,joseph.ndlovu314@example.com,True
+100662,Jessica Smith,31,Unknown,United States,2021-02-20,119.36,jessica.smith624@example.com,True
+100750,Robert Abara,71,Male,United Kingdom,2024-03-30,355.54,robert.abara301@example.com,True
+100484,Linda Brown,42,Female,Nigeria,2023-10-08,225.32,linda.brown776@example.com,True
+100755,William Davis,50,Female,United States,2022-03-09,73.35,william.davis98@example.com,True
+100535,David Okafor,38,Male,Canada,2024-05-08,171.29,david.okafor924@example.com,True
+100819,Amara Jones,53,Unknown,Canada,2022-01-31,80.67,amara.jones203@example.com,True
+100720,Zola Mensah,19,Unknown,United Kingdom,2022-02-18,142.66,,False
+100144,Sarah Garcia,59,Unknown,Kenya,2023-10-19,169.83,sarah.garcia272@example.com,True
+101299,Wanjiru Kimani,45,Female,Canada,,53.88,wanjiru.kimani354@example.com,True
+100296,Karen Okafor,68,Female,Unknown,2022-05-02,60.01,,False
+100871,Linda Williams,24,Unknown,Unknown,2023-05-28,79.02,linda.williams733@example.com,True
+100243,Linda Smith,67,Male,United States,2021-10-11,102.14,linda.smith609@example.com,True
+100461,William Kimani,36,Unknown,United States,2023-12-31,88.75,william.kimani582@example.com,True
+101090,Robert Abara,45,Unknown,Unknown,2022-11-12,159.93,,False
+100526,Thomas Okafor,70,Male,Kenya,2024-12-04,362.45,thomas.okafor759@example.com,True
+101438,Kwame Garcia,51,Male,United Kingdom,,64.3,,False
+101210,Joseph Johnson,54,Unknown,Kenya,,362.45,joseph.johnson303@example.com,True
+100569,William Williams,58,Unknown,United Kingdom,,104.26,,False
+100476,Sarah Mensah,39,Male,Nigeria,2023-04-10,105.25,,False
+100768,Barbara Jones,37,Unknown,Nigeria,2022-02-06,252.78,barbarajonesAT example dot com,True
+100833,Richard Martinez,31,Unknown,Nigeria,2020-11-10,149.08,richard.martinez506@example.com,True
+100762,Susan Martinez,23,Male,United Kingdom,2022-11-25,166.99,susan.martinez468@example.com,True
+100914,James Martinez,45,Male,United Kingdom,2023-08-09,184.54,james.martinez174@example.com,True
+100271,Amara Miller,41,Male,Kenya,2020-01-04,85.53,amara.miller466@example.com,True
+101401,Patricia Abara,62,Unknown,United Kingdom,2024-11-08,140.12,patricia.abara91@example.com,True
+100327,Michael Mensah,58,Male,United Kingdom,2021-06-05,110.12,michael.mensah860@example.com,True
+101072,Susan Abara,62,Female,United States,2023-03-08,203.44,susan.abara519@example.com,True
+101154,Elizabeth Rodriguez,60,Male,United Kingdom,2024-04-17,110.98,elizabeth.rodriguez419@example.com,True
+101098,Robert Jones,44,Unknown,Canada,2022-06-10,201.21,robert.jones790@example.com,True
+101498,Robert Miller,66,Female,Nigeria,2024-08-16,143.54,robert.miller131@example.com,True
+100925,John Kimani,43,Unknown,United States,,362.45,john.kimani191@example.com,True
+101163,Richard Davis,25,Female,United Kingdom,2024-06-06,136.85,richard.davis824@example.com,True
+101434,Mary Garcia,62,Male,Nigeria,2024-06-26,180.68,,False
+100813,Joseph Davis,41,Male,United Kingdom,2021-09-20,140.12,joseph.davis140@example.com,True
+101334,Joseph Jones,29,Male,United States,2022-06-13,113.37,josephjonesAT example dot com,True
+100155,Karen Okafor,71,Unknown,United States,2024-05-23,216.91,karen.okafor232@example.com,True
+100405,Michael Kimani,29,Female,United States,2022-11-07,362.45,michael.kimani207@example.com,True
+101275,Sarah Kimani,36,Female,Canada,2021-04-18,49.34,sarah.kimani109@example.com,True
+100687,Kwame Martinez,19,Male,United States,2020-03-04,50.08,kwamemartinezAT example dot com,True
+100057,Chidi Miller,43,Male,Canada,2022-12-25,68.22,chidi.miller271@example.com,True
+101395,Karen Jones,31,Male,United Kingdom,,152.39,karen.jones744@example.com,True
+100121,Charles Ndlovu,35,Unknown,United Kingdom,2024-08-14,158.86,charles.ndlovu797@example.com,True
+100788,Robert Garcia,60,Unknown,Kenya,2020-09-04,49.35,,False
+101111,Michael Okafor,38,Female,United States,2024-05-19,185.68,michael.okafor586@example.com,True
+101172,Michael Smith,26,Male,United States,2023-07-07,88.32,michael.smith341@example.com,True
+101178,Amara Mensah,31,Unknown,Kenya,2023-07-24,40.19,amara.mensah475@example.com,True
+101242,Barbara Jones,71,Male,United States,,260.31,barbara.jones547@example.com,True
+100464,Chidi Ndlovu,37,Unknown,Kenya,2024-07-31,73.46,chidindlovuAT example dot com,True
+100607,Michael Rodriguez,63,Male,United Kingdom,2024-08-30,127.02,michael.rodriguez661@example.com,True
+101465,Richard Brown,34,Male,United States,2021-12-05,140.12,,False
+101300,Susan Okafor,34,Unknown,Canada,2023-03-21,140.12,susan.okafor785@example.com,True
+100480,Charles Okafor,54,Male,Canada,2020-10-18,84.2,charles.okafor731@example.com,True
+100670,Amara Smith,18,Male,Kenya,2020-03-11,94.87,amara.smith520@example.com,True
+100939,Jennifer Johnson,22,Male,United Kingdom,,108.12,jennifer.johnson523@example.com,True
+101184,Robert Davis,57,Male,United Kingdom,,152.31,robert.davis196@example.com,True
+100847,Susan Mensah,42,Female,United States,2023-10-01,140.12,susan.mensah13@example.com,True
+100104,Barbara Williams,40,Male,United States,2020-01-07,16.69,,False
+100222,John Brown,65,Male,Canada,2020-09-28,362.45,john.brown586@example.com,True
+100386,Zola Johnson,18,Unknown,United Kingdom,2024-09-09,32.71,zola.johnson485@example.com,True
+101189,James Johnson,55,Female,Kenya,2021-08-09,130.72,jamesjohnsonAT example dot com,True
+100865,Patricia Ndlovu,39,Male,Kenya,2020-07-29,95.92,patricia.ndlovu408@example.com,True
+100770,John Davis,58,Unknown,United States,2023-12-21,66.3,john.davis382@example.com,True
+100086,Kwame Garcia,42,Male,Kenya,,110.83,kwame.garcia168@example.com,True
+100563,Susan Abara,52,Female,United Kingdom,2021-06-19,140.12,susan.abara113@example.com,True
+101311,Susan Kimani,42,Unknown,Canada,2023-03-11,233.82,susan.kimani220@example.com,True
+100260,Kwame Brown,29,Male,United Kingdom,2022-11-17,188.02,kwame.brown655@example.com,True
+100360,Linda Rodriguez,62,Female,Kenya,2021-12-29,362.45,linda.rodriguez927@example.com,True
+100613,Thomas Brown,25,Female,Nigeria,2022-06-23,108.48,thomas.brown784@example.com,True
+101084,Michael Okafor,21,Male,Nigeria,2022-03-24,120.72,michael.okafor177@example.com,True
+100544,William Davis,54,Unknown,United States,2021-10-08,74.1,,False
+101007,Jessica Jones,29,Unknown,Canada,2023-12-16,25.2,jessica.jones423@example.com,True
+100928,Karen Kimani,26,Unknown,United Kingdom,2024-03-21,140.12,karen.kimani3@example.com,True
+101439,Thomas Ndlovu,49,Unknown,Canada,2024-02-20,362.45,thomas.ndlovu701@example.com,True
+100016,Amara Abara,42,Male,United States,2021-03-23,86.31,amara.abara115@example.com,True
+101038,Joseph Brown,68,Unknown,United States,2020-12-30,91.49,joseph.brown730@example.com,True
+100735,John Okafor,46,Female,United States,2020-12-07,112.04,john.okafor817@example.com,True
+100685,Kwame Williams,23,Unknown,United Kingdom,2024-09-11,140.12,kwame.williams862@example.com,True
+100597,Linda Mensah,45,Male,Kenya,2020-05-24,70.24,linda.mensah602@example.com,True
+100005,Elizabeth Rodriguez,49,Male,Nigeria,2022-03-03,226.63,elizabeth.rodriguez8@example.com,True
+100757,Linda Williams,29,Male,United Kingdom,2021-06-05,153.64,linda.williams707@example.com,True
+100422,Charles Davis,60,Male,Canada,2022-03-17,208.51,charles.davis942@example.com,True
+100910,David Miller,27,Female,United Kingdom,2023-08-18,140.12,david.miller212@example.com,True
+101100,Kwame Miller,48,Male,United Kingdom,2020-06-06,201.6,kwame.miller242@example.com,True
+100759,Kwame Miller,34,Female,United Kingdom,2023-10-02,239.46,kwame.miller792@example.com,True
+101183,Chidi Smith,56,Female,Canada,2023-08-29,216.91,chidi.smith538@example.com,True
+101185,Wanjiru Johnson,49,Female,United Kingdom,2021-07-16,140.12,wanjiru.johnson957@example.com,True
+100821,Thomas Johnson,44,Male,Nigeria,2020-03-14,74.31,thomas.johnson385@example.com,True
+100315,Joseph Martinez,40,Female,United States,2023-04-29,140.12,josephmartinezAT example dot com,True
+101454,Patricia Garcia,45,Male,Kenya,2020-10-18,27.5,patricia.garcia998@example.com,True
+100576,Kwame Miller,24,Female,Canada,2020-12-31,362.45,,False
+101133,Richard Ndlovu,45,Male,United States,2024-06-12,153.28,richard.ndlovu535@example.com,True
+100365,Sarah Garcia,30,Female,Canada,2023-04-04,201.42,sarah.garcia303@example.com,True
+100503,James Martinez,45,Female,United Kingdom,2023-02-04,133.56,james.martinez359@example.com,True
+100699,Thomas Kimani,47,Female,United Kingdom,2022-10-03,109.56,thomas.kimani739@example.com,True
+101216,Amara Mensah,55,Female,Kenya,2020-03-31,200.02,amara.mensah233@example.com,True
+100954,Mary Mensah,41,Male,Kenya,2024-03-28,183.39,mary.mensah520@example.com,True
+100151,Karen Okafor,45,Female,Nigeria,2023-04-14,91.71,karen.okafor415@example.com,True
+100377,Mary Kimani,69,Male,United States,2020-08-08,203.17,mary.kimani981@example.com,True
+101366,Susan Kimani,23,Male,United States,2022-10-18,90.9,susan.kimani259@example.com,True
+100372,James Davis,52,Unknown,United Kingdom,,101.98,james.davis915@example.com,True
+101469,Susan Johnson,68,Male,Canada,2024-11-19,199.82,susan.johnson828@example.com,True
+100605,Jessica Abara,45,Male,Kenya,2023-08-29,140.12,jessica.abara15@example.com,True
+100572,Kwame Okafor,48,Unknown,Unknown,2021-09-15,204.84,kwameokaforAT example dot com,True
+101321,Jessica Brown,69,Unknown,United Kingdom,2021-10-11,140.12,jessica.brown210@example.com,True
+101372,David Rodriguez,54,Female,Canada,2021-08-27,145.29,david.rodriguez537@example.com,True
+100751,William Abara,57,Female,Canada,2022-07-05,70.78,william.abara231@example.com,True
+101430,Sarah Johnson,45,Female,Nigeria,2020-06-26,362.45,sarah.johnson68@example.com,True
+100577,Susan Rodriguez,25,Female,Canada,2020-05-24,40.04,susan.rodriguez926@example.com,True
+101015,Thomas Miller,45,Unknown,Canada,2024-06-26,152.28,,False
+100936,Patricia Garcia,18,Female,Canada,,105.55,patricia.garcia977@example.com,True
+100202,Amara Smith,33,Male,Unknown,2023-03-01,141.6,amara.smith918@example.com,True
+100079,Wanjiru Jones,21,Unknown,Unknown,2021-04-20,57.05,wanjiru.jones452@example.com,True
+100784,Zola Johnson,48,Male,Canada,2024-01-20,140.12,zola.johnson659@example.com,True
+100352,Elizabeth Rodriguez,45,Female,Nigeria,2022-08-10,208.76,elizabeth.rodriguez141@example.com,True
+100976,William Davis,51,Female,Kenya,2020-02-21,18.9,william.davis176@example.com,True
+100056,John Garcia,26,Male,United Kingdom,2024-09-29,64.77,john.garcia53@example.com,True
+101001,Wanjiru Kimani,66,Unknown,Canada,2024-09-09,169.25,wanjiru.kimani803@example.com,True
+100426,Charles Okafor,43,Unknown,United States,2021-07-23,20.12,charles.okafor694@example.com,True
+100933,Jessica Ndlovu,21,Female,Unknown,2024-12-02,122.01,jessica.ndlovu530@example.com,True
+100923,Joseph Kimani,45,Unknown,Kenya,2022-05-16,242.52,joseph.kimani548@example.com,True
+100449,Patricia Okafor,65,Female,United Kingdom,2020-05-29,272.58,patricia.okafor140@example.com,True
+101240,Zola Martinez,24,Unknown,Canada,2020-07-29,105.07,zola.martinez489@example.com,True
+100646,Charles Smith,60,Unknown,United Kingdom,2021-10-07,127.88,charlessmithAT example dot com,True
+100124,Elizabeth Davis,44,Unknown,Canada,,128.14,elizabeth.davis36@example.com,True
+101335,Chidi Kimani,45,Unknown,Kenya,2022-08-24,362.45,chidi.kimani232@example.com,True
+101455,Joseph Rodriguez,43,Unknown,Nigeria,2020-06-29,362.45,joseph.rodriguez414@example.com,True
+100794,Thomas Johnson,45,Male,United States,2021-12-12,76.98,thomas.johnson300@example.com,True
+100872,Kwame Garcia,47,Unknown,Nigeria,2024-02-02,160.83,kwame.garcia391@example.com,True
+100610,Robert Jones,35,Unknown,United Kingdom,2023-09-03,84.17,robertjonesAT example dot com,True
+101028,Barbara Smith,67,Unknown,Kenya,2024-08-11,142.59,barbara.smith289@example.com,True
+100212,Mary Mensah,23,Male,Kenya,2022-01-06,157.82,mary.mensah764@example.com,True
+100660,Mary Abara,57,Unknown,United Kingdom,2022-12-26,162.06,mary.abara125@example.com,True
+100556,Thomas Martinez,45,Female,Canada,2024-03-12,236.3,,False
+100204,James Martinez,58,Unknown,United Kingdom,2024-09-28,71.2,james.martinez615@example.com,True
+100191,Elizabeth Jones,67,Unknown,Unknown,2021-04-10,186.39,elizabeth.jones184@example.com,True
+100409,Linda Davis,52,Male,Canada,,140.12,linda.davis76@example.com,True
+100393,Linda Davis,45,Male,United States,2022-07-21,49.07,linda.davis67@example.com,True
+100677,Robert Miller,40,Male,Nigeria,2023-09-24,148.32,robert.miller870@example.com,True
+101158,Sarah Mensah,20,Unknown,United Kingdom,2021-01-31,255.18,sarah.mensah535@example.com,True
+100783,Barbara Miller,28,Unknown,United States,2020-09-24,47.35,barbara.miller690@example.com,True
+101457,Richard Smith,36,Female,Kenya,2022-12-05,28.02,richard.smith799@example.com,True
+100606,Michael Johnson,61,Unknown,United States,2021-01-09,149.83,michael.johnson931@example.com,True
+100551,John Williams,68,Male,United States,2024-11-30,158.12,john.williams408@example.com,True
+100170,Richard Smith,26,Male,United Kingdom,,362.45,richard.smith799@example.com,True
+100659,Sarah Garcia,42,Female,Canada,,140.12,sarah.garcia797@example.com,True
+100183,David Mensah,42,Unknown,Kenya,2021-08-26,140.01,david.mensah382@example.com,True
+100825,John Johnson,43,Male,United Kingdom,2021-03-13,86.72,,False
+100899,Richard Smith,32,Male,Canada,2024-09-24,274.81,richard.smith165@example.com,True
+101254,William Ndlovu,45,Female,United States,2023-01-13,68.1,william.ndlovu386@example.com,True
+101193,Kwame Kimani,47,Unknown,United Kingdom,,40.07,kwame.kimani482@example.com,True
+100635,Jessica Mensah,56,Male,United Kingdom,2021-11-10,362.45,,False
+100553,Sarah Miller,60,Female,Nigeria,2021-07-16,136.45,sarah.miller299@example.com,True
+100267,Michael Mensah,40,Female,Canada,2023-01-10,120.63,michael.mensah712@example.com,True
+100102,Amara Johnson,44,Unknown,Unknown,2021-06-29,362.45,amara.johnson765@example.com,True
+100695,Amara Smith,66,Unknown,United States,2024-10-31,76.0,amara.smith100@example.com,True
+100995,Thomas Williams,41,Male,United Kingdom,2022-09-14,51.99,thomas.williams681@example.com,True
+100592,Barbara Martinez,52,Unknown,Nigeria,2021-05-01,38.8,barbara.martinez580@example.com,True
+100431,Jessica Kimani,62,Female,United Kingdom,,205.07,jessica.kimani989@example.com,True
+100826,Mary Johnson,28,Unknown,United States,2022-09-24,244.83,mary.johnson605@example.com,True
+101389,Elizabeth Martinez,45,Female,Kenya,2020-07-31,154.37,elizabeth.martinez990@example.com,True
+100671,Kwame Abara,52,Unknown,United States,2023-10-14,206.32,kwame.abara775@example.com,True
+100571,Amara Ndlovu,28,Female,Canada,2023-10-05,140.12,,False
+100235,William Okafor,74,Female,Nigeria,2023-02-07,269.93,william.okafor246@example.com,True
+100938,Mary Smith,39,Unknown,United Kingdom,2022-03-10,77.25,mary.smith533@example.com,True
+100724,Elizabeth Kimani,73,Male,Canada,2022-11-10,72.85,,False
+101151,Jennifer Jones,54,Unknown,United Kingdom,2022-11-27,200.42,jennifer.jones169@example.com,True
+100785,Jennifer Davis,43,Female,United States,2023-03-15,68.57,jennifer.davis794@example.com,True
+100154,Richard Garcia,22,Female,United Kingdom,2021-12-19,362.45,,False
+101288,Karen Rodriguez,19,Unknown,Nigeria,2021-06-14,140.12,karen.rodriguez364@example.com,True
+100961,Susan Rodriguez,59,Male,Unknown,2022-06-07,146.0,susan.rodriguez242@example.com,True
+101343,Thomas Brown,37,Unknown,Nigeria,2023-12-08,75.24,thomas.brown513@example.com,True
+100176,Amara Williams,53,Female,Canada,2023-10-05,153.3,amara.williams76@example.com,True
+101369,Zola Mensah,43,Male,Nigeria,2023-07-20,90.41,zola.mensah414@example.com,True
+101362,Zola Garcia,45,Unknown,United Kingdom,2020-12-02,168.3,zola.garcia904@example.com,True
+101416,Susan Ndlovu,34,Unknown,Nigeria,2020-08-03,140.12,susan.ndlovu220@example.com,True
+100451,Thomas Mensah,48,Male,Kenya,2020-05-25,143.5,thomasmensahAT example dot com,True
+100689,Linda Kimani,26,Female,Nigeria,2021-07-13,118.02,linda.kimani516@example.com,True
+101412,Wanjiru Kimani,45,Female,United Kingdom,2024-11-20,57.63,wanjiru.kimani588@example.com,True
+100852,Michael Kimani,29,Male,Kenya,,257.49,michael.kimani862@example.com,True
+100190,James Ndlovu,45,Male,Canada,2024-03-29,140.12,james.ndlovu927@example.com,True
+101270,Michael Williams,52,Female,United Kingdom,,238.85,michael.williams923@example.com,True
+101387,Joseph Garcia,33,Male,United Kingdom,2022-01-14,34.78,joseph.garcia997@example.com,True
+100437,Sarah Johnson,52,Female,Unknown,2024-05-11,108.05,sarah.johnson624@example.com,True
+100562,Kwame Ndlovu,30,Male,United Kingdom,2022-03-01,140.12,kwame.ndlovu379@example.com,True
+100403,Jennifer Mensah,31,Unknown,Kenya,2020-01-07,161.91,jennifer.mensah842@example.com,True
+101109,Kwame Okafor,72,Male,Nigeria,2023-08-05,212.6,kwame.okafor278@example.com,True
+100028,Sarah Abara,65,Male,Nigeria,2020-07-12,147.65,sarah.abara117@example.com,True
+100742,Kwame Miller,45,Female,Canada,2024-08-19,170.7,kwame.miller438@example.com,True
+100300,Sarah Garcia,53,Female,Kenya,2023-11-29,140.12,,False
+100977,Charles Jones,53,Male,Kenya,2021-04-11,154.67,charles.jones549@example.com,True
+101031,James Martinez,69,Male,Unknown,2020-08-03,165.04,james.martinez296@example.com,True
+101264,Sarah Ndlovu,41,Male,Canada,2020-09-19,140.12,sarah.ndlovu639@example.com,True
+100867,Michael Kimani,51,Male,Kenya,2023-09-02,224.94,michael.kimani634@example.com,True
+100469,Susan Brown,41,Unknown,United Kingdom,2021-03-23,140.12,susan.brown65@example.com,True
+100633,Richard Brown,73,Unknown,Nigeria,2022-08-06,121.74,richard.brown703@example.com,True
+100568,Zola Jones,67,Unknown,United States,2021-09-19,140.12,zola.jones669@example.com,True
+101003,Wanjiru Smith,45,Male,Unknown,,114.45,wanjiru.smith947@example.com,True
+100179,Charles Johnson,45,Male,Nigeria,2022-02-07,274.21,charles.johnson226@example.com,True
+100548,Karen Ndlovu,49,Male,United States,2020-02-14,68.94,karen.ndlovu404@example.com,True
+100072,Richard Brown,47,Female,Nigeria,2021-08-04,29.95,richard.brown306@example.com,True
+100590,Thomas Miller,29,Male,Canada,2023-10-07,14.66,thomas.miller884@example.com,True
+100863,Elizabeth Smith,49,Male,Kenya,2020-09-16,213.13,elizabeth.smith638@example.com,True
+100187,Michael Williams,60,Unknown,United Kingdom,2022-06-25,362.45,michael.williams735@example.com,True
+100105,Robert Davis,68,Male,United Kingdom,2024-05-19,87.38,robertdavisAT example dot com,True
+100376,Patricia Abara,67,Unknown,United States,2023-08-04,117.77,patricia.abara913@example.com,True
+100898,Thomas Kimani,68,Female,Unknown,2024-09-23,110.02,thomas.kimani565@example.com,True
+101449,David Okafor,51,Female,Canada,2021-03-07,140.12,david.okafor271@example.com,True
+100919,Karen Garcia,54,Unknown,Canada,2021-01-08,59.05,,False
+100467,Chidi Rodriguez,39,Female,United States,2023-07-02,362.45,chidi.rodriguez252@example.com,True
+100673,David Jones,63,Unknown,Unknown,,31.74,david.jones792@example.com,True
+101481,Charles Abara,52,Unknown,Canada,2023-01-04,185.39,charles.abara792@example.com,True
+100361,Zola Davis,55,Male,United Kingdom,2023-07-23,189.66,zola.davis119@example.com,True
+100040,David Miller,21,Unknown,United Kingdom,2021-11-16,140.12,david.miller705@example.com,True
+101034,Linda Kimani,66,Unknown,Nigeria,2024-08-19,140.12,linda.kimani983@example.com,True
+100081,Zola Jones,45,Male,Kenya,,202.04,zola.jones664@example.com,True
+101229,Mary Williams,70,Male,Canada,2020-06-22,140.12,mary.williams747@example.com,True
+100602,Elizabeth Johnson,55,Male,United States,,235.56,elizabeth.johnson692@example.com,True
+100268,Barbara Brown,51,Male,United Kingdom,2024-02-15,105.15,barbara.brown636@example.com,True
+101168,Joseph Miller,53,Female,United Kingdom,2021-09-18,40.92,joseph.miller456@example.com,True
+100328,Joseph Ndlovu,39,Male,United Kingdom,2022-06-09,186.53,joseph.ndlovu528@example.com,True
+101460,Kwame Ndlovu,45,Female,United States,2020-11-05,60.57,kwame.ndlovu146@example.com,True
+100792,Thomas Abara,45,Unknown,Nigeria,2022-02-07,81.97,thomas.abara442@example.com,True
+101325,Jennifer Kimani,27,Female,United States,2023-11-14,215.94,,False
+100351,Amara Kimani,44,Male,Canada,2021-03-16,234.68,amara.kimani550@example.com,True
+100101,Wanjiru Williams,58,Female,United States,2022-08-08,362.45,wanjiru.williams282@example.com,True
+100453,James Miller,45,Female,Kenya,,313.27,,False
+100824,James Ndlovu,70,Female,Canada,2021-11-01,212.96,,False
+100835,Chidi Williams,20,Female,United Kingdom,2022-01-08,362.45,chidi.williams608@example.com,True
+100033,Wanjiru Mensah,20,Male,Kenya,2024-07-02,140.12,wanjiru.mensah465@example.com,True
+100950,Chidi Miller,56,Female,United States,,65.16,chidi.miller165@example.com,True
+100530,Karen Williams,28,Unknown,Kenya,2020-06-05,140.12,karen.williams158@example.com,True
+100492,Elizabeth Smith,55,Unknown,United Kingdom,2021-09-26,322.21,elizabeth.smith793@example.com,True
+100736,Charles Ndlovu,38,Unknown,Nigeria,2021-09-09,176.44,charles.ndlovu1@example.com,True
+100523,James Martinez,33,Unknown,United States,,252.45,,False
+101436,Zola Martinez,26,Female,United Kingdom,,114.64,zola.martinez971@example.com,True
+101303,Linda Johnson,45,Unknown,Kenya,2022-08-30,99.07,linda.johnson670@example.com,True
+100727,Robert Ndlovu,52,Female,Nigeria,2023-07-29,285.93,robert.ndlovu53@example.com,True
+100971,Chidi Johnson,45,Unknown,United Kingdom,2021-02-14,62.24,chidi.johnson622@example.com,True
+100982,Linda Williams,18,Female,United Kingdom,2020-12-21,362.45,linda.williams641@example.com,True
+100655,Jessica Mensah,54,Unknown,United Kingdom,2021-05-11,270.16,jessica.mensah314@example.com,True
+100207,Patricia Kimani,45,Unknown,United States,2023-05-14,106.8,patriciakimaniAT example dot com,True
+100915,Elizabeth Williams,71,Unknown,United Kingdom,,125.8,elizabeth.williams587@example.com,True
+101079,Charles Miller,30,Female,United Kingdom,2021-01-29,140.12,charles.miller69@example.com,True
+101448,Elizabeth Miller,28,Male,Nigeria,2020-05-26,140.12,elizabeth.miller451@example.com,True
+100143,Joseph Smith,49,Male,United Kingdom,2022-08-27,104.86,joseph.smith551@example.com,True
+100318,Wanjiru Martinez,32,Male,United Kingdom,2023-11-09,129.16,wanjiru.martinez595@example.com,True
+100513,Karen Davis,62,Female,Canada,2024-04-13,205.11,karen.davis503@example.com,True
+100302,James Garcia,63,Unknown,Kenya,2023-09-10,20.77,james.garcia260@example.com,True
+101473,Elizabeth Davis,54,Female,United States,2020-01-02,146.56,elizabeth.davis833@example.com,True
+101033,William Williams,51,Female,United States,2024-12-03,138.07,william.williams48@example.com,True
+101405,Thomas Rodriguez,65,Female,United States,,140.12,thomasrodriguezAT example dot com,True
+101174,Jennifer Okafor,34,Unknown,United States,2020-07-29,233.98,jennifer.okafor701@example.com,True
+101317,Amara Garcia,70,Male,Canada,2020-05-19,349.12,amara.garcia922@example.com,True
+101450,James Kimani,37,Female,Kenya,,140.12,james.kimani177@example.com,True
+100375,Richard Mensah,45,Unknown,United Kingdom,2021-08-28,245.44,richard.mensah293@example.com,True
+100515,Joseph Garcia,45,Male,Unknown,2024-09-18,128.39,joseph.garcia717@example.com,True
+100263,Charles Garcia,40,Male,Nigeria,2021-07-01,182.4,charles.garcia343@example.com,True
+100918,Thomas Abara,48,Female,Kenya,2020-11-10,203.9,thomas.abara101@example.com,True
+100996,William Jones,69,Male,United States,2021-08-15,179.67,william.jones253@example.com,True
+101194,Richard Garcia,69,Female,Kenya,2022-12-20,140.12,,False
+100967,Zola Smith,39,Male,Nigeria,2024-01-23,92.89,zola.smith972@example.com,True
+100772,David Garcia,49,Female,Unknown,2020-05-19,134.18,david.garcia213@example.com,True
+101444,William Miller,22,Unknown,United Kingdom,2022-09-16,80.45,william.miller281@example.com,True
+100656,Barbara Abara,30,Female,United Kingdom,2020-04-29,140.12,barbara.abara59@example.com,True
+100627,Chidi Mensah,30,Male,Unknown,2021-03-19,51.56,chidi.mensah866@example.com,True
+100374,Jessica Okafor,55,Male,Nigeria,2022-08-06,193.45,jessica.okafor434@example.com,True
+100841,Sarah Ndlovu,40,Unknown,United States,2023-05-18,99.07,sarah.ndlovu230@example.com,True
+100274,Robert Abara,54,Unknown,United States,2022-04-15,178.99,robert.abara882@example.com,True
+100831,Karen Brown,73,Male,United Kingdom,2023-11-28,43.13,,False
+101032,Amara Brown,46,Unknown,Canada,2022-12-28,167.07,amara.brown583@example.com,True
+100200,William Williams,45,Male,United Kingdom,2020-02-17,73.3,william.williams63@example.com,True
+100020,Elizabeth Jones,45,Unknown,United States,2021-09-16,41.71,elizabeth.jones27@example.com,True
+100997,Mary Smith,25,Unknown,Unknown,2023-09-30,124.54,mary.smith682@example.com,True
+101493,William Johnson,29,Unknown,Canada,,240.49,william.johnson618@example.com,True
+101182,Zola Garcia,35,Female,Canada,2022-04-09,236.23,zola.garcia46@example.com,True
+100087,Zola Miller,45,Female,United States,2022-07-27,246.24,zola.miller113@example.com,True
+100775,Jessica Martinez,56,Unknown,Nigeria,2022-04-10,102.08,jessica.martinez496@example.com,True
+101256,Charles Mensah,33,Female,United States,2022-04-15,135.28,charles.mensah318@example.com,True
+100974,Jessica Mensah,73,Unknown,Kenya,2023-11-26,132.49,,False
+100306,Sarah Miller,34,Unknown,United States,2020-01-07,305.0,,False
+100483,Richard Jones,29,Unknown,Unknown,2020-10-26,185.42,richard.jones506@example.com,True
+101494,John Davis,69,Unknown,United States,2020-01-08,140.12,,False
+100888,Chidi Jones,29,Male,Kenya,2023-09-03,121.04,chidi.jones827@example.com,True
+100908,John Garcia,43,Male,Nigeria,2024-01-01,140.12,john.garcia120@example.com,True
+101323,Thomas Mensah,61,Female,United States,2021-12-02,275.53,thomas.mensah241@example.com,True
+100111,David Ndlovu,54,Female,Nigeria,2022-01-13,93.7,david.ndlovu442@example.com,True
+100198,Thomas Garcia,60,Male,United States,2022-08-20,138.11,thomas.garcia772@example.com,True
+101301,Richard Smith,32,Unknown,Kenya,2020-11-28,140.12,richard.smith837@example.com,True
+100559,Sarah Brown,50,Male,United States,2020-11-14,206.65,sarah.brown654@example.com,True
+100949,Amara Johnson,56,Male,Canada,2023-03-08,108.19,amara.johnson835@example.com,True
+100968,William Williams,35,Unknown,Kenya,2020-01-29,140.12,,False
+100049,John Smith,33,Female,United States,2024-01-21,80.4,john.smith417@example.com,True
+100797,Robert Johnson,40,Male,United Kingdom,2020-06-23,48.05,robert.johnson706@example.com,True
+100904,Karen Garcia,39,Unknown,United States,2020-08-22,33.39,karen.garcia753@example.com,True
+100764,David Davis,22,Unknown,United Kingdom,2020-05-11,99.58,david.davis575@example.com,True
+100390,Sarah Davis,63,Female,Kenya,2020-12-04,87.83,sarah.davis251@example.com,True
+101148,Patricia Martinez,29,Male,Kenya,2022-01-12,59.51,,False
+101006,Susan Rodriguez,41,Male,United Kingdom,2023-08-01,118.71,susan.rodriguez893@example.com,True
+100645,Wanjiru Miller,21,Female,United Kingdom,2022-05-28,142.56,wanjiru.miller976@example.com,True
+100713,Jennifer Ndlovu,66,Male,Nigeria,2024-04-05,148.96,jennifer.ndlovu41@example.com,True
+100113,Wanjiru Mensah,25,Unknown,United States,2021-08-11,140.12,wanjiru.mensah869@example.com,True
+100881,Thomas Garcia,18,Female,Canada,2021-12-14,140.23,,False
+101407,Jennifer Okafor,71,Male,United Kingdom,2021-08-31,105.02,jennifer.okafor586@example.com,True
+101005,Kwame Johnson,21,Unknown,Nigeria,2020-03-27,140.12,kwame.johnson597@example.com,True
+101164,Chidi Smith,19,Female,United Kingdom,2021-02-10,204.64,chidi.smith36@example.com,True
+101274,Jessica Garcia,61,Female,United States,,140.12,jessicagarciaAT example dot com,True
+100854,Robert Mensah,61,Unknown,United States,2020-12-14,84.0,robert.mensah579@example.com,True
+100084,James Mensah,48,Male,Canada,,267.65,,False
+100282,Patricia Kimani,38,Female,Nigeria,2022-09-06,140.12,patricia.kimani458@example.com,True
+100711,Karen Garcia,23,Female,United States,2024-04-22,129.29,karen.garcia760@example.com,True
+100131,Barbara Rodriguez,56,Male,United States,2021-08-19,140.12,barbara.rodriguez309@example.com,True
+100726,Linda Kimani,42,Male,United Kingdom,,13.84,lindakimaniAT example dot com,True
+101177,Jessica Jones,45,Male,United Kingdom,2023-07-13,140.12,jessica.jones834@example.com,True
+100341,Mary Miller,62,Male,Canada,2022-07-20,95.25,,False
+100620,Richard Brown,36,Female,Kenya,2021-03-19,322.5,richard.brown161@example.com,True
+100941,Richard Ndlovu,74,Unknown,United Kingdom,,58.35,richard.ndlovu728@example.com,True
+101131,Barbara Davis,33,Female,Nigeria,,91.27,barbara.davis747@example.com,True
+101233,Wanjiru Williams,22,Male,Canada,,362.45,wanjiru.williams794@example.com,True
+101237,Kwame Rodriguez,45,Unknown,Canada,2021-08-14,110.61,kwamerodriguezAT example dot com,True
+100078,Richard Okafor,19,Male,United States,,140.12,richard.okafor123@example.com,True
+101273,Karen Johnson,59,Unknown,Kenya,2024-08-20,362.45,karen.johnson593@example.com,True
+100004,Charles Davis,54,Male,Kenya,2021-11-28,200.12,charlesdavisAT example dot com,True
+100062,Susan Kimani,59,Female,Nigeria,2022-01-05,346.98,susan.kimani686@example.com,True
+100845,Linda Abara,28,Female,United States,2022-07-08,261.57,linda.abara508@example.com,True
+100219,Thomas Martinez,74,Male,Canada,2022-03-10,74.08,thomas.martinez202@example.com,True
+100862,William Rodriguez,41,Unknown,Nigeria,2020-01-27,140.12,william.rodriguez942@example.com,True
+100152,Kwame Rodriguez,45,Female,United Kingdom,2020-06-12,145.1,,False
+100307,Charles Johnson,70,Male,United Kingdom,2024-11-13,362.45,charles.johnson890@example.com,True
+101002,Linda Okafor,45,Male,United Kingdom,,150.69,linda.okafor370@example.com,True
+100958,Mary Abara,70,Male,Nigeria,2024-06-03,301.81,,False
+101496,Richard Miller,38,Unknown,United States,2020-12-17,78.7,richard.miller711@example.com,True
+100203,Jessica Williams,45,Unknown,Canada,2022-08-14,94.02,jessica.williams734@example.com,True
+100301,Wanjiru Mensah,71,Male,United Kingdom,2021-07-13,140.12,wanjiru.mensah703@example.com,True
+100516,Jennifer Garcia,42,Female,Nigeria,2021-12-02,362.45,jennifer.garcia333@example.com,True
+100295,Mary Kimani,46,Female,Kenya,,114.17,mary.kimani791@example.com,True
+101086,William Smith,73,Female,Nigeria,2024-04-27,120.89,william.smith444@example.com,True
+100382,Richard Kimani,18,Male,United Kingdom,2020-08-08,89.59,richard.kimani962@example.com,True
+101309,Jessica Johnson,18,Unknown,Nigeria,2021-05-11,54.47,jessica.johnson666@example.com,True
+100129,James Miller,44,Male,Canada,2022-06-09,80.23,jamesmillerAT example dot com,True
+101055,Sarah Garcia,18,Male,United Kingdom,2023-11-16,140.12,sarah.garcia766@example.com,True
+100100,David Abara,28,Female,United Kingdom,2022-11-14,14.87,david.abara886@example.com,True
+101296,Sarah Martinez,52,Female,United States,2024-07-08,51.61,sarah.martinez78@example.com,True
+101212,Wanjiru Miller,46,Female,Kenya,2020-06-04,265.3,wanjiru.miller540@example.com,True
+100801,Charles Williams,50,Female,Canada,2021-12-25,115.25,charles.williams770@example.com,True
+100071,Charles Johnson,44,Female,Nigeria,2020-09-28,171.26,charles.johnson61@example.com,True
+100692,Robert Ndlovu,26,Unknown,Canada,2020-11-22,282.58,robert.ndlovu676@example.com,True
+100400,Chidi Smith,40,Female,Canada,2020-07-15,118.74,chidi.smith861@example.com,True
+101122,David Smith,60,Female,United Kingdom,2024-01-13,80.62,david.smith747@example.com,True
+100696,Jessica Kimani,72,Unknown,United Kingdom,2020-05-14,100.13,jessica.kimani974@example.com,True
+101486,Linda Ndlovu,48,Unknown,United States,2024-11-21,240.79,linda.ndlovu431@example.com,True
+100261,Richard Martinez,35,Female,United States,2022-04-27,140.12,,False
+100502,Karen Rodriguez,45,Male,United Kingdom,2020-11-01,21.8,karen.rodriguez451@example.com,True
+101041,Richard Kimani,46,Male,Nigeria,2020-03-30,151.56,richard.kimani769@example.com,True
+100714,Amara Martinez,47,Female,Canada,,89.53,amara.martinez118@example.com,True
+101470,Amara Miller,53,Male,United States,2020-04-07,158.22,amara.miller813@example.com,True
+101139,Patricia Jones,45,Male,United Kingdom,2023-03-02,153.65,patricia.jones668@example.com,True
+100697,Elizabeth Martinez,42,Unknown,Canada,2023-03-07,178.18,elizabeth.martinez897@example.com,True
+100601,Kwame Rodriguez,45,Male,Unknown,2022-07-02,47.8,kwamerodriguezAT example dot com,True
+101018,Amara Williams,22,Unknown,Nigeria,2024-09-22,107.41,amara.williams807@example.com,True
+100370,Michael Garcia,71,Unknown,Kenya,,41.9,michael.garcia751@example.com,True
+100134,Robert Williams,28,Female,Nigeria,2020-05-25,264.01,robert.williams512@example.com,True
+101119,William Williams,36,Male,Kenya,2024-09-21,193.87,william.williams944@example.com,True
+101223,Wanjiru Ndlovu,25,Unknown,United States,2021-04-30,236.72,wanjiru.ndlovu506@example.com,True
+100733,Linda Abara,45,Female,United Kingdom,2022-02-23,79.93,linda.abara213@example.com,True
+101400,Zola Johnson,44,Male,United States,2020-10-28,200.69,zola.johnson783@example.com,True
+101466,Wanjiru Jones,30,Female,Nigeria,2021-01-11,161.46,wanjiru.jones218@example.com,True
+100560,Elizabeth Brown,49,Female,United States,2023-12-18,184.24,elizabeth.brown68@example.com,True
+100055,Chidi Davis,22,Female,Canada,2022-11-15,362.45,chidi.davis628@example.com,True
+100355,Wanjiru Smith,57,Male,Nigeria,2021-07-14,140.12,wanjiru.smith448@example.com,True
+100116,Mary Mensah,43,Male,United Kingdom,2022-05-28,147.23,mary.mensah112@example.com,True
+100988,Mary Miller,24,Unknown,United States,2023-01-31,140.12,mary.miller357@example.com,True
+100210,Kwame Mensah,69,Unknown,Canada,2021-02-24,304.34,,False
+100387,Robert Garcia,54,Unknown,United States,,266.3,robert.garcia316@example.com,True
+100162,Jessica Rodriguez,30,Male,Unknown,2024-08-26,61.36,jessica.rodriguez9@example.com,True
+100728,Michael Rodriguez,27,Male,Kenya,2020-09-28,99.5,michael.rodriguez206@example.com,True
+100774,Wanjiru Kimani,48,Male,Nigeria,2022-09-06,230.17,wanjirukimaniAT example dot com,True
+100421,William Abara,70,Female,Canada,2021-01-31,45.35,,False
+100229,Wanjiru Rodriguez,20,Female,Kenya,2021-03-18,104.94,wanjirurodriguezAT example dot com,True
+100063,Elizabeth Brown,28,Male,Canada,2021-08-21,165.27,elizabeth.brown157@example.com,True
+100339,Joseph Kimani,36,Male,United States,2021-08-03,88.66,joseph.kimani72@example.com,True
+100336,Susan Rodriguez,20,Male,Kenya,2022-09-18,125.03,susan.rodriguez68@example.com,True
+100870,Michael Martinez,19,Unknown,United Kingdom,2023-12-02,362.45,,False
+101017,William Ndlovu,23,Unknown,United Kingdom,2023-07-18,57.5,william.ndlovu936@example.com,True
+101170,Karen Miller,52,Male,Canada,2023-12-10,101.51,,False
+100096,Chidi Mensah,55,Male,United Kingdom,2024-10-20,140.12,chidi.mensah83@example.com,True
+101289,Richard Williams,72,Unknown,United Kingdom,2024-09-15,189.8,richardwilliamsAT example dot com,True
+101393,James Brown,51,Unknown,United Kingdom,2024-03-03,127.2,james.brown983@example.com,True
+101050,Linda Jones,30,Unknown,United States,,362.45,linda.jones633@example.com,True
+100810,Jennifer Williams,33,Male,United States,,21.75,jennifer.williams637@example.com,True
+100108,James Rodriguez,20,Male,United States,2022-06-18,37.53,james.rodriguez692@example.com,True
+100932,Mary Brown,61,Male,United States,2020-09-12,140.12,mary.brown896@example.com,True
+101435,Patricia Abara,45,Unknown,Canada,2020-03-07,102.04,patricia.abara403@example.com,True
+101010,Linda Okafor,19,Female,United States,2023-05-16,52.51,linda.okafor331@example.com,True
+101161,Amara Rodriguez,41,Unknown,United Kingdom,2021-11-26,57.46,amara.rodriguez15@example.com,True
+100790,Amara Johnson,45,Unknown,Unknown,,170.01,amarajohnsonAT example dot com,True
+100636,Michael Johnson,58,Unknown,Nigeria,2020-12-13,134.24,michael.johnson922@example.com,True
+100037,James Martinez,72,Unknown,Kenya,2024-08-05,162.12,james.martinez730@example.com,True
+100345,Kwame Rodriguez,62,Unknown,Nigeria,,140.12,kwame.rodriguez860@example.com,True
+101414,Patricia Garcia,27,Unknown,Nigeria,,172.3,patricia.garcia699@example.com,True
+100098,Michael Rodriguez,23,Male,Canada,2023-07-11,94.8,michael.rodriguez206@example.com,True
+101253,Zola Rodriguez,38,Male,Kenya,,131.88,zola.rodriguez939@example.com,True
+101128,Robert Kimani,45,Unknown,Kenya,2023-12-31,362.45,robert.kimani754@example.com,True
+100494,Robert Miller,45,Female,Nigeria,2021-12-25,164.83,,False
+100074,Susan Ndlovu,62,Unknown,United States,2021-05-30,96.83,susan.ndlovu881@example.com,True
+100265,Sarah Johnson,19,Unknown,United Kingdom,2023-07-17,109.21,sarah.johnson480@example.com,True
+100642,Karen Miller,67,Female,Kenya,2020-09-29,362.45,karen.miller676@example.com,True
+101238,Patricia Okafor,53,Female,Nigeria,,142.65,patricia.okafor198@example.com,True
+101314,Joseph Miller,31,Male,Nigeria,2022-01-12,87.39,joseph.miller854@example.com,True
+100011,John Abara,38,Unknown,Canada,2024-11-10,274.47,john.abara340@example.com,True
+100661,Elizabeth Johnson,49,Male,United States,2022-05-05,123.0,elizabeth.johnson545@example.com,True
+100027,Robert Garcia,61,Unknown,United Kingdom,2024-07-13,139.92,robert.garcia339@example.com,True
+100669,Elizabeth Ndlovu,53,Unknown,Canada,2023-02-25,58.4,elizabeth.ndlovu540@example.com,True
+101091,John Davis,36,Female,United States,2022-08-28,52.37,john.davis294@example.com,True
+100424,Elizabeth Mensah,44,Unknown,United Kingdom,,145.91,elizabeth.mensah661@example.com,True
+100024,Robert Martinez,59,Female,United Kingdom,2023-07-27,140.12,robert.martinez65@example.com,True
+101471,Patricia Davis,59,Male,Unknown,2022-09-03,97.94,patricia.davis890@example.com,True
+100330,Elizabeth Williams,65,Unknown,Nigeria,2024-06-22,200.8,elizabeth.williams355@example.com,True
+100703,Patricia Miller,72,Male,United Kingdom,2021-07-13,126.47,patricia.miller41@example.com,True
+101023,Karen Abara,61,Female,Kenya,2021-05-08,217.75,karen.abara528@example.com,True
+100501,Kwame Mensah,48,Unknown,Nigeria,2021-10-04,169.02,,False
+101197,Barbara Garcia,48,Female,United Kingdom,2020-09-10,120.0,barbara.garcia654@example.com,True
+100903,William Okafor,60,Male,United Kingdom,2021-01-19,129.39,williamokaforAT example dot com,True
+101063,Karen Kimani,39,Male,Unknown,2023-09-05,187.11,karen.kimani492@example.com,True
+101271,Zola Miller,61,Unknown,Kenya,2024-07-13,66.73,zola.miller447@example.com,True
+100168,Chidi Kimani,20,Male,United Kingdom,2022-09-23,122.58,chidi.kimani691@example.com,True
+100286,Robert Davis,22,Female,Kenya,,180.7,robert.davis1@example.com,True
+101477,Joseph Jones,70,Female,United Kingdom,2021-08-13,214.78,joseph.jones696@example.com,True
+100937,Michael Martinez,45,Unknown,United Kingdom,2021-12-10,55.54,michael.martinez130@example.com,True
+101424,Joseph Jones,39,Unknown,Kenya,2020-12-30,140.12,joseph.jones422@example.com,True
+100809,Kwame Kimani,45,Female,United States,2024-06-03,105.37,,False
+100653,Jennifer Abara,18,Unknown,United Kingdom,2021-09-14,140.12,jennifer.abara194@example.com,True
+101480,William Miller,22,Male,Kenya,2021-01-14,197.73,william.miller180@example.com,True
+100014,Linda Abara,60,Female,Kenya,2022-12-06,28.25,linda.abara412@example.com,True
+100419,David Miller,72,Unknown,United Kingdom,,209.65,david.miller793@example.com,True
+100188,Susan Kimani,46,Unknown,United States,2023-12-11,209.78,susan.kimani550@example.com,True
+100652,Wanjiru Jones,68,Female,Nigeria,2020-06-10,362.45,wanjirujonesAT example dot com,True
+100436,Robert Brown,50,Female,United Kingdom,2024-06-27,140.12,robert.brown736@example.com,True
+101315,Amara Davis,71,Unknown,Canada,2024-06-21,202.38,amara.davis680@example.com,True
+101142,Karen Smith,73,Female,Unknown,2023-02-05,46.47,karen.smith363@example.com,True
+100566,Patricia Martinez,55,Male,Nigeria,2020-05-29,200.42,patricia.martinez800@example.com,True
+100416,David Johnson,45,Male,Unknown,2022-08-06,362.45,david.johnson889@example.com,True
+101134,Sarah Okafor,29,Female,Kenya,2021-10-28,140.12,sarah.okafor277@example.com,True
+101171,David Garcia,39,Male,United States,2020-03-04,140.12,david.garcia59@example.com,True
+100778,Charles Okafor,45,Male,United Kingdom,2023-04-09,145.48,charles.okafor190@example.com,True
+101025,Kwame Martinez,29,Male,United Kingdom,2023-11-05,140.12,kwame.martinez769@example.com,True
+100407,Michael Johnson,21,Male,Canada,2020-11-03,140.12,michael.johnson944@example.com,True
+100587,Jessica Smith,58,Unknown,Nigeria,2023-04-17,228.27,,False
+100396,William Ndlovu,60,Unknown,United States,2021-11-17,96.05,william.ndlovu115@example.com,True
+101004,Michael Abara,51,Male,Nigeria,2023-02-09,85.02,michael.abara460@example.com,True
+100366,John Garcia,58,Male,Canada,2022-05-20,140.12,john.garcia42@example.com,True
+101123,Michael Johnson,52,Unknown,Canada,2023-10-26,98.8,michael.johnson36@example.com,True
+100782,Amara Johnson,38,Male,Canada,2024-06-25,130.65,amara.johnson271@example.com,True
+100729,Amara Garcia,61,Male,Nigeria,2020-10-25,262.72,amara.garcia977@example.com,True
+100796,William Garcia,67,Unknown,Unknown,2023-07-08,152.64,,False
+101068,Jessica Jones,59,Unknown,United Kingdom,,202.93,jessica.jones128@example.com,True
+101235,Susan Williams,69,Male,United States,2024-05-20,216.06,,False
+100844,Susan Mensah,74,Male,United Kingdom,,18.49,susan.mensah280@example.com,True
+100192,Patricia Jones,68,Female,Kenya,2020-03-30,38.51,patricia.jones229@example.com,True
+100149,Thomas Brown,35,Female,Kenya,2023-11-07,29.2,thomas.brown698@example.com,True
+101070,Michael Davis,39,Male,United States,2022-10-26,73.65,michael.davis36@example.com,True
+100952,Charles Jones,67,Male,United States,2023-07-07,127.35,charles.jones59@example.com,True
+101008,David Mensah,60,Unknown,Kenya,2023-04-12,82.48,david.mensah572@example.com,True
+100911,Elizabeth Brown,64,Male,Kenya,2023-07-29,50.97,elizabeth.brown156@example.com,True
+100299,Richard Abara,45,Female,Canada,,257.72,richard.abara538@example.com,True
+101053,Zola Garcia,19,Unknown,Nigeria,2022-03-17,34.02,zola.garcia645@example.com,True
+101024,Elizabeth Williams,33,Unknown,Canada,2021-10-07,150.51,elizabeth.williams81@example.com,True
+100829,Thomas Jones,47,Unknown,Canada,2023-12-12,274.65,thomas.jones696@example.com,True
+100896,Richard Kimani,21,Unknown,Nigeria,,98.04,richard.kimani882@example.com,True
+101292,Jessica Rodriguez,55,Female,United States,2023-12-04,76.09,,False
+100240,Sarah Mensah,35,Unknown,United States,2022-04-24,72.61,sarah.mensah864@example.com,True
+100199,Amara Mensah,64,Female,United States,2020-06-28,95.76,amara.mensah415@example.com,True
+100779,Zola Johnson,29,Male,Canada,2022-06-07,311.04,,False
+100045,Sarah Rodriguez,32,Female,Canada,2021-06-08,280.54,sarah.rodriguez476@example.com,True
+101087,Amara Ndlovu,56,Male,United Kingdom,2021-12-08,117.46,amara.ndlovu227@example.com,True
+100540,Thomas Rodriguez,39,Male,United States,2020-03-14,268.38,thomas.rodriguez745@example.com,True
+100962,Sarah Williams,55,Unknown,Kenya,2021-03-29,181.34,sarah.williams363@example.com,True
+100137,James Miller,51,Unknown,United Kingdom,2024-06-02,140.7,jamesmillerAT example dot com,True
+101463,Michael Johnson,19,Male,United Kingdom,2022-09-30,74.72,michael.johnson343@example.com,True
+101406,Jessica Johnson,72,Female,United Kingdom,2020-01-18,264.2,jessica.johnson681@example.com,True
+100533,Kwame Mensah,63,Female,Kenya,2020-10-16,362.45,kwame.mensah6@example.com,True
+101049,David Mensah,36,Unknown,Nigeria,2020-12-01,49.74,,False
+101150,Charles Garcia,49,Male,United Kingdom,2023-04-24,24.05,charles.garcia833@example.com,True
+101305,Amara Davis,58,Male,Kenya,,133.11,amara.davis671@example.com,True
+101280,Zola Jones,68,Male,Canada,2021-01-07,49.63,zola.jones344@example.com,True
+100381,Patricia Davis,25,Male,United States,2023-10-30,172.68,patricia.davis354@example.com,True
+100205,Richard Jones,66,Unknown,United States,2020-02-15,140.12,richardjonesAT example dot com,True
+101085,Jessica Abara,34,Male,United Kingdom,2023-04-28,153.07,jessica.abara555@example.com,True
+101267,Jessica Ndlovu,60,Male,United States,2021-01-09,177.13,jessica.ndlovu312@example.com,True
+100688,Jennifer Rodriguez,35,Male,United Kingdom,2021-03-12,362.45,jennifer.rodriguez720@example.com,True
+100638,Patricia Brown,72,Male,Kenya,2020-11-30,45.22,patricia.brown750@example.com,True
+100884,Charles Mensah,64,Male,United States,2022-06-21,140.12,charles.mensah137@example.com,True
+100448,Elizabeth Brown,60,Unknown,Unknown,2023-05-15,68.69,elizabeth.brown832@example.com,True
+100510,Chidi Ndlovu,63,Male,United Kingdom,2022-06-16,31.98,chidi.ndlovu25@example.com,True
+100423,James Ndlovu,59,Female,United Kingdom,,172.34,james.ndlovu297@example.com,True
+100006,Thomas Smith,35,Male,Canada,,109.13,,False
+100097,James Jones,24,Male,Canada,,158.52,,False
+100410,John Martinez,45,Unknown,United States,2021-04-26,166.24,john.martinez778@example.com,True
+100158,Joseph Abara,62,Male,Kenya,,87.25,joseph.abara218@example.com,True
+100564,Kwame Davis,48,Female,Kenya,2021-01-29,64.58,,False
+100640,Chidi Ndlovu,26,Unknown,United Kingdom,2023-05-27,82.34,chidi.ndlovu652@example.com,True
+101250,Jessica Garcia,45,Male,United Kingdom,2023-11-13,140.12,jessica.garcia841@example.com,True
+101302,Chidi Garcia,69,Female,Kenya,2020-05-16,185.29,chidi.garcia402@example.com,True
+100746,Jennifer Brown,59,Male,Kenya,2024-11-13,362.45,jennifer.brown137@example.com,True
+100032,John Abara,37,Unknown,United States,2024-08-21,202.88,john.abara545@example.com,True
+101358,Amara Mensah,61,Male,Nigeria,2023-05-02,140.12,amara.mensah987@example.com,True
+100156,Thomas Smith,27,Female,United States,2024-10-15,213.97,,False
+100521,Sarah Garcia,63,Female,Nigeria,2022-12-30,65.06,sarah.garcia708@example.com,True
+100334,William Garcia,60,Female,United States,2023-11-14,258.83,william.garcia963@example.com,True
+100837,Mary Miller,67,Unknown,Kenya,2022-02-24,362.45,mary.miller97@example.com,True
+100490,Elizabeth Kimani,46,Male,United States,2020-10-26,118.83,,False
+101022,Jennifer Okafor,45,Female,Unknown,2021-05-01,53.8,jennifer.okafor726@example.com,True
+100258,Kwame Davis,51,Unknown,United Kingdom,2022-01-08,140.12,kwame.davis173@example.com,True
+100171,Elizabeth Davis,62,Male,United Kingdom,2022-04-26,41.62,elizabeth.davis182@example.com,True
+101419,Chidi Williams,59,Male,United States,2024-07-10,74.89,chidi.williams912@example.com,True
+100593,Richard Rodriguez,45,Female,Kenya,2023-09-06,140.12,richardrodriguezAT example dot com,True
+100547,John Abara,45,Male,United States,2021-01-14,362.45,john.abara1@example.com,True
+100236,Jennifer Mensah,60,Male,Nigeria,2020-05-19,166.13,jennifer.mensah833@example.com,True
+100384,Michael Rodriguez,37,Male,United States,2021-09-20,64.12,michael.rodriguez876@example.com,True
+100748,Jessica Abara,40,Male,Canada,2023-01-27,278.64,jessica.abara256@example.com,True
+100859,Susan Abara,41,Male,United Kingdom,,67.71,susan.abara112@example.com,True
+100023,Thomas Johnson,65,Unknown,United Kingdom,2023-01-20,118.22,thomas.johnson453@example.com,True
+101251,Mary Rodriguez,45,Male,United States,2021-03-09,42.81,mary.rodriguez432@example.com,True
+100622,James Jones,33,Male,Nigeria,,140.12,james.jones979@example.com,True
+101306,Chidi Jones,46,Female,Kenya,2024-03-07,87.63,chidi.jones910@example.com,True
+100406,Charles Okafor,68,Female,Nigeria,2024-03-27,193.98,charles.okafor494@example.com,True
+100545,Patricia Abara,71,Unknown,United Kingdom,2021-03-18,136.07,patricia.abara405@example.com,True
+101374,Michael Kimani,64,Male,United Kingdom,2024-04-13,362.45,,False
+100477,Sarah Jones,35,Unknown,United States,2020-10-06,217.68,sarah.jones294@example.com,True
+100012,Kwame Davis,50,Female,Kenya,2024-04-29,46.66,kwame.davis541@example.com,True
+100013,Kwame Mensah,32,Unknown,United States,2024-07-15,42.3,kwame.mensah970@example.com,True
+101097,Wanjiru Ndlovu,22,Female,United States,2024-02-21,140.12,wanjiru.ndlovu970@example.com,True
+100681,Kwame Mensah,67,Female,United States,2020-06-08,277.85,,False
+100895,Amara Okafor,69,Female,United Kingdom,,89.3,amara.okafor72@example.com,True
+100893,Chidi Ndlovu,70,Female,Canada,2022-08-22,113.03,chidi.ndlovu757@example.com,True
+100153,John Abara,28,Female,United States,,196.07,john.abara980@example.com,True
+100122,Jennifer Miller,50,Female,United States,2021-02-26,140.12,jennifer.miller540@example.com,True
+101081,Susan Johnson,63,Male,Nigeria,2022-03-16,140.12,susan.johnson772@example.com,True
+100120,Linda Johnson,64,Unknown,Nigeria,2023-11-22,362.45,,False
+100065,Michael Smith,45,Female,United Kingdom,2022-07-03,87.92,michael.smith946@example.com,True
+100846,James Martinez,31,Unknown,Unknown,2024-05-11,199.88,james.martinez65@example.com,True
+100582,Thomas Williams,33,Male,United States,2021-07-16,168.25,thomas.williams920@example.com,True
+100806,William Smith,42,Female,Kenya,2023-05-11,362.45,william.smith568@example.com,True
+100600,Mary Smith,41,Male,Kenya,,91.75,mary.smith441@example.com,True
+100463,Linda Abara,26,Female,Unknown,2024-09-09,69.66,linda.abara447@example.com,True
+101198,Patricia Smith,46,Female,Kenya,,140.12,patricia.smith58@example.com,True
+101027,Linda Kimani,43,Female,United States,2024-08-27,234.32,linda.kimani979@example.com,True
+101384,Kwame Johnson,63,Unknown,United States,2024-05-07,80.3,kwame.johnson587@example.com,True
+100984,Kwame Okafor,72,Male,Canada,2023-05-01,73.58,kwame.okafor348@example.com,True
+100817,Jessica Williams,74,Female,Kenya,,232.51,jessica.williams655@example.com,True
+101118,Charles Okafor,26,Female,Nigeria,2020-11-15,130.75,charles.okafor811@example.com,True
+100752,James Rodriguez,69,Unknown,United Kingdom,2023-06-20,174.62,james.rodriguez928@example.com,True
+100822,Michael Rodriguez,46,Male,Canada,2022-01-12,143.4,michaelrodriguezAT example dot com,True
+100519,Zola Kimani,67,Female,United Kingdom,2024-06-29,157.78,zola.kimani758@example.com,True
+101353,Karen Brown,70,Unknown,United Kingdom,2020-06-21,62.76,karen.brown108@example.com,True
+100629,Michael Johnson,31,Female,United Kingdom,,145.81,michael.johnson808@example.com,True
+100861,William Smith,59,Male,Canada,2023-02-14,140.12,william.smith597@example.com,True
+101281,Joseph Williams,60,Female,United Kingdom,2021-02-10,59.67,joseph.williams318@example.com,True
+101298,Robert Rodriguez,39,Female,Kenya,2021-10-04,137.49,robert.rodriguez666@example.com,True
+100586,Richard Rodriguez,20,Female,United Kingdom,2020-04-29,351.07,richard.rodriguez609@example.com,True
+100880,Chidi Abara,18,Male,Kenya,2020-01-25,252.27,chidi.abara873@example.com,True
+101345,Barbara Martinez,26,Unknown,United Kingdom,2022-09-17,104.34,barbara.martinez649@example.com,True
+100745,Michael Jones,48,Female,United States,,84.62,michael.jones680@example.com,True
+100946,Zola Garcia,30,Male,Canada,2024-06-25,137.1,zola.garcia122@example.com,True
+100906,Robert Garcia,72,Unknown,Nigeria,2024-05-10,272.25,robert.garcia640@example.com,True
+101195,David Williams,38,Unknown,United Kingdom,2024-10-01,96.71,david.williams842@example.com,True
+101247,Susan Davis,21,Male,Kenya,2021-11-18,54.43,susan.davis965@example.com,True
+101179,Wanjiru Brown,59,Female,Kenya,2024-06-16,171.46,,False
+101039,Kwame Miller,31,Male,Unknown,2024-05-31,200.74,kwamemillerAT example dot com,True
+100522,Richard Rodriguez,47,Male,United States,2022-05-13,140.12,richard.rodriguez535@example.com,True
+100357,Robert Ndlovu,42,Female,Kenya,2022-04-24,183.33,robert.ndlovu874@example.com,True
+100197,Mary Okafor,45,Male,United Kingdom,2021-08-28,241.65,mary.okafor5@example.com,True
+101337,John Ndlovu,64,Female,United Kingdom,2023-04-24,140.12,john.ndlovu909@example.com,True
+100150,John Johnson,34,Unknown,United States,2022-08-19,42.62,john.johnson206@example.com,True
+100528,Jessica Mensah,45,Female,United States,2021-09-05,140.12,jessica.mensah18@example.com,True
+100690,Karen Okafor,66,Unknown,Nigeria,2020-03-21,76.42,karen.okafor701@example.com,True
+100180,Richard Mensah,55,Male,United States,2024-09-28,12.91,richard.mensah116@example.com,True
+100291,Linda Ndlovu,28,Male,United Kingdom,2023-09-01,83.9,linda.ndlovu585@example.com,True
+100780,Elizabeth Johnson,53,Unknown,United States,2023-02-25,140.12,elizabeth.johnson308@example.com,True
+101262,Sarah Rodriguez,41,Unknown,Kenya,2023-07-25,107.42,sarah.rodriguez842@example.com,True
+100832,Kwame Miller,41,Female,United Kingdom,,20.52,kwame.miller292@example.com,True
+100050,William Smith,38,Male,Canada,2024-09-12,232.28,william.smith679@example.com,True
+100174,Chidi Miller,24,Female,United Kingdom,2022-04-04,34.28,chidi.miller728@example.com,True
+101121,John Martinez,28,Male,United Kingdom,2020-09-11,150.73,john.martinez874@example.com,True
+100650,William Williams,61,Unknown,Nigeria,,185.11,william.williams658@example.com,True
+100257,Barbara Smith,61,Unknown,United States,2022-08-17,140.12,barbarasmithAT example dot com,True
+101333,Mary Kimani,29,Unknown,United Kingdom,2020-06-09,78.15,mary.kimani20@example.com,True
+101213,Elizabeth Okafor,57,Male,United Kingdom,2021-05-07,122.59,elizabeth.okafor214@example.com,True
+100021,John Brown,51,Female,United States,2020-08-28,362.45,john.brown710@example.com,True
+101204,Thomas Garcia,70,Unknown,Kenya,2020-09-22,38.97,thomas.garcia625@example.com,True
+101489,Robert Johnson,45,Male,Canada,,248.86,robert.johnson975@example.com,True
+101368,Robert Johnson,19,Male,United Kingdom,2023-06-16,362.45,robert.johnson690@example.com,True
+101231,Patricia Rodriguez,29,Female,United Kingdom,2022-02-16,105.19,patricia.rodriguez639@example.com,True
+100739,Robert Williams,50,Male,Nigeria,2024-09-14,140.12,robert.williams348@example.com,True
+100481,Amara Johnson,56,Male,United States,2021-10-27,318.31,amara.johnson630@example.com,True
+100474,Mary Smith,69,Female,Canada,2020-12-09,166.25,mary.smith289@example.com,True
+101165,Susan Smith,31,Female,United States,2020-07-05,154.26,susan.smith720@example.com,True
+100118,Richard Martinez,38,Male,United Kingdom,2021-06-11,204.18,richard.martinez123@example.com,True
+100178,Wanjiru Rodriguez,24,Male,United States,2024-03-12,140.12,wanjiru.rodriguez821@example.com,True
+101226,William Kimani,27,Female,Unknown,2022-07-07,164.87,william.kimani616@example.com,True
+100337,Michael Davis,27,Female,Kenya,2024-11-10,140.12,michael.davis497@example.com,True
+100686,Mary Davis,29,Male,United Kingdom,,224.73,,False
+100609,Kwame Smith,57,Female,United Kingdom,2020-05-26,280.94,kwame.smith270@example.com,True
+100297,James Rodriguez,33,Male,Canada,,120.93,,False
+101227,William Williams,46,Unknown,Canada,2024-09-15,45.68,,False
+100765,Richard Davis,36,Male,United Kingdom,2023-07-01,103.08,richard.davis668@example.com,True
+100674,Thomas Miller,66,Female,United Kingdom,2020-01-18,176.77,thomas.miller441@example.com,True
+100761,Joseph Davis,39,Unknown,United Kingdom,2024-11-11,115.91,joseph.davis153@example.com,True
+100942,Sarah Martinez,33,Unknown,United States,2020-08-30,238.0,sarah.martinez143@example.com,True
+101433,James Abara,47,Female,Canada,2021-08-24,204.41,james.abara180@example.com,True
+100109,Mary Rodriguez,31,Female,Kenya,2024-05-09,156.79,,False
+100413,Amara Ndlovu,45,Male,Kenya,2022-05-31,49.74,,False
+100667,Linda Mensah,57,Female,Unknown,2022-12-03,167.12,linda.mensah837@example.com,True
+101294,Susan Johnson,45,Female,Kenya,2024-04-04,140.12,susan.johnson753@example.com,True
+101422,Linda Davis,27,Female,United Kingdom,2020-07-17,140.12,,False
+100542,Jennifer Davis,54,Unknown,United Kingdom,2024-04-03,283.33,jennifer.davis961@example.com,True
+100719,James Okafor,24,Male,Canada,2024-08-15,61.56,james.okafor196@example.com,True
+101228,Patricia Martinez,21,Female,Canada,2024-09-18,73.86,patriciamartinezAT example dot com,True
+100305,Chidi Johnson,51,Male,United Kingdom,2024-04-08,203.65,,False
+100935,David Mensah,53,Male,Unknown,2020-10-06,248.64,david.mensah11@example.com,True
+100649,William Ndlovu,69,Unknown,United States,,140.12,william.ndlovu427@example.com,True
+100712,David Williams,69,Female,United Kingdom,2020-04-08,81.12,davidwilliamsAT example dot com,True
+101357,Charles Garcia,24,Male,United Kingdom,2022-02-22,77.11,charles.garcia646@example.com,True
+100732,Patricia Johnson,31,Unknown,United Kingdom,,248.41,patricia.johnson774@example.com,True
+100917,Amara Williams,41,Female,Canada,2023-02-04,215.19,amara.williams987@example.com,True
+101220,Charles Ndlovu,50,Female,Canada,2022-04-23,110.83,charles.ndlovu145@example.com,True
+100139,Charles Smith,45,Unknown,United States,2023-02-06,130.08,charles.smith850@example.com,True
+100223,Mary Ndlovu,25,Unknown,United Kingdom,2020-12-27,57.43,mary.ndlovu269@example.com,True
+100075,Jessica Jones,58,Male,United Kingdom,2023-07-19,71.24,jessica.jones549@example.com,True
+100882,Kwame Smith,63,Male,Nigeria,2023-03-27,167.02,kwame.smith289@example.com,True
+101207,Chidi Davis,68,Unknown,Canada,2020-01-17,140.12,chididavisAT example dot com,True
+100643,Susan Johnson,22,Male,United States,,161.99,susan.johnson984@example.com,True
+100588,Barbara Johnson,68,Female,Kenya,2020-10-05,145.25,barbara.johnson815@example.com,True
+100708,Elizabeth Kimani,29,Female,United Kingdom,2021-10-24,345.54,elizabeth.kimani245@example.com,True
+100623,Richard Abara,36,Male,United Kingdom,,44.28,richard.abara435@example.com,True
+100723,Richard Miller,44,Male,Kenya,2024-10-04,92.89,richard.miller634@example.com,True
+101329,David Williams,68,Unknown,Unknown,2024-07-02,16.34,david.williams949@example.com,True
+101485,Linda Smith,45,Female,United States,2021-03-09,193.51,linda.smith249@example.com,True
+101245,Chidi Williams,39,Male,United Kingdom,2022-04-15,163.01,chidi.williams104@example.com,True
+101218,Wanjiru Ndlovu,45,Male,Canada,2021-03-09,61.31,wanjiru.ndlovu101@example.com,True
+100395,Thomas Mensah,30,Male,United Kingdom,,362.45,thomas.mensah336@example.com,True
+100839,Michael Rodriguez,26,Female,Kenya,,140.12,michael.rodriguez660@example.com,True
+101319,Jessica Kimani,31,Female,Canada,2023-12-29,112.22,jessica.kimani959@example.com,True
+101423,Jennifer Martinez,72,Unknown,United States,2020-10-08,182.96,jennifermartinezAT example dot com,True
+100165,David Ndlovu,49,Female,United States,,35.02,david.ndlovu87@example.com,True
+101330,David Smith,45,Male,Kenya,,106.17,david.smith393@example.com,True
+100115,Barbara Davis,30,Unknown,United Kingdom,2021-03-19,240.24,barbara.davis88@example.com,True
+100682,Amara Kimani,20,Male,United States,,185.95,amarakimaniAT example dot com,True
+100310,David Johnson,32,Female,United Kingdom,2020-10-05,140.12,david.johnson829@example.com,True
+101442,Robert Williams,45,Female,Nigeria,,206.83,robert.williams177@example.com,True
+100475,David Okafor,62,Female,United Kingdom,,203.05,david.okafor141@example.com,True
+100420,Kwame Smith,42,Unknown,Kenya,2022-10-01,39.57,kwame.smith652@example.com,True
+100554,Joseph Garcia,53,Male,United Kingdom,2023-06-06,15.99,joseph.garcia776@example.com,True
+101211,David Kimani,36,Unknown,United Kingdom,2022-03-15,65.62,david.kimani163@example.com,True
+100218,Sarah Martinez,29,Female,United Kingdom,,138.65,,False
+100211,Chidi Rodriguez,38,Female,United Kingdom,2023-01-25,137.27,chidi.rodriguez221@example.com,True
+100634,David Miller,73,Male,Canada,,140.12,david.miller126@example.com,True
+100054,Karen Brown,45,Unknown,United Kingdom,2020-08-21,119.31,karen.brown151@example.com,True
+101173,Patricia Jones,44,Male,United Kingdom,2023-04-02,139.43,patricia.jones796@example.com,True
+100648,Patricia Abara,45,Female,United States,2020-11-14,8.19,patricia.abara795@example.com,True
+100581,John Davis,19,Female,Nigeria,2023-11-11,167.56,john.davis711@example.com,True
+101143,Linda Williams,64,Male,United Kingdom,2024-10-31,310.16,linda.williams734@example.com,True
+101222,Susan Jones,45,Unknown,United States,2024-11-09,179.28,susanjonesAT example dot com,True
+100718,David Davis,68,Unknown,Nigeria,2024-05-11,113.41,david.davis78@example.com,True
+101187,David Johnson,58,Male,United Kingdom,2020-08-22,141.0,,False
+100147,Sarah Brown,35,Female,United Kingdom,2024-02-22,109.7,sarah.brown517@example.com,True
+100953,Zola Abara,59,Male,Canada,,113.76,zola.abara731@example.com,True
+100254,David Miller,20,Unknown,United States,,140.12,david.miller500@example.com,True
+100106,Zola Miller,58,Female,Unknown,2021-10-23,217.33,zola.miller727@example.com,True
+100565,James Garcia,71,Female,Nigeria,2023-12-01,129.5,jamesgarciaAT example dot com,True
+100392,Jennifer Smith,43,Female,Kenya,2022-01-22,140.12,jennifer.smith236@example.com,True
+101192,Sarah Williams,72,Male,Kenya,,53.82,sarah.williams178@example.com,True
+100230,Barbara Davis,36,Male,Kenya,2023-07-21,247.45,barbara.davis218@example.com,True
+100146,Mary Abara,69,Female,Nigeria,2023-08-11,140.12,mary.abara167@example.com,True
+101472,David Miller,71,Male,Kenya,2023-05-15,45.33,david.miller421@example.com,True
+101019,Wanjiru Mensah,48,Male,Nigeria,,59.32,wanjiru.mensah184@example.com,True
+100167,Wanjiru Ndlovu,45,Male,United States,2021-06-07,183.79,wanjiru.ndlovu463@example.com,True
+100956,Mary Martinez,28,Female,Unknown,2020-12-25,226.42,mary.martinez767@example.com,True
+100052,Michael Okafor,45,Unknown,United States,2022-08-08,188.72,,False
+100598,William Miller,38,Unknown,United Kingdom,,11.12,williammillerAT example dot com,True
+100808,Michael Rodriguez,26,Female,United Kingdom,,216.77,michael.rodriguez287@example.com,True
+101356,Sarah Martinez,57,Unknown,Kenya,2023-08-23,42.47,sarah.martinez430@example.com,True
+100399,Susan Kimani,60,Unknown,United Kingdom,2024-01-02,126.87,,False
+101290,Charles Kimani,69,Unknown,United Kingdom,2022-05-06,140.12,charles.kimani597@example.com,True
+100651,Zola Kimani,55,Unknown,United Kingdom,2021-10-26,362.45,zola.kimani235@example.com,True
+100858,Patricia Martinez,35,Female,Kenya,2020-01-24,140.12,patricia.martinez993@example.com,True
+100468,David Kimani,46,Female,United Kingdom,2022-02-28,70.45,david.kimani512@example.com,True
+101316,Richard Abara,43,Male,United Kingdom,2021-08-20,165.39,richard.abara653@example.com,True
+101342,Michael Garcia,60,Female,United States,2024-10-08,113.4,michael.garcia335@example.com,True
+100347,Karen Rodriguez,51,Male,United States,2021-03-22,362.45,,False
+100280,Michael Rodriguez,64,Unknown,United States,2020-10-26,135.43,michael.rodriguez655@example.com,True
+100990,Patricia Johnson,48,Male,Kenya,2022-11-04,94.8,patricia.johnson275@example.com,True
+101258,Michael Kimani,42,Unknown,Canada,2023-09-24,57.47,michael.kimani833@example.com,True
+100009,Susan Miller,67,Unknown,Canada,2024-06-14,181.54,susan.miller519@example.com,True
+100740,Kwame Abara,40,Male,Kenya,,83.63,kwame.abara934@example.com,True
+100270,Charles Mensah,35,Unknown,United States,2021-02-11,117.86,charles.mensah54@example.com,True
+101291,John Abara,35,Female,United Kingdom,2024-11-29,79.96,john.abara253@example.com,True
+100285,John Rodriguez,67,Female,United States,2023-10-24,168.58,john.rodriguez811@example.com,True
+100541,Kwame Brown,45,Unknown,Nigeria,2022-12-07,150.28,kwame.brown607@example.com,True
+100741,Mary Martinez,45,Unknown,Canada,2020-03-04,140.12,mary.martinez633@example.com,True
+100444,Jennifer Ndlovu,41,Male,Canada,2024-11-27,76.41,jennifer.ndlovu373@example.com,True
+101413,William Rodriguez,22,Unknown,United Kingdom,2020-05-27,264.5,william.rodriguez344@example.com,True
+100830,Karen Miller,21,Male,Kenya,2022-08-29,126.14,karen.miller252@example.com,True
+100103,Michael Kimani,45,Unknown,United Kingdom,2023-03-03,183.37,,False
+101377,Thomas Okafor,35,Unknown,United States,2021-07-15,342.21,thomas.okafor692@example.com,True
+100099,Kwame Abara,18,Unknown,United Kingdom,2021-12-06,209.23,kwame.abara511@example.com,True
+100781,Kwame Kimani,45,Female,Kenya,2020-06-05,121.36,kwame.kimani761@example.com,True
+100803,Chidi Kimani,49,Unknown,Unknown,2020-12-08,163.24,chidi.kimani103@example.com,True
+100855,Zola Rodriguez,69,Unknown,United States,2021-03-10,265.4,zola.rodriguez156@example.com,True
+101203,Mary Ndlovu,53,Unknown,United States,2021-12-30,71.21,mary.ndlovu946@example.com,True
+100495,Karen Okafor,50,Female,Kenya,2022-05-31,140.12,karenokaforAT example dot com,True
+100432,Michael Mensah,64,Female,United States,2021-10-10,130.82,michael.mensah765@example.com,True
+100142,Sarah Garcia,32,Female,Nigeria,2021-10-16,140.12,sarah.garcia656@example.com,True
+100827,Thomas Kimani,19,Unknown,United Kingdom,2020-09-29,220.49,thomas.kimani285@example.com,True
+100166,Mary Martinez,65,Unknown,Kenya,2024-07-08,149.13,mary.martinez325@example.com,True
+100161,Amara Okafor,38,Female,Canada,2020-03-20,362.45,amara.okafor384@example.com,True
+101040,Zola Garcia,21,Female,United Kingdom,2023-03-08,62.39,zola.garcia854@example.com,True
+100007,Kwame Brown,45,Female,Kenya,2022-10-22,262.58,,False
+100173,Chidi Brown,71,Male,Unknown,2021-06-21,140.12,chidi.brown402@example.com,True
+100446,Barbara Williams,41,Male,United States,2021-11-13,113.77,barbara.williams331@example.com,True
+101429,Mary Jones,23,Female,Kenya,2024-04-21,175.23,mary.jones676@example.com,True
+101359,Barbara Kimani,45,Female,Kenya,,140.12,barbara.kimani557@example.com,True
+100866,Thomas Rodriguez,19,Unknown,Nigeria,2024-05-27,140.12,thomas.rodriguez729@example.com,True
+100579,Chidi Brown,25,Male,Nigeria,2023-03-15,89.88,chidi.brown384@example.com,True
+101446,Susan Mensah,71,Unknown,United Kingdom,2021-02-08,140.12,,False
+100902,Thomas Abara,29,Male,Canada,2021-03-06,362.45,thomas.abara427@example.com,True
+100580,Elizabeth Davis,54,Unknown,United States,2024-10-16,142.99,,False
+101336,Zola Mensah,44,Male,Kenya,2020-11-02,103.14,zola.mensah332@example.com,True
+100485,Elizabeth Jones,23,Male,United States,2022-01-08,99.0,elizabeth.jones732@example.com,True
+101000,Zola Johnson,42,Unknown,United States,2024-05-23,140.12,zola.johnson485@example.com,True
+100644,James Kimani,49,Female,United Kingdom,2020-01-10,117.44,,False
+101456,Jennifer Jones,27,Unknown,United Kingdom,2020-12-12,362.45,jennifer.jones191@example.com,True
+101421,Karen Okafor,19,Male,Unknown,,140.44,karen.okafor556@example.com,True
+101219,Jessica Brown,70,Male,United States,2024-02-25,97.87,jessica.brown72@example.com,True
+100003,Jennifer Okafor,39,Male,Kenya,2024-10-02,362.45,jennifer.okafor879@example.com,True
+101312,Joseph Miller,47,Male,Nigeria,2022-02-09,103.53,joseph.miller913@example.com,True
+100358,Karen Brown,30,Male,Canada,2020-09-03,105.11,karen.brown967@example.com,True
+100428,John Brown,72,Unknown,United States,2022-07-22,153.17,john.brown773@example.com,True
+100276,Kwame Jones,45,Male,United States,2022-08-11,253.49,kwame.jones820@example.com,True
+100266,Zola Johnson,56,Female,United Kingdom,2021-06-21,362.45,zolajohnsonAT example dot com,True
+100749,Robert Ndlovu,50,Unknown,Unknown,2024-08-31,218.11,robert.ndlovu145@example.com,True
+101332,Patricia Mensah,45,Male,United Kingdom,2021-02-22,224.32,patricia.mensah619@example.com,True
+100030,Zola Jones,68,Female,Nigeria,2022-07-15,309.28,,False
+100445,Richard Martinez,24,Male,United States,2024-09-04,140.12,,False
+100760,William Kimani,71,Male,Kenya,2021-04-21,90.08,william.kimani887@example.com,True
+100373,Elizabeth Smith,56,Unknown,United Kingdom,2020-10-01,314.9,elizabeth.smith406@example.com,True
+101205,Thomas Johnson,65,Female,United Kingdom,2023-10-05,198.71,thomas.johnson852@example.com,True
+101140,John Johnson,33,Male,United Kingdom,2021-06-18,134.98,john.johnson761@example.com,True
+100617,Kwame Miller,45,Male,Nigeria,2022-07-09,176.56,kwame.miller41@example.com,True
+101344,Joseph Okafor,45,Female,United Kingdom,2021-02-28,204.44,joseph.okafor25@example.com,True
+100342,Joseph Brown,32,Female,Unknown,2022-10-10,191.98,joseph.brown4@example.com,True
+101388,Zola Martinez,25,Male,Canada,2024-10-01,157.39,zola.martinez499@example.com,True
+101347,Zola Rodriguez,61,Male,Nigeria,2023-08-29,152.58,zola.rodriguez488@example.com,True
+100944,Patricia Rodriguez,35,Male,United Kingdom,2022-04-01,149.68,patricia.rodriguez29@example.com,True
+100391,Joseph Garcia,21,Male,Nigeria,,136.02,joseph.garcia249@example.com,True
+100228,Mary Abara,39,Male,Canada,2024-08-10,312.52,mary.abara689@example.com,True
+101324,Kwame Johnson,53,Female,Canada,2022-08-06,159.67,kwame.johnson893@example.com,True
+100517,Patricia Williams,45,Male,Kenya,2021-10-03,43.22,patricia.williams194@example.com,True
+100479,David Davis,19,Female,Canada,2024-04-26,140.12,david.davis258@example.com,True
+100799,Robert Johnson,61,Unknown,Nigeria,2023-10-09,328.6,,False
+100034,Linda Kimani,37,Male,United Kingdom,2023-09-23,45.68,,False
+100008,Joseph Davis,43,Male,Nigeria,2021-10-31,20.37,joseph.davis79@example.com,True
+100231,Joseph Smith,25,Unknown,United States,2022-05-07,36.86,,False
+100440,Chidi Garcia,33,Male,United Kingdom,,68.19,chidi.garcia293@example.com,True
+100525,Richard Brown,60,Female,Kenya,2023-02-23,25.51,,False
+100624,Joseph Abara,28,Male,Nigeria,2020-07-01,35.81,joseph.abara963@example.com,True
+100094,Sarah Abara,45,Male,United States,2022-01-19,208.1,sarah.abara604@example.com,True
+100543,Susan Williams,53,Female,United States,2024-07-15,109.57,,False
+101263,Wanjiru Jones,33,Unknown,United States,2021-02-15,362.45,wanjiru.jones665@example.com,True
+100970,Charles Williams,35,Male,United Kingdom,2022-06-28,145.64,charles.williams288@example.com,True
+101278,John Davis,45,Male,United Kingdom,2023-02-11,170.32,john.davis644@example.com,True
+100209,Karen Ndlovu,57,Male,Nigeria,2024-11-03,84.36,,False
+100281,Richard Kimani,26,Female,United Kingdom,2024-05-14,239.09,richard.kimani873@example.com,True
+101130,Jennifer Rodriguez,40,Male,United States,2023-09-05,201.52,jennifer.rodriguez344@example.com,True
+100389,William Martinez,28,Unknown,Kenya,2023-06-30,68.91,william.martinez819@example.com,True
+100948,Kwame Rodriguez,69,Female,Canada,2020-08-24,67.59,kwame.rodriguez408@example.com,True
+100251,Linda Mensah,68,Male,United Kingdom,2022-12-30,362.45,linda.mensah810@example.com,True
+101346,Linda Martinez,21,Male,Nigeria,2024-11-19,140.12,linda.martinez472@example.com,True
+101157,Michael Rodriguez,49,Unknown,United States,,108.87,michael.rodriguez932@example.com,True
+100890,Susan Abara,53,Unknown,United Kingdom,,140.12,susan.abara401@example.com,True
+101355,Zola Ndlovu,56,Male,Kenya,2022-04-14,81.43,zola.ndlovu4@example.com,True
+100520,Kwame Kimani,25,Male,United States,2020-05-30,140.12,kwame.kimani770@example.com,True
+101036,Karen Mensah,40,Male,Kenya,2024-06-16,140.12,karen.mensah513@example.com,True
+101318,Thomas Davis,63,Male,Canada,2024-07-14,108.28,thomas.davis34@example.com,True
+100668,Zola Brown,29,Male,United States,2022-06-03,314.37,,False
+101378,Robert Mensah,68,Female,United Kingdom,2022-02-24,108.19,robert.mensah438@example.com,True
+100876,James Garcia,33,Unknown,Nigeria,2021-09-26,140.12,,False
+101295,Joseph Brown,34,Male,Unknown,2022-01-26,114.18,joseph.brown437@example.com,True
+101349,Barbara Okafor,26,Male,United States,2021-07-07,140.12,barbaraokaforAT example dot com,True
+101013,Kwame Miller,29,Female,United Kingdom,2020-11-04,140.12,kwame.miller41@example.com,True
+101370,Linda Abara,20,Unknown,United States,2021-03-23,76.61,linda.abara586@example.com,True
+100753,Susan Abara,45,Unknown,United States,2024-10-28,40.36,susan.abara299@example.com,True
+100213,Amara Martinez,49,Female,United Kingdom,2023-02-01,206.93,amara.martinez796@example.com,True
+100957,Robert Miller,45,Unknown,Canada,2020-07-18,285.5,robert.miller19@example.com,True
+101313,Amara Kimani,68,Male,Kenya,2022-12-14,111.16,amara.kimani154@example.com,True
+100567,Sarah Martinez,33,Unknown,Canada,2022-05-26,42.12,sarah.martinez920@example.com,True
+100068,Barbara Kimani,25,Male,United States,2024-10-30,88.64,,False
+100912,Chidi Abara,21,Female,United Kingdom,,201.74,chidi.abara959@example.com,True
+100466,David Kimani,50,Female,United States,,145.28,david.kimani603@example.com,True
+100879,Richard Martinez,27,Unknown,Canada,2020-10-29,77.04,richard.martinez625@example.com,True
+100429,John Smith,55,Female,Kenya,,362.45,john.smith994@example.com,True
+100417,Joseph Brown,48,Unknown,Nigeria,2021-09-16,140.12,joseph.brown405@example.com,True
+100412,Richard Johnson,39,Male,Unknown,2022-09-15,57.34,richard.johnson174@example.com,True
+100196,David Jones,57,Male,Canada,2024-11-03,161.53,david.jones439@example.com,True
+100284,Mary Garcia,18,Female,Canada,2022-03-08,108.71,marygarciaAT example dot com,True
+101135,Michael Ndlovu,59,Male,United Kingdom,2023-03-07,240.56,michael.ndlovu422@example.com,True
+101169,Elizabeth Smith,38,Unknown,United States,2024-07-16,140.12,,False
+100666,Robert Davis,56,Unknown,Kenya,2022-03-11,179.69,,False
+100684,Joseph Mensah,26,Unknown,United Kingdom,2021-11-11,147.44,,False
+100380,James Johnson,46,Unknown,United States,2024-06-26,275.63,james.johnson842@example.com,True
+101012,Amara Brown,38,Female,Canada,2020-11-29,53.89,amara.brown821@example.com,True
+101339,Zola Ndlovu,45,Male,Kenya,2023-10-14,261.59,,False
+100290,Linda Jones,27,Unknown,Kenya,2020-10-08,140.12,linda.jones740@example.com,True
+100359,Karen Williams,25,Male,United Kingdom,2023-11-23,130.38,karen.williams175@example.com,True
+100364,Elizabeth Brown,60,Male,United States,2021-02-08,51.39,elizabeth.brown559@example.com,True
+100524,Elizabeth Williams,23,Unknown,Canada,,208.98,elizabeth.williams876@example.com,True
+100574,Jessica Rodriguez,45,Male,Canada,,233.17,jessica.rodriguez300@example.com,True
+100693,Jessica Smith,47,Male,Kenya,2023-01-16,108.9,jessica.smith640@example.com,True
+100704,Chidi Smith,38,Unknown,Kenya,2024-05-28,209.13,chidi.smith963@example.com,True
+100112,Barbara Rodriguez,34,Female,Canada,2020-04-11,213.05,barbararodriguezAT example dot com,True
+101126,Karen Mensah,19,Female,Unknown,2021-07-21,140.12,karen.mensah994@example.com,True
+100414,Linda Miller,27,Male,United Kingdom,2021-12-26,140.12,linda.miller647@example.com,True
+100589,Robert Okafor,64,Unknown,Kenya,2022-11-13,22.15,robert.okafor639@example.com,True
+101214,Chidi Garcia,54,Female,Kenya,2020-02-23,362.45,chidi.garcia260@example.com,True
+101453,Barbara Martinez,28,Unknown,Canada,2024-02-28,9.87,barbara.martinez486@example.com,True
+100486,Elizabeth Martinez,56,Male,United States,2024-01-14,205.5,elizabeth.martinez411@example.com,True
+101076,Richard Kimani,28,Unknown,United Kingdom,,65.64,richard.kimani275@example.com,True
+101052,Chidi Ndlovu,21,Male,Canada,,94.83,chidi.ndlovu768@example.com,True
+101089,Elizabeth Mensah,26,Male,Unknown,2024-01-16,71.92,elizabeth.mensah888@example.com,True
+100874,Thomas Davis,64,Female,United States,2022-01-24,180.34,thomas.davis730@example.com,True
+100843,Joseph Smith,69,Male,Canada,2022-11-19,140.12,,False
+100966,William Kimani,45,Male,Canada,2022-02-06,133.15,william.kimani450@example.com,True
+100594,Wanjiru Martinez,41,Female,United States,2023-10-13,309.89,wanjiru.martinez686@example.com,True
+100927,Mary Rodriguez,54,Male,Canada,2022-07-26,48.49,mary.rodriguez656@example.com,True
+100308,Richard Davis,27,Unknown,Kenya,2024-05-10,165.85,richard.davis272@example.com,True
+100058,Wanjiru Abara,49,Male,Kenya,2020-08-12,81.75,wanjiru.abara448@example.com,True
+100159,Amara Smith,24,Unknown,United States,,165.49,amara.smith710@example.com,True
+101410,Richard Okafor,47,Female,United States,2024-04-21,108.14,richardokaforAT example dot com,True
+100186,Thomas Davis,26,Female,United States,2022-05-22,245.11,thomas.davis997@example.com,True
+101459,Chidi Ndlovu,44,Unknown,United Kingdom,2021-12-13,85.54,chidindlovuAT example dot com,True
+100157,James Kimani,42,Unknown,Kenya,2021-07-06,99.26,,False
+100126,Linda Jones,74,Unknown,United Kingdom,2020-02-04,65.76,linda.jones964@example.com,True
+100322,Elizabeth Abara,74,Male,Canada,,10.15,elizabeth.abara751@example.com,True
+101083,Richard Rodriguez,45,Female,Unknown,2024-02-20,187.8,richard.rodriguez406@example.com,True
+100804,Elizabeth Garcia,35,Male,Unknown,,362.45,,False
+101236,Chidi Jones,45,Unknown,United Kingdom,2023-04-25,187.31,chidi.jones652@example.com,True
+100777,Zola Smith,41,Unknown,United Kingdom,2022-02-24,271.92,zola.smith990@example.com,True
+101127,Mary Davis,68,Male,United Kingdom,2024-08-18,152.54,mary.davis207@example.com,True
+101268,Elizabeth Williams,74,Male,Kenya,2024-09-11,140.12,elizabeth.williams219@example.com,True
+101277,Karen Davis,31,Male,United Kingdom,2020-07-26,63.79,karen.davis842@example.com,True
+101252,William Smith,45,Unknown,United Kingdom,2020-08-18,362.45,william.smith868@example.com,True
+100273,Mary Brown,36,Female,United States,2023-08-07,161.45,mary.brown82@example.com,True
+100875,Kwame Mensah,45,Male,Canada,2021-04-23,195.83,kwamemensahAT example dot com,True
+100182,Charles Abara,65,Female,Canada,2024-03-21,42.3,charles.abara107@example.com,True
+101286,Karen Brown,45,Female,Nigeria,2021-06-13,140.12,karen.brown690@example.com,True
+101075,William Martinez,51,Unknown,United States,2020-01-02,155.43,william.martinez647@example.com,True
+101221,Wanjiru Miller,41,Unknown,United States,2023-08-31,345.95,wanjiru.miller444@example.com,True
+100462,David Miller,71,Unknown,Canada,2024-07-04,99.28,david.miller290@example.com,True
+100089,Elizabeth Jones,57,Male,Canada,2023-07-17,172.44,,False
+101248,Zola Ndlovu,45,Male,United States,2024-11-28,77.17,zola.ndlovu416@example.com,True
+100853,John Okafor,37,Unknown,United States,2023-11-01,120.08,john.okafor967@example.com,True
+100415,Karen Smith,45,Female,United Kingdom,2024-07-08,140.12,karen.smith155@example.com,True
+100676,Elizabeth Kimani,58,Unknown,United States,2020-06-17,92.76,elizabeth.kimani553@example.com,True
+100534,Chidi Davis,43,Female,United States,2023-08-12,136.69,chidi.davis124@example.com,True
+100234,Amara Williams,73,Female,Unknown,2022-12-02,192.42,amara.williams518@example.com,True
+100680,Joseph Garcia,23,Male,Kenya,2024-09-24,133.88,joseph.garcia772@example.com,True
+100401,William Ndlovu,66,Unknown,Nigeria,2021-10-13,140.12,,False
+100698,David Williams,34,Male,United States,2022-03-26,198.75,david.williams93@example.com,True
+100438,Patricia Abara,41,Female,United Kingdom,2020-04-02,109.96,patricia.abara800@example.com,True
+100527,Susan Kimani,26,Female,Canada,2023-09-13,281.73,,False
+101476,Chidi Rodriguez,45,Female,United States,2024-03-25,195.59,chidi.rodriguez127@example.com,True
+100717,James Ndlovu,74,Female,Kenya,2022-02-01,15.38,james.ndlovu954@example.com,True
+101175,Kwame Smith,70,Male,Canada,2020-09-02,52.18,kwame.smith231@example.com,True
+100132,John Jones,45,Female,Kenya,2021-10-01,362.45,john.jones614@example.com,True
+100738,Zola Mensah,45,Female,Kenya,2020-05-15,55.38,zola.mensah355@example.com,True
+100029,Barbara Abara,26,Female,United States,2020-02-28,278.93,barbara.abara938@example.com,True
+100639,Charles Martinez,21,Male,Kenya,2023-12-01,295.19,charlesmartinezAT example dot com,True
+100238,Jessica Ndlovu,21,Unknown,Kenya,,65.85,jessica.ndlovu469@example.com,True
+100323,Linda Kimani,42,Female,Nigeria,,54.99,linda.kimani65@example.com,True
+100628,Amara Davis,48,Female,Kenya,2021-11-17,58.97,,False
+101461,Amara Davis,21,Female,United Kingdom,,122.33,amara.davis296@example.com,True
+100769,Mary Ndlovu,30,Unknown,Nigeria,2024-02-19,362.45,mary.ndlovu883@example.com,True
+101487,Kwame Garcia,60,Male,United Kingdom,2022-01-04,115.84,kwame.garcia678@example.com,True
+101420,Karen Abara,44,Unknown,Nigeria,2023-08-27,140.12,karen.abara860@example.com,True
+101020,Karen Johnson,70,Unknown,Kenya,2024-11-16,362.45,karen.johnson551@example.com,True
+100379,Michael Miller,42,Male,United States,,362.45,michael.miller3@example.com,True
+100747,Elizabeth Davis,45,Female,United States,2020-01-21,289.53,elizabeth.davis568@example.com,True
+101054,Susan Miller,74,Unknown,Canada,2020-12-29,362.45,susanmillerAT example dot com,True
+100350,Barbara Garcia,55,Unknown,United Kingdom,2021-10-13,135.25,barbara.garcia72@example.com,True
+101272,Sarah Williams,28,Female,Nigeria,,41.89,sarah.williams771@example.com,True
+100051,Wanjiru Ndlovu,74,Female,United Kingdom,2020-12-24,121.08,wanjiru.ndlovu951@example.com,True
+100507,Linda Rodriguez,72,Female,Unknown,2023-02-13,362.45,lindarodriguezAT example dot com,True
+101060,Robert Rodriguez,45,Female,Unknown,2022-10-11,263.88,,False
+101102,Wanjiru Johnson,73,Female,Canada,2022-06-09,140.12,wanjiru.johnson628@example.com,True
+101037,James Brown,36,Unknown,Canada,2023-08-06,217.43,,False
+101082,John Kimani,54,Male,United Kingdom,2020-04-24,140.12,john.kimani369@example.com,True
+100575,Susan Ndlovu,45,Female,United Kingdom,2022-03-24,145.28,susan.ndlovu638@example.com,True
+100233,James Martinez,73,Unknown,Canada,2020-10-27,168.21,,False
+101338,Patricia Kimani,64,Unknown,United States,2022-07-16,157.02,patricia.kimani961@example.com,True
+101428,Linda Smith,45,Male,Nigeria,2022-09-01,140.12,lindasmithAT example dot com,True
+100743,Susan Kimani,70,Male,United Kingdom,2022-01-03,264.16,susan.kimani308@example.com,True
+100478,Richard Martinez,34,Male,United States,2022-08-19,362.45,richard.martinez750@example.com,True
+100999,Karen Davis,56,Male,Kenya,2021-02-24,250.59,karen.davis414@example.com,True
+100193,Karen Miller,43,Unknown,United States,2023-06-28,66.0,karen.miller391@example.com,True
+100404,Linda Rodriguez,37,Male,United Kingdom,2023-08-27,67.05,linda.rodriguez966@example.com,True
+101069,Elizabeth Ndlovu,22,Male,United States,2022-11-22,41.84,elizabeth.ndlovu314@example.com,True
+100883,Amara Smith,47,Female,United States,2024-07-03,246.48,amara.smith975@example.com,True
+100487,Jessica Abara,61,Unknown,Canada,2020-07-28,94.8,jessica.abara795@example.com,True
+101048,Wanjiru Garcia,39,Male,Canada,2020-01-09,23.98,wanjiru.garcia706@example.com,True
+100471,James Rodriguez,42,Male,Canada,2020-08-27,207.46,james.rodriguez950@example.com,True
+100256,Mary Rodriguez,71,Female,Canada,2021-01-23,168.77,mary.rodriguez7@example.com,True
+100894,Amara Martinez,45,Male,United States,2024-10-16,274.72,amara.martinez34@example.com,True
+101397,Robert Williams,71,Unknown,Nigeria,2020-05-14,44.57,robert.williams826@example.com,True
+100138,Jessica Ndlovu,20,Male,Nigeria,2021-11-01,362.45,jessica.ndlovu590@example.com,True
+100491,Robert Smith,39,Male,Kenya,,211.04,robert.smith915@example.com,True
+101146,Chidi Garcia,69,Female,United Kingdom,2023-08-28,140.12,chidi.garcia689@example.com,True
+100578,Patricia Smith,45,Male,Kenya,,41.22,patricia.smith971@example.com,True
+100706,John Johnson,45,Female,Kenya,2023-03-26,362.45,johnjohnsonAT example dot com,True
+100206,Karen Mensah,53,Unknown,United Kingdom,2023-11-24,140.12,karen.mensah418@example.com,True
+101200,James Martinez,37,Male,Canada,2021-09-05,53.12,james.martinez203@example.com,True
+100848,Jennifer Davis,63,Male,Kenya,2022-10-11,111.54,,False
+101348,Sarah Miller,42,Male,United States,2023-07-06,216.04,sarah.miller157@example.com,True
+101392,Michael Ndlovu,29,Female,United States,2020-06-11,362.45,michael.ndlovu287@example.com,True
+100000,Kwame Martinez,65,Male,United States,2024-04-21,140.12,kwame.martinez341@example.com,True
+100226,Michael Ndlovu,55,Female,Kenya,2020-05-05,63.25,,False
+101497,Mary Ndlovu,73,Female,United States,2020-01-12,266.46,mary.ndlovu892@example.com,True
+100249,Mary Davis,29,Female,Canada,2024-03-01,243.92,mary.davis861@example.com,True
+100889,Barbara Mensah,59,Male,United States,2023-06-03,140.12,barbara.mensah394@example.com,True
+101132,Patricia Okafor,55,Unknown,Canada,2024-01-22,58.37,patricia.okafor133@example.com,True
+100705,James Kimani,51,Female,United Kingdom,2020-09-10,254.09,james.kimani822@example.com,True
+100979,Jennifer Brown,45,Unknown,United Kingdom,2021-11-19,105.04,jennifer.brown278@example.com,True
+101029,Kwame Johnson,40,Male,Nigeria,2020-09-30,355.03,kwame.johnson666@example.com,True
+101284,Joseph Smith,22,Male,United Kingdom,2024-09-16,15.46,joseph.smith455@example.com,True
+100283,Linda Abara,29,Female,Kenya,2023-09-22,127.33,linda.abara354@example.com,True
+100313,Patricia Miller,52,Female,United States,2023-11-27,61.96,patricia.miller404@example.com,True
+100596,James Jones,25,Male,Canada,2020-05-22,118.54,james.jones681@example.com,True
+100059,Chidi Ndlovu,67,Female,Kenya,2023-09-24,140.12,chidindlovuAT example dot com,True
+100047,Kwame Jones,55,Unknown,United States,2021-01-26,105.7,kwame.jones257@example.com,True
+101437,Barbara Davis,22,Unknown,United States,2022-12-02,218.92,barbara.davis417@example.com,True
+101326,Wanjiru Martinez,37,Unknown,United Kingdom,2024-06-27,362.45,wanjiru.martinez266@example.com,True
+101385,John Mensah,65,Female,Canada,2023-03-07,140.12,john.mensah483@example.com,True
+100986,Joseph Williams,55,Male,United Kingdom,2024-03-12,99.73,joseph.williams656@example.com,True
+100969,Barbara Brown,53,Male,Canada,2022-12-05,73.64,barbara.brown2@example.com,True
+101310,Jessica Garcia,31,Unknown,United States,2022-01-07,129.87,jessica.garcia716@example.com,True
+101478,Karen Williams,41,Male,United Kingdom,2024-10-24,54.83,karen.williams118@example.com,True
+101462,Chidi Miller,45,Male,United Kingdom,2020-03-03,145.99,chidi.miller669@example.com,True
+100758,David Johnson,21,Female,United Kingdom,2023-05-17,161.23,david.johnson25@example.com,True
+100978,Susan Martinez,59,Male,Kenya,2022-05-21,176.26,,False
+101425,Sarah Davis,47,Unknown,Nigeria,2022-11-21,172.4,sarah.davis582@example.com,True
+100312,Kwame Garcia,57,Male,Canada,,100.15,kwame.garcia66@example.com,True
+100091,Barbara Rodriguez,51,Unknown,Kenya,2022-02-11,124.79,,False
+100721,William Johnson,25,Male,Canada,,173.35,william.johnson286@example.com,True
+101265,Karen Mensah,59,Unknown,United Kingdom,,146.87,karen.mensah283@example.com,True
+100734,Amara Johnson,72,Unknown,Kenya,2022-10-26,84.45,amarajohnsonAT example dot com,True
+100811,Richard Brown,70,Male,Nigeria,2020-04-14,276.06,richard.brown208@example.com,True
+100459,Chidi Martinez,69,Male,Kenya,2021-07-30,362.45,chidi.martinez659@example.com,True
+100849,Susan Smith,18,Unknown,United Kingdom,2023-02-07,44.16,susan.smith421@example.com,True
+100383,Karen Rodriguez,61,Male,United Kingdom,2020-09-09,93.44,karen.rodriguez286@example.com,True
+100017,Thomas Johnson,45,Female,Kenya,2022-02-26,221.92,thomas.johnson657@example.com,True
+100955,John Johnson,37,Unknown,United Kingdom,2022-08-27,106.44,john.johnson202@example.com,True
+101381,Mary Rodriguez,58,Male,Canada,2021-03-17,362.45,mary.rodriguez510@example.com,True
+101066,William Brown,45,Unknown,United States,2024-11-06,362.45,william.brown486@example.com,True
+100987,Robert Smith,47,Male,Nigeria,,245.71,robert.smith833@example.com,True
+101014,Joseph Jones,31,Female,Canada,2022-09-26,362.45,joseph.jones755@example.com,True
+101482,Elizabeth Williams,45,Unknown,United States,,130.87,elizabeth.williams681@example.com,True
+101451,Linda Martinez,32,Male,Nigeria,2023-11-19,84.46,linda.martinez704@example.com,True
+100125,Kwame Mensah,45,Female,United States,2023-06-12,126.08,kwame.mensah155@example.com,True
+100511,Michael Mensah,35,Female,Canada,2020-07-19,75.87,michael.mensah544@example.com,True
+100076,Jennifer Abara,51,Male,Nigeria,,122.65,jennifer.abara421@example.com,True
+100930,Barbara Brown,30,Unknown,Canada,2023-12-04,112.95,barbara.brown774@example.com,True
+100141,Charles Davis,62,Female,Kenya,2023-07-08,362.45,charles.davis656@example.com,True
+101495,Wanjiru Williams,20,Female,Kenya,2020-11-12,362.45,wanjiru.williams974@example.com,True
+100585,Robert Garcia,21,Male,Nigeria,2024-07-09,289.91,robert.garcia497@example.com,True
+100818,Mary Okafor,45,Male,United Kingdom,2024-09-05,140.12,mary.okafor602@example.com,True
+101484,Zola Smith,74,Male,Kenya,2021-05-06,91.09,zola.smith586@example.com,True
+100787,Susan Martinez,40,Male,United States,2022-05-27,159.09,,False
+100555,William Davis,53,Unknown,Nigeria,2024-01-07,72.96,,False
+101176,Patricia Rodriguez,73,Male,Nigeria,2020-12-21,362.45,patricia.rodriguez1@example.com,True
+101056,Kwame Jones,45,Unknown,Canada,2022-07-29,207.71,kwame.jones599@example.com,True
+100015,Jessica Johnson,28,Unknown,Nigeria,2024-05-30,157.5,jessica.johnson729@example.com,True
+100435,Sarah Ndlovu,38,Female,United Kingdom,2024-06-25,172.0,sarah.ndlovu69@example.com,True
+100498,Barbara Williams,45,Male,Kenya,2023-08-19,362.45,barbara.williams329@example.com,True
+100619,Joseph Ndlovu,40,Unknown,United Kingdom,2021-12-14,244.28,joseph.ndlovu932@example.com,True
+100450,Kwame Okafor,73,Unknown,United Kingdom,2024-09-17,123.34,kwame.okafor289@example.com,True
+100766,Jessica Kimani,20,Female,Nigeria,2024-05-31,362.45,,False
+100035,Joseph Williams,27,Female,Unknown,2023-12-17,140.12,josephwilliamsAT example dot com,True
+100947,Michael Garcia,42,Female,United States,2023-01-25,153.12,michael.garcia254@example.com,True
+101249,Patricia Williams,69,Unknown,Nigeria,2024-01-18,83.23,patricia.williams473@example.com,True
+101196,Kwame Miller,39,Unknown,United Kingdom,,117.15,kwame.miller487@example.com,True
+100981,Susan Smith,43,Female,Kenya,2022-03-13,41.87,susan.smith239@example.com,True
+100241,Elizabeth Jones,65,Female,Canada,2024-02-21,362.45,elizabeth.jones974@example.com,True
+100529,Patricia Okafor,33,Female,United States,2023-02-05,132.23,patricia.okafor619@example.com,True
+100343,Robert Okafor,20,Female,Canada,2020-06-30,261.45,robert.okafor647@example.com,True
+101180,Kwame Okafor,48,Female,Canada,2024-04-08,190.39,kwame.okafor508@example.com,True
+101445,Susan Mensah,60,Female,Unknown,2020-04-02,362.45,susan.mensah83@example.com,True
+100886,Charles Garcia,33,Unknown,United Kingdom,2021-09-12,129.76,charles.garcia648@example.com,True
+100506,Thomas Abara,57,Female,Unknown,2022-05-27,30.6,thomas.abara683@example.com,True
+100215,Charles Garcia,45,Female,Kenya,2022-06-15,141.25,charles.garcia31@example.com,True
+100208,Linda Miller,45,Male,Unknown,2023-03-23,44.16,linda.miller887@example.com,True
+100945,William Okafor,59,Female,Nigeria,2020-06-26,138.12,william.okafor954@example.com,True
+100064,Richard Ndlovu,47,Male,Canada,2022-11-25,65.96,richard.ndlovu981@example.com,True
+100010,Joseph Mensah,66,Unknown,United Kingdom,2020-01-26,140.12,joseph.mensah193@example.com,True
+101202,Robert Abara,34,Male,United Kingdom,2022-08-16,115.5,robert.abara222@example.com,True
+100252,James Mensah,59,Unknown,Kenya,2024-02-14,154.06,jamesmensahAT example dot com,True
+100603,Jennifer Brown,50,Female,Kenya,2021-10-14,43.43,jennifer.brown862@example.com,True
+100805,Elizabeth Okafor,71,Male,United States,2020-05-04,234.34,elizabeth.okafor683@example.com,True
+101285,William Mensah,45,Unknown,Canada,2022-11-10,362.45,william.mensah35@example.com,True
+101124,Sarah Smith,53,Female,Kenya,2020-12-12,176.14,sarah.smith252@example.com,True
+101191,Patricia Rodriguez,34,Unknown,United Kingdom,2022-11-24,362.26,patricia.rodriguez7@example.com,True
+100314,David Johnson,67,Unknown,Canada,2023-03-06,162.56,david.johnson876@example.com,True
+100518,Charles Mensah,58,Male,United Kingdom,2021-07-31,169.71,charles.mensah336@example.com,True
+100465,Barbara Smith,54,Unknown,United States,2021-05-22,119.37,barbara.smith346@example.com,True
+100931,Jennifer Smith,34,Male,Nigeria,2020-02-23,307.5,jennifer.smith389@example.com,True
+100963,Mary Brown,29,Male,United States,2022-06-18,174.02,mary.brown794@example.com,True
+100842,Barbara Davis,54,Female,Unknown,2020-09-12,199.42,,False
+100367,Joseph Johnson,26,Unknown,Nigeria,2021-12-11,39.14,joseph.johnson440@example.com,True
+100145,Susan Garcia,50,Female,United States,2020-12-28,69.15,susan.garcia440@example.com,True
+100362,Chidi Brown,59,Female,United Kingdom,2020-11-21,362.45,chidi.brown457@example.com,True
+100630,Linda Brown,70,Unknown,Nigeria,2023-09-22,24.91,linda.brown401@example.com,True
+100090,Jessica Okafor,18,Male,Unknown,,155.6,jessica.okafor540@example.com,True
+100321,Mary Kimani,60,Male,Canada,2023-12-20,38.09,marykimaniAT example dot com,True
+100185,Susan Brown,38,Unknown,United States,2023-07-14,362.45,,False
+100924,Thomas Miller,51,Unknown,United States,2023-06-08,362.45,thomas.miller914@example.com,True
+101156,Sarah Martinez,65,Male,Canada,2023-03-22,140.12,sarah.martinez285@example.com,True
+100868,Robert Kimani,22,Female,United States,,160.46,robert.kimani258@example.com,True
+100756,Thomas Okafor,25,Unknown,Nigeria,2024-02-01,103.03,,False
+100119,William Okafor,61,Male,Canada,2022-11-09,73.68,william.okafor924@example.com,True
+101062,Linda Rodriguez,74,Male,United States,,71.45,linda.rodriguez801@example.com,True
+100840,Thomas Abara,26,Male,Nigeria,2022-04-29,85.41,thomas.abara93@example.com,True
+100493,John Johnson,73,Female,United Kingdom,,176.44,john.johnson552@example.com,True
+100443,Jennifer Abara,45,Male,Canada,2021-07-27,140.12,jennifer.abara301@example.com,True
+100338,Wanjiru Miller,57,Female,United States,2020-09-26,173.03,wanjiru.miller666@example.com,True
+101108,Amara Johnson,30,Male,United Kingdom,2021-02-15,98.52,amara.johnson604@example.com,True
+100224,Linda Davis,28,Unknown,Nigeria,2021-02-22,172.43,linda.davis559@example.com,True
+100019,Patricia Kimani,61,Female,United Kingdom,2021-04-18,124.65,patricia.kimani609@example.com,True
+101096,Charles Kimani,58,Unknown,United States,2020-04-10,181.3,charles.kimani205@example.com,True
+100418,Michael Rodriguez,45,Unknown,Unknown,2021-08-20,145.85,,False
+101099,Sarah Mensah,45,Male,United Kingdom,,140.12,sarah.mensah354@example.com,True
+101404,Zola Kimani,40,Female,Kenya,2023-05-12,142.39,zola.kimani539@example.com,True
+100991,Kwame Rodriguez,50,Female,Kenya,,347.21,kwame.rodriguez984@example.com,True
+100385,Michael Smith,70,Female,Kenya,2024-04-12,180.48,michael.smith336@example.com,True
+100929,Elizabeth Martinez,20,Male,Unknown,2024-07-03,135.5,elizabeth.martinez319@example.com,True
+100452,Robert Kimani,23,Unknown,Nigeria,2022-08-08,89.11,,False
+100264,Richard Martinez,43,Unknown,Canada,2022-05-09,51.49,richard.martinez167@example.com,True
+101064,John Brown,35,Male,Unknown,2023-07-07,156.76,john.brown732@example.com,True
+101452,Joseph Davis,56,Female,Nigeria,2023-02-21,88.55,joseph.davis517@example.com,True
+100160,Richard Miller,64,Unknown,United States,2021-03-21,362.45,richard.miller971@example.com,True
+100110,Kwame Miller,59,Unknown,Nigeria,2022-01-29,228.23,kwame.miller17@example.com,True
+100303,William Smith,65,Male,Canada,2020-09-17,27.03,william.smith214@example.com,True
+100048,Richard Williams,71,Unknown,United Kingdom,2020-02-16,50.02,richard.williams163@example.com,True
+100509,Susan Kimani,21,Female,Nigeria,2020-06-02,222.54,susan.kimani118@example.com,True
+100018,Barbara Ndlovu,50,Male,United Kingdom,2020-07-21,140.12,barbara.ndlovu305@example.com,True
+101067,David Brown,56,Unknown,Kenya,2022-12-19,264.24,david.brown649@example.com,True
+101297,Elizabeth Johnson,52,Male,United Kingdom,2020-11-19,157.29,elizabeth.johnson920@example.com,True
+101467,Kwame Rodriguez,45,Unknown,Canada,2020-08-13,151.1,kwame.rodriguez430@example.com,True
+100934,Barbara Davis,56,Female,Kenya,,140.12,,False
+100885,Jennifer Garcia,45,Male,United States,2021-09-13,89.46,,False
+100275,Jessica Brown,73,Unknown,United Kingdom,2021-08-17,205.01,,False
+100114,Susan Brown,23,Female,Canada,2021-08-01,170.57,susan.brown223@example.com,True
+101352,Patricia Smith,19,Female,Unknown,2024-07-08,132.83,,False
+101155,Elizabeth Okafor,26,Male,Nigeria,2020-03-19,313.38,elizabeth.okafor50@example.com,True
+100001,Michael Okafor,32,Female,Kenya,2023-12-24,25.75,michael.okafor792@example.com,True
+100227,Robert Kimani,53,Unknown,United Kingdom,,204.7,robert.kimani384@example.com,True
+100133,Chidi Kimani,53,Female,United States,2022-03-09,113.33,chidi.kimani660@example.com,True
+100248,Charles Rodriguez,45,Unknown,Unknown,2024-03-27,150.24,charles.rodriguez867@example.com,True
+101307,Joseph Jones,48,Male,Nigeria,2023-11-20,99.67,joseph.jones168@example.com,True
+100496,Sarah Kimani,69,Female,United Kingdom,2021-02-03,128.62,sarah.kimani295@example.com,True
+100960,William Davis,28,Female,United Kingdom,2024-03-07,137.75,william.davis686@example.com,True
+100335,Michael Miller,56,Male,United Kingdom,2021-10-03,50.94,michael.miller210@example.com,True
+100439,Elizabeth Martinez,70,Male,Unknown,2024-01-22,56.98,elizabeth.martinez250@example.com,True
+101287,Patricia Johnson,31,Male,United Kingdom,2021-04-01,74.76,patricia.johnson742@example.com,True
+101166,Wanjiru Miller,45,Female,United States,2023-10-27,117.21,wanjirumillerAT example dot com,True
+101269,Jessica Brown,20,Male,United Kingdom,2023-07-05,59.24,jessica.brown470@example.com,True
+100812,Jennifer Johnson,42,Female,Canada,2023-12-28,180.23,jennifer.johnson171@example.com,True
+101051,Sarah Mensah,51,Female,United States,2023-12-22,243.26,sarah.mensah494@example.com,True
+100441,David Ndlovu,45,Male,United States,2024-07-13,122.73,david.ndlovu173@example.com,True
+101162,Mary Davis,40,Male,Kenya,2024-09-01,91.28,mary.davis626@example.com,True
+101113,James Brown,43,Unknown,United Kingdom,2021-06-28,46.94,james.brown716@example.com,True
+100838,Robert Martinez,47,Female,United Kingdom,2022-06-19,219.38,robert.martinez277@example.com,True
+101047,James Mensah,45,Female,United Kingdom,2022-06-29,188.64,james.mensah612@example.com,True
+101103,Thomas Kimani,58,Female,Canada,2021-09-01,25.42,thomas.kimani770@example.com,True
+101149,Mary Miller,45,Female,Kenya,2020-10-09,56.51,marymillerAT example dot com,True
+100242,Charles Rodriguez,45,Female,United States,,71.52,charles.rodriguez667@example.com,True
+101394,Richard Okafor,39,Unknown,United States,2022-05-21,140.12,richard.okafor694@example.com,True
+100683,Jessica Garcia,38,Female,Unknown,2022-10-20,138.34,jessica.garcia125@example.com,True
+101350,Mary Garcia,45,Male,Kenya,,247.27,marygarciaAT example dot com,True
+100657,Michael Brown,47,Male,United States,,162.87,michael.brown702@example.com,True
+100504,Richard Davis,29,Male,United States,2022-02-11,140.12,richard.davis87@example.com,True
+100408,William Williams,59,Unknown,United Kingdom,2024-04-29,29.36,william.williams886@example.com,True
+101105,Sarah Johnson,38,Female,United Kingdom,2023-04-15,140.12,sarah.johnson464@example.com,True
+101492,Jennifer Smith,45,Female,United States,2024-01-02,288.58,,False
+101255,Linda Kimani,50,Male,United States,2022-05-18,140.12,linda.kimani986@example.com,True
+101061,Kwame Jones,45,Unknown,Kenya,2023-11-25,105.26,kwame.jones774@example.com,True
+100140,John Martinez,30,Male,Canada,2024-10-31,78.26,john.martinez448@example.com,True
+100546,David Johnson,33,Female,Kenya,2022-09-13,163.12,,False
+100900,Wanjiru Kimani,45,Unknown,United States,2020-07-26,283.56,wanjiru.kimani164@example.com,True
+100637,Joseph Brown,31,Male,United States,2023-08-18,362.45,joseph.brown436@example.com,True
+101260,Zola Martinez,32,Female,United States,2021-03-24,362.45,zola.martinez258@example.com,True
+101440,Barbara Smith,63,Male,Kenya,2021-07-23,140.12,barbara.smith300@example.com,True
+100621,Patricia Rodriguez,49,Unknown,United Kingdom,2020-10-17,120.38,patricia.rodriguez325@example.com,True
+100850,Susan Garcia,38,Male,Canada,,114.99,susan.garcia111@example.com,True
+100583,John Davis,45,Unknown,Nigeria,2021-10-24,140.12,,False
+100332,Linda Jones,26,Female,United States,2020-07-20,264.31,linda.jones123@example.com,True
+101293,Linda Ndlovu,30,Male,Nigeria,2024-07-22,362.45,linda.ndlovu247@example.com,True
+101361,Jennifer Mensah,45,Male,United Kingdom,2020-11-26,27.11,,False
+101115,James Williams,56,Unknown,United States,2023-10-06,65.77,james.williams949@example.com,True
+101104,Jessica Jones,21,Unknown,Canada,2024-03-21,362.45,jessica.jones288@example.com,True

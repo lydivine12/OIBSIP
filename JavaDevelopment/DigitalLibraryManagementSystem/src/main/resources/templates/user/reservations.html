@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>My Reservations - Digital Library</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div th:replace="~{fragments/header :: nav}"></div>
+
+<div class="container">
+    <div class="card">
+        <h1>My Reservations</h1>
+        <p class="muted">When a book you've reserved is returned by its current holder, it's automatically issued to you (oldest reservation first).</p>
+
+        <table>
+            <thead>
+            <tr><th>Title</th><th>Reserved On</th><th>Status</th><th></th></tr>
+            </thead>
+            <tbody>
+            <tr th:each="r : ${reservations}">
+                <td th:text="${r.book.title}"></td>
+                <td th:text="${r.reservationDate}"></td>
+                <td>
+                    <span th:if="${r.status.name() == 'PENDING'}" class="badge badge-gray">Waiting</span>
+                    <span th:if="${r.status.name() == 'FULFILLED'}" class="badge badge-green">Fulfilled - check My Books</span>
+                    <span th:if="${r.status.name() == 'CANCELLED'}" class="badge badge-red">Cancelled</span>
+                </td>
+                <td>
+                    <form th:if="${r.status.name() == 'PENDING'}" method="post"
+                          th:action="@{/user/reservations/{id}/cancel(id=${r.id})}">
+                        <button type="submit" class="btn-small btn-danger">Cancel</button>
+                    </form>
+                </td>
+            </tr>
+            <tr th:if="${#lists.isEmpty(reservations)}"><td colspan="4" class="muted">No reservations yet.</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

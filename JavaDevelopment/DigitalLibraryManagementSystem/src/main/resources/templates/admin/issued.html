@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Issued Books - Digital Library</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div th:replace="~{fragments/header :: nav}"></div>
+
+<div class="container">
+    <div class="card">
+        <h1>Currently Issued Books</h1>
+        <table>
+            <thead>
+            <tr><th>Book</th><th>Member</th><th>Issue Date</th><th>Due Date</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+            <tr th:each="r : ${records}">
+                <td th:text="${r.book.title}"></td>
+                <td th:text="${r.member.fullName} + ' (' + ${r.member.email} + ')'"></td>
+                <td th:text="${r.issueDate}"></td>
+                <td th:text="${r.dueDate}"></td>
+                <td>
+                    <span th:if="${!r.dueDate.isBefore(today)}" class="badge badge-green">On time</span>
+                    <span th:if="${r.dueDate.isBefore(today)}" class="badge badge-red">Overdue</span>
+                </td>
+            </tr>
+            <tr th:if="${#lists.isEmpty(records)}"><td colspan="5" class="muted">No books are currently issued.</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
