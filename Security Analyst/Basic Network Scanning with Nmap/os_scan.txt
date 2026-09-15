@@ -1,0 +1,25 @@
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-09-13 12:29 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000022s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+8000/tcp open  http-alt
+8080/tcp open  http-proxy
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.94SVN%E=4%D=9/13%OT=22%CT=1%CU=44426%PV=N%DS=0%DC=L%G=Y%TM=6AA6
+OS:973D%P=x86_64-pc-linux-gnu)SEQ(SP=106%GCD=1%ISR=10C%TI=Z%CI=Z%II=I%TS=20
+OS:)OPS(O1=MFFD7ST11NW9%O2=MFFD7ST11NW9%O3=MFFD7NNT11NW9%O4=MFFD7ST11NW9%O5
+OS:=MFFD7ST11NW9%O6=MFFD7ST11)WIN(W1=FFCB%W2=FFCB%W3=FFCB%W4=FFCB%W5=FFCB%W
+OS:6=FFCB)ECN(R=Y%DF=Y%T=40%W=FFD7%O=MFFD7NNSNW9%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S
+OS:=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%R
+OS:D=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=
+OS:0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U
+OS:1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DF
+OS:I=N%T=40%CD=S)
+
+Network Distance: 0 hops
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 11.31 seconds

@@ -1,0 +1,226 @@
+================================================================================
+NMAP NETWORK SCAN RESULTS AND SECURITY ANALYSIS
+================================================================================
+Target:          127.0.0.1 (localhost)
+Scanner:         Nmap version 7.94SVN
+Scanning host:   Ubuntu Linux (lab/container environment)
+Date performed:  2026-09-13
+Authorization:   Own system — no third-party authorization required
+================================================================================
+
+
+--------------------------------------------------------------------------------
+SECTION 1: BASIC SCAN
+--------------------------------------------------------------------------------
+Command: nmap 127.0.0.1
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-09-13 12:26 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.0000020s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+8000/tcp open  http-alt
+8080/tcp open  http-proxy
+
+Nmap done: 1 IP address (1 host up) scanned in 0.04 seconds
+
+Notes: A default Nmap scan checks the 1,000 most common TCP ports using a SYN
+scan. 3 of the top 1,000 were found open; 997 were closed (host actively
+refused connection with a TCP RST). Service names at this stage (e.g.
+"http-proxy" for 8080) are Nmap's best guess purely from the port number's
+common association — not yet confirmed by an actual protocol handshake.
+
+
+--------------------------------------------------------------------------------
+SECTION 2: SERVICE VERSION SCAN
+--------------------------------------------------------------------------------
+Command: nmap -sV 127.0.0.1
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-09-13 12:26 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.0000020s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT     STATE SERVICE   VERSION
+22/tcp   open  ssh       OpenSSH 9.6p1 Ubuntu 3ubuntu13.19 (Ubuntu Linux; protocol 2.0)
+8000/tcp open  http-alt?
+8080/tcp open  http      SimpleHTTPServer 0.6 (Python 3.12.3)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 198.56 seconds
+
+Notes: Version detection sends real protocol probes to each open port and
+compares the responses against Nmap's fingerprint database. This confirmed
+port 8080 as a Python "SimpleHTTPServer" (Python 3.12.3) and identified the
+exact SSH server build on port 22. Port 8000 could not be confidently
+identified (marked "http-alt?" with a trailing "?", meaning low-confidence
+guess) — in this lab it was a bare `nc -lk 8000` listener with no real
+protocol behind it, which is exactly the kind of ambiguous result that should
+raise suspicion during a real assessment: an open port an operator can't
+explain is a red flag worth investigating directly on the host.
+
+
+--------------------------------------------------------------------------------
+SECTION 3: OS DETECTION SCAN
+--------------------------------------------------------------------------------
+Command: nmap -O 127.0.0.1
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-09-13 12:29 UTC
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000022s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+8000/tcp open  http-alt
+8080/tcp open  http-proxy
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.94SVN%E=4%D=9/13%OT=22%CT=1%CU=44426%PV=N%DS=0%DC=L%G=Y%TM=6AA6
+OS:973D%P=x86_64-pc-linux-gnu)SEQ(SP=106%GCD=1%ISR=10C%TI=Z%CI=Z%II=I%TS=20
+OS:)OPS(O1=MFFD7ST11NW9%O2=MFFD7ST11NW9%O3=MFFD7NNT11NW9%O4=MFFD7ST11NW9%O5
+OS:=MFFD7ST11NW9%O6=MFFD7ST11)WIN(W1=FFCB%W2=FFCB%W3=FFCB%W4=FFCB%W5=FFCB%W
+OS:6=FFCB)ECN(R=Y%DF=Y%T=40%W=FFD7%O=MFFD7NNSNW9%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S
+OS:=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%R
+OS:D=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=
+OS:0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U
+OS:1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DF
+OS:I=N%T=40%CD=S)
+
+Network Distance: 0 hops
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 11.31 seconds
+
+Notes: OS fingerprinting works by analysing subtle quirks in how a target's
+TCP/IP stack responds to a set of crafted probes (initial sequence number
+generation, TCP window sizes, TCP options ordering, ICMP quirks, etc.) and
+comparing that fingerprint against a database of known OS signatures. On this
+lab environment (scanning 127.0.0.1 over the loopback interface inside a
+containerised host), Nmap could not return a single confident OS match — a
+known limitation of OS fingerprinting over loopback/virtualised network
+stacks, where some of the signal OS-fingerprinting relies on doesn't behave
+the same as it would over a real physical/virtual NIC. The raw fingerprint
+above was still captured for completeness. "Network Distance: 0 hops"
+confirms this is the local machine itself (0 hops = no routing involved).
+
+Real-world expectation: on a real VM (e.g. Ubuntu Server running under
+VirtualBox, scanned from the host machine or another VM over an actual
+virtual NIC), this scan typically returns a specific match such as
+"Linux 5.X - 6.X" with a confidence percentage.
+
+
+--------------------------------------------------------------------------------
+SECTION 4: OPEN PORTS — SERVICE EXPLANATIONS AND SECURITY RISK ANALYSIS
+--------------------------------------------------------------------------------
+
+PORT 22/tcp — SSH (OpenSSH 9.6p1, Ubuntu build)
+--------------------------------------------------------------------------------
+What it does:
+  SSH (Secure Shell) provides encrypted remote command-line access to a
+  machine. It's the standard way system administrators log into Linux
+  servers remotely, and also underpins secure file transfer (SFTP/SCP) and
+  tunnelling.
+
+Security risk assessment: LOW-TO-MEDIUM (depends heavily on configuration)
+  - SSH itself is a mature, well-audited protocol and is *not* inherently
+    risky to expose — it's designed to be internet-facing.
+  - However, it is one of the single most commonly brute-forced services on
+    the internet. Automated bots constantly scan for port 22 and attempt
+    credential-stuffing / password-guessing attacks against it.
+  - The specific risk level depends on configuration choices, not the mere
+    fact that the port is open:
+      * Is password authentication enabled, or only key-based auth?
+        (password auth is far more brute-forceable)
+      * Is root login permitted directly (`PermitRootLogin`)? This should
+        normally be disabled.
+      * Is the OpenSSH version current? (9.6p1 here is a recent release with
+        no widely known unpatched critical CVEs at time of writing — but
+        this should always be checked against the current CVE database
+        before relying on it).
+      * Is it rate-limited / protected by fail2ban or similar against brute
+        force attempts?
+  - Recommendation: keep SSH open only if remote access is actually needed;
+    disable password auth in favour of SSH keys, disable direct root login,
+    and consider moving it off the default port 22 or restricting it to a
+    VPN/allow-listed IP range as defense-in-depth (not a substitute for the
+    above, but a useful extra layer).
+
+
+PORT 8080/tcp — HTTP (Python `http.server` / SimpleHTTPServer, Python 3.12.3)
+--------------------------------------------------------------------------------
+What it does:
+  This is Python's built-in development HTTP server (`python3 -m
+  http.server`), serving files from a directory over plain HTTP. It's
+  commonly used for quick local file sharing or front-end development
+  testing — never intended for production use.
+
+Security risk assessment: HIGH (in this context)
+  - This is explicitly a **development/debugging tool**, not production
+    software. Python's own documentation warns it "is not recommended for
+    production" — it has no authentication, no HTTPS/TLS, no rate limiting,
+    minimal logging, and directory-listing is often enabled by default,
+    which can expose file contents to anyone who can reach the port.
+  - Plain HTTP (no TLS) means any data transferred is sent unencrypted and
+    can be intercepted on the network (a concern if this were exposed beyond
+    localhost).
+  - If this is running on a real server rather than as a genuinely temporary
+    local convenience, it's a strong sign of a **forgotten debug service** —
+    exactly the kind of thing regular scanning is meant to catch.
+  - Recommendation: never expose this server type beyond localhost/a trusted
+    dev machine. For anything resembling production file-serving, use a
+    hardened web server (nginx, Apache) with TLS, authentication where
+    appropriate, and directory listing explicitly disabled.
+
+
+PORT 8000/tcp — Unidentified service ("http-alt?", low-confidence guess)
+--------------------------------------------------------------------------------
+What it does (as configured in this lab):
+  A bare `nc -lk 8000` (netcat) listener — accepts raw TCP connections with
+  no defined protocol, no authentication, and no logging of any kind.
+
+Security risk assessment: HIGH — and the most concerning finding in this scan
+  - Nmap could not confidently fingerprint this service at all (note the "?"
+    in "http-alt?"), which is itself a red flag: legitimate, well-known
+    services are usually identifiable. An unidentified open port is exactly
+    the kind of finding that warrants direct investigation on the host
+    (`ss -tlnp` / `netstat -tlnp` + `lsof -i` to see which process actually
+    owns it) rather than being dismissed.
+  - A raw netcat listener with no authentication will accept a connection
+    from literally anyone who can reach it, and depending on how it's
+    configured on the other end, could be used to exfiltrate data, act as an
+    unauthorized backdoor, or serve as a pivot point if the host is
+    compromised through another route.
+  - In a real audit, an open port that no one on the team can explain should
+    be treated as a potential indicator of compromise until proven otherwise
+    — it's exactly the profile of a manually planted backdoor or an
+    abandoned debug/test tool nobody remembered to shut down.
+  - Recommendation: identify the owning process immediately, confirm it's
+    intentional and understand exactly why it exists, and if not
+    justified, kill the process and remove whatever started it (cron job,
+    systemd service, startup script).
+
+
+--------------------------------------------------------------------------------
+SECTION 5: OVERALL SECURITY SUMMARY
+--------------------------------------------------------------------------------
+Total open ports found: 3 (out of 1,000 scanned)
+
+Risk breakdown:
+  - 1 port (22/SSH) is a legitimate, expected service with a
+    configuration-dependent risk level — standard hardening steps apply.
+  - 2 ports (8080, 8000) are exactly the kind of finding a basic scan exists
+    to catch: a non-production debug server and an unidentified raw
+    listener, neither of which should be exposed on a real host.
+
+This result nicely illustrates the core value of routine network scanning:
+even a "known" machine accumulates services over time that nobody remembers
+starting, and a scan is often the fastest way to notice before an attacker
+does. The recommended next step for this lab machine would be to shut down
+the two non-SSH services (or explicitly document and secure them if they are
+genuinely needed), then re-scan to confirm the attack surface has been
+reduced to just the intended service(s).
+
+================================================================================
+END OF REPORT
+================================================================================

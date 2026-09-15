@@ -1,0 +1,38 @@
+==================================================================
+ UFW Firewall Configuration Script
+==================================================================
+[1/8] UFW already installed (ufw 0.36.2)
+[2/8] Setting default policies (deny incoming, allow outgoing)...
+Default incoming policy changed to 'deny'
+(be sure to update your rules accordingly)
+Default outgoing policy changed to 'allow'
+(be sure to update your rules accordingly)
+[3/8] Allowing SSH (22/tcp)...
+Rules updated
+[4/8] Denying HTTP (80/tcp)...
+Rules updated
+[5/8] Allowing HTTPS (443/tcp, both TCP and UDP for HTTP/3-QUIC)...
+Rules updated
+[6/8] Denying traffic from 203.0.113.0/24 (example untrusted range)...
+Rules updated
+[7/8] Rate-limiting 8080/tcp (max ~6 connections/30s per source)...
+Rules updated
+[8/8] Enabling UFW...
+Firewall is active and enabled on system startup
+
+==================================================================
+ Configuration complete. Current rules:
+==================================================================
+Status: active
+Logging: on (low)
+Default: deny (incoming), allow (outgoing), disabled (routed)
+New profiles: skip
+
+To                         Action      From
+--                         ------      ----
+22/tcp                     ALLOW IN    Anywhere                  
+80/tcp                     DENY IN     Anywhere                  
+443                        ALLOW IN    Anywhere                  
+Anywhere                   DENY IN     203.0.113.0/24            
+8080/tcp                   LIMIT IN    Anywhere                  
+
